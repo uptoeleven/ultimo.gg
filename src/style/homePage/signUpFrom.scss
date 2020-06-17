@@ -2,11 +2,11 @@
 
 .SignUpform {
   padding: 15px 40px;
-  border: 1px solid $DarkPurple;
+  border: 1px solid $LightPurple;
   border-radius: 15px;
   color: white;
   font-family: nimbus-sans, sans-serif;
-  box-shadow: inset 0px 0px 30px 10px $DarkPurple;
+  box-shadow: inset 0px 0px 30px 10px $LightPurple;
 
   .field {
     width: 50%;
@@ -29,7 +29,7 @@
     input {
       box-sizing: border-box;
       padding: 10px 10px;
-      background-color: rgb(48, 45, 57);
+      background-color: rgba(255, 255, 255, 0.1);
       color: white;
       border: none;
       background-image: none;

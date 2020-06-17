@@ -1,0 +1,71 @@
+@import "../Default/variables.scss";
+
+.platform {
+  position: relative;
+  background-color: $LightBackground;
+  padding: 40px;
+
+  &_content {
+    width: 60%;
+    max-width: 1000px;
+    margin: 0 auto;
+    &_title {
+      font-family: nimbus-sans-condensed, sans-serif;
+      text-align: center;
+      color: $LightPurple;
+      font-size: 30px;
+      letter-spacing: -1px;
+      margin-top: 0px;
+    }
+
+    &_text-block {
+      color: white;
+      font-family: nimbus-sans, sans-serif;
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .link-text {
+      text-align: center;
+      font-weight: bold;
+      font-family: nimbus-sans, sans-serif;
+
+      a {
+        color: $LightPurple;
+        font-style: italic;
+      }
+      span {
+        color: white;
+      }
+    }
+    .sign-up_button-p {
+      border: none;
+      background-color: $LightPurple;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2px;
+      border-radius: 7px;
+      position: relative;
+      transform: translateY(7px);
+      width: fit-content;
+      font-family: nimbus-sans, sans-serif;
+      margin: 20px auto 0 auto;
+
+      &:before {
+        content: "SIGN-UP";
+        color: white;
+        background-color: rgb(3, 3, 18);
+        padding: 6px 30px;
+        border-radius: 7px;
+        transition: all ease 0.3s;
+        font-size: 0.8em;
+      }
+
+      &:hover:before {
+        transform: scale(0.94);
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "../Default/variables.scss";
+.info {
+  background-color: $LightBackground;
+
+  &_content {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+    color: white;
+    font-family: nimbus-sans, sans-serif;
+    text-align: center;
+    &-image {
+      img {
+        width: 50%;
+        max-width: 100px;
+      }
+    }
+    &-title {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    &-text {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 150px;
+    }
+  }
+}

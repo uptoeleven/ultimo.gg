@@ -11,7 +11,7 @@ class ItTakesSection extends Component {
   state = {};
   render() {
     return (
-      <div class='sign-up'>
+      <div className='sign-up'>
         <h2 className='sign-up_title-block'>HAVE YOU GOT WHAT IT TAKES?</h2>
         <div className='sign-up_content'>
           <div className='sign-up_content-video'>

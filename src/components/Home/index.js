@@ -7,6 +7,8 @@ import "../../style/homePage/index.scss";
 import HomeHero from "./homeHero";
 import ItTakes from "./IttakesSection.jsx";
 import ImageBanner from "./imageBannerSection";
+import PlatformSection from "./platformSection";
+import InfoSection from "./infoSection";
 
 class HomePage extends Component {
   state = {};
@@ -17,6 +19,8 @@ class HomePage extends Component {
           <HomeHero />
           <ItTakes />
           <ImageBanner />
+          <PlatformSection />
+          <InfoSection />
         </div>
       </>
     );
