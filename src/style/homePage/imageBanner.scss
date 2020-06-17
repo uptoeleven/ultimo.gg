@@ -1,0 +1,10 @@
+.imageBanner {
+  display: flex;
+  min-height: 400px;
+
+  &_image {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+}

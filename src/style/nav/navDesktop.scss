@@ -1,0 +1,40 @@
+@import "../Default/variables.scss";
+
+.desktop-nav {
+  width: 120px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(3, 3, 18);
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 75px;
+    transition: 0.8s all;
+    color: $GreyIcon;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: nimbus-sans, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    flex-direction: column;
+    padding: 10px;
+    letter-spacing: 0.14px;
+    &:hover {
+      background-color: rgba(194, 92, 255, 0.4);
+      color: $LightPurple;
+    }
+
+    img {
+      height: 25px;
+    }
+  }
+
+  .activeRoute {
+    background-color: rgba(194, 92, 255, 0.4);
+    color: $LightPurple;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../Default/variables.scss";
+
+.sign-up {
+  display: flex;
+  background-color: $LightBackground;
+  flex-direction: column;
+  &_title-block {
+    color: white;
+    margin: 20px auto 0 auto;
+    font-size: 40px;
+    font-family: nimbus-sans-condensed, sans-serif;
+    letter-spacing: 2px;
+  }
+
+  &_content {
+    display: flex;
+
+    &-video,
+    &-form {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 30px;
+    }
+  }
+}

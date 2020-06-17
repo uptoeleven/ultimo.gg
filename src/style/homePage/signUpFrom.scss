@@ -1,0 +1,72 @@
+@import "../Default/variables.scss";
+
+.SignUpform {
+  padding: 15px 40px;
+  border: 1px solid $DarkPurple;
+  border-radius: 15px;
+  color: white;
+  font-family: nimbus-sans, sans-serif;
+  box-shadow: inset 0px 0px 30px 10px $DarkPurple;
+
+  .field {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px 20px;
+
+    label,
+    input {
+      display: block;
+      width: 100%;
+      font-size: 12px;
+    }
+
+    label {
+      text-transform: uppercase;
+      margin: 7px 0;
+    }
+
+    input {
+      box-sizing: border-box;
+      padding: 10px 10px;
+      background-color: rgb(48, 45, 57);
+      color: white;
+      border: none;
+      background-image: none;
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      font-family: nimbus-sans, sans-serif;
+
+      &:focus {
+        background-color: $DarkPurple;
+        outline: none;
+      }
+    }
+  }
+  .check-box {
+    width: 70%;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    input {
+      background-color: transparent;
+    }
+
+    label {
+      font-size: 12px;
+    }
+  }
+}
+
+.submit-button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  height: 100px;
+}
