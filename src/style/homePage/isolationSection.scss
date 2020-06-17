@@ -1,0 +1,36 @@
+.isolation {
+  background-image: url(../../assets/homePage/JapaneselandscapeBg.svg);
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  color: white;
+
+  &_content {
+    text-align: center;
+
+    &-image {
+      margin: 0 auto;
+      width: 250px;
+    }
+    &-title {
+      font-size: 50px;
+      margin: 15px 0px;
+    }
+
+    &-partner {
+      .title-block {
+        font-family: nimbus-sans-condensed, sans-serif;
+      }
+
+      .image-container {
+        width: 30%;
+        min-width: 400px;
+        margin: 0 auto;
+
+        img {
+          width: 33%;
+        }
+      }
+    }
+  }
+}

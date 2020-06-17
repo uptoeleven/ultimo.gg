@@ -1,0 +1,28 @@
+@import "../Default/variables.scss";
+
+.gaming {
+  background-color: $LightBackground;
+
+  &_content {
+    width: 60%;
+    max-width: 800px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    &-icon {
+      width: 250px;
+    }
+    &-title {
+      font-family: nimbus-sans-condensed, sans-serif;
+    }
+  }
+
+  .video-container {
+    padding: 50px;
+
+    .react-player {
+      height: 500px !important;
+    }
+  }
+}

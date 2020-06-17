@@ -9,6 +9,9 @@ import ItTakes from "./IttakesSection.jsx";
 import ImageBanner from "./imageBannerSection";
 import PlatformSection from "./platformSection";
 import InfoSection from "./infoSection";
+import IsolationSeries from "./isolationSeries";
+import IsolationContent from "./isolationSeriesContent";
+import GamingLeague from "./gamingLeague";
 
 class HomePage extends Component {
   state = {};
@@ -21,6 +24,9 @@ class HomePage extends Component {
           <ImageBanner />
           <PlatformSection />
           <InfoSection />
+          <IsolationSeries />
+          <IsolationContent />
+          <GamingLeague />
         </div>
       </>
     );

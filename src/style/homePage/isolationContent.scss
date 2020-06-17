@@ -1,0 +1,59 @@
+@import "../Default/variables.scss";
+
+.isolation-content {
+  background-color: $DarkBackground;
+  .covid {
+    width: 40%;
+    font-family: nimbus-sans, sans-serif;
+    margin: 0px auto;
+    padding: 50px 0 20px 0;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-size: 14px;
+    min-width: 510px;
+  }
+
+  &-info {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1300px;
+    color: white;
+    .content-block {
+      box-sizing: border-box;
+      margin: 20px;
+      width: 33%;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+
+      .title {
+        text-align: center;
+        margin: 10px 0;
+        font-family: nimbus-sans-condensed, sans-serif;
+      }
+
+      .icon {
+        width: 50%;
+        height: 70px;
+        margin: 0 auto;
+      }
+
+      .text {
+        margin: 0px;
+      }
+    }
+  }
+
+  .video-container {
+    padding: 50px;
+    height: 500px;
+
+    .react-player {
+      height: 100% !important;
+    }
+  }
+}
