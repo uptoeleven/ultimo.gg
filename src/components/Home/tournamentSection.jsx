@@ -64,9 +64,9 @@ class TournamentSection extends Component {
         </div>
 
         <div className='tournament_seemore'>
-          <span>SEE MORE TOURNAMENTS</span>
+          <span className='title'>SEE MORE TOURNAMENTS</span>
           <img className='cup' src={CupLogo} alt='torn' />
-          <span>TOURNAMENTS</span>
+          <span className='heading'>TOURNAMENTS</span>
         </div>
       </div>
     );

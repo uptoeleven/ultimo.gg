@@ -1,0 +1,75 @@
+@import "../Default/variables.scss";
+
+.footer {
+  padding: 40px;
+  display: flex;
+  background-color: #340053;
+  justify-content: space-between;
+  &-logo {
+    width: 20%;
+    max-width: 150px;
+  }
+
+  &_content {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+
+    .pages {
+      width: 35%;
+    }
+
+    .icon {
+      width: 120px;
+    }
+    &-links {
+      padding: 20px;
+      font-family: nimbus-sans-condensed, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      width: auto;
+      .title {
+        color: $LightPurple;
+        width: 100%;
+        font-size: 14px;
+        font-family: nimbus-sans-condensed, sans-serif;
+        margin-bottom: 20px;
+      }
+      .text-block {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          margin-right: 40px;
+          color: white;
+          text-decoration: none;
+        }
+      }
+
+      .icon-block {
+        display: flex;
+        flex-direction: column;
+
+        .block {
+          display: flex;
+          flex-direction: row;
+          max-width: 300px;
+          margin-bottom: 10px;
+        }
+
+        img {
+          width: 33%;
+          max-width: 40px;
+          float: left;
+          margin-right: 10px;
+        }
+      }
+      .col-2 {
+        box-sizing: border-box;
+        width: 50%;
+        min-width: 90px;
+        float: left;
+      }
+    }
+  }
+}

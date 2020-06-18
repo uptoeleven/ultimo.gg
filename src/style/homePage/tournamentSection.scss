@@ -35,7 +35,7 @@
     display: flex;
     flex-direction: column;
 
-    span {
+    .title {
       font-size: 24px;
       font-weight: bold;
     }
@@ -43,6 +43,11 @@
     .cup {
       height: 40px;
       margin-top: 20px;
+    }
+
+    .heading {
+      font-size: 10px;
+      padding: 10px;
     }
   }
 }
