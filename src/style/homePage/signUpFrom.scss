@@ -2,12 +2,11 @@
 
 .SignUpform {
   padding: 15px 40px;
-  border: 1px solid $LightPurple;
-  border-radius: 15px;
+  // border: 1px solid rgba(194, 92, 255, 0.2);
+  border-radius: 5px;
   color: white;
   font-family: nimbus-sans, sans-serif;
-  box-shadow: inset 0px 0px 30px 10px $LightPurple;
-
+  box-shadow: inset 0px -4px 30px 10px rgba(194, 92, 255, 0.2);
   .field {
     width: 50%;
     float: left;
@@ -18,7 +17,7 @@
     input {
       display: block;
       width: 100%;
-      font-size: 12px;
+      font-size: 10px;
     }
 
     label {
@@ -57,7 +56,7 @@
     }
 
     label {
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 }

@@ -1,8 +1,12 @@
 import React, { Component } from "react";
+
+// components
+import FeaturedTournament from "./featuredTournament";
+
 class TournamentPage extends Component {
   state = {};
   render() {
-    return <h1>tornament page</h1>;
+    return <FeaturedTournament />;
   }
 }
 
