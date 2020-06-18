@@ -12,6 +12,7 @@ import InfoSection from "./infoSection";
 import IsolationSeries from "./isolationSeries";
 import IsolationContent from "./isolationSeriesContent";
 import GamingLeague from "./gamingLeague";
+import TournamentSection from "./tournamentSection";
 
 class HomePage extends Component {
   state = {};
@@ -27,6 +28,7 @@ class HomePage extends Component {
           <IsolationSeries />
           <IsolationContent />
           <GamingLeague />
+          <TournamentSection />
         </div>
       </>
     );

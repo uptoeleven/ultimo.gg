@@ -50,10 +50,12 @@
 
   .video-container {
     padding: 50px;
-    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
 
     .react-player {
-      height: 100% !important;
+      height: 500px !important;
     }
   }
 }

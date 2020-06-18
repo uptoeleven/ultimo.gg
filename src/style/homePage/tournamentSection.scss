@@ -1,0 +1,48 @@
+@import "../Default/variables.scss";
+
+.tournament {
+  background-color: $DarkBackground;
+  padding: 20px;
+  &_title {
+    color: white;
+    font-family: nimbus-sans, sans-serif;
+    text-align: center;
+  }
+
+  &_content {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .container {
+      margin: 0;
+      padding: 20px;
+      min-width: 50%;
+      min-height: 400px;
+      box-sizing: border-box;
+    }
+  }
+
+  &_seemore {
+    color: $GreyIcon;
+    font-family: nimbus-sans-condensed, sans-serif;
+
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .cup {
+      height: 40px;
+      margin-top: 20px;
+    }
+  }
+}

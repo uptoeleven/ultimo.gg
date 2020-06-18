@@ -1,9 +1,9 @@
 @import "../Default/variables.scss";
 .info {
-  background-image: url(../../assets/homePage/JapaneselandscapeBg.svg);
+  background-image: url(../../assets/homePage/Landscape-wide.svg);
   background-position: left;
-  background-size: 100%;
-
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
   .info-container {
     width: 90%;
     margin: 0 auto;

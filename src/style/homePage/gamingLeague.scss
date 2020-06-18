@@ -2,27 +2,48 @@
 
 .gaming {
   background-color: $LightBackground;
-
+  position: relative;
+  &-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../../assets/homePage/helmet-background.svg);
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
   &_content {
     width: 60%;
     max-width: 800px;
     color: white;
     margin: 0 auto;
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
     &-icon {
       width: 250px;
     }
     &-title {
       font-family: nimbus-sans-condensed, sans-serif;
     }
+
+    &-text {
+      line-height: 24px;
+    }
   }
 
   .video-container {
     padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
 
     .react-player {
+      position: relative;
       height: 500px !important;
+      z-index: 100;
     }
   }
 }
