@@ -1,0 +1,88 @@
+@import "../Default/variables.scss";
+
+.sign-up_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: rgba(102, 58, 140, 0.4);
+  width: 70%;
+  margin: auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  color: white;
+
+  .title-block {
+    font-size: 40px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .text-block {
+    width: 80%;
+    text-align: center;
+  }
+
+  .page-form {
+    width: 70%;
+    margin: 0;
+    min-width: 500px;
+    font-family: nimbus-sans, sans-serif;
+
+    label {
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      font-size: 14px;
+    }
+    input {
+      box-sizing: border-box;
+      padding: 10px 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: none;
+      background-image: none;
+      border-radius: 5px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      font-family: nimbus-sans, sans-serif;
+
+      &:focus {
+        background-color: $DarkPurple;
+        outline: none;
+      }
+    }
+
+    .field-group {
+      &_top {
+        box-sizing: border-box;
+        padding: 10px;
+        float: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &_bottom {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+
+    .checkbox {
+      margin: 0 auto;
+      width: 50%;
+      padding: 10px 0;
+
+      label {
+        font-size: 10px;
+      }
+    }
+
+    .sign-up_button {
+      margin: 10px auto 0 auto;
+    }
+  }
+}
