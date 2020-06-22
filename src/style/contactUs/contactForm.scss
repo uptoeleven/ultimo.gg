@@ -1,0 +1,78 @@
+@import "../Default/variables.scss";
+
+.contact-form {
+  background-color: $LightBackground;
+  padding: 20px;
+  color: white;
+  .title-block {
+    text-align: center;
+  }
+  .form-container {
+    width: 50%;
+    margin: 0 auto;
+
+    .page-form {
+      margin-bottom: 30px;
+      min-width: 500px;
+      padding: 20px;
+      font-family: nimbus-sans, sans-serif;
+      border: 1px solid $DarkPurple;
+      label {
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-size: 14px;
+      }
+      input,
+      textarea {
+        box-sizing: border-box;
+        padding: 10px 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: none;
+        background-image: none;
+        border-radius: 5px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        font-family: nimbus-sans, sans-serif;
+
+        &:focus {
+          background-color: $DarkPurple;
+          outline: none;
+        }
+      }
+
+      .field-group {
+        &_top {
+          box-sizing: border-box;
+          padding: 10px;
+          float: left;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        &_bottom {
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding: 10px;
+          width: 100%;
+        }
+      }
+
+      .checkbox {
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px 0;
+
+        label {
+          font-size: 10px;
+        }
+      }
+    }
+    .sign-up_button {
+      margin: 30px auto 0 auto;
+    }
+  }
+}

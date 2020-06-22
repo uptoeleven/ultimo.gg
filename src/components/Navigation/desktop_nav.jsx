@@ -32,7 +32,7 @@ class DesktopNav extends Component {
             <img src={SignUpIcon} alt='SignUp Icon'></img>
             <span>SIGN UP</span>
           </NavLink>
-          <NavLink activeClassName='activeRoute' to='/Shop'>
+          <NavLink activeClassName='activeRoute' to='/store'>
             <img src={MerchIcon} alt='Merch Icon'></img>
             <span>MERCH STORE</span>
           </NavLink>

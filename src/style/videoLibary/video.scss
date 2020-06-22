@@ -1,0 +1,56 @@
+@import "../Default/variables.scss";
+
+.video {
+  margin: 20px;
+  width: 259px;
+  box-sizing: border-box;
+
+  &_container {
+    height: 142px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(194, 92, 255, 0.2);
+    transition: 0.3s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      box-shadow: inset 0 0 0 1000px rgba(194, 92, 255, 0);
+
+      .button {
+        height: 50px;
+        width: 50px;
+      }
+    }
+
+    .button {
+      height: 40px;
+      width: 40px;
+      border: 2px solid white;
+      border-radius: 50px;
+      transition: 0.2s ease-in;
+      position: relative;
+
+      .play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-40%, -50%);
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 18px solid #fff;
+      }
+    }
+  }
+
+  p {
+    color: white;
+    font-family: nimbus-sans, sans-serif;
+    line-height: 10px;
+    font-size: 12px;
+  }
+}

@@ -6,7 +6,7 @@ import "../../style/Tournements/imageBanner.scss";
 class ImageBanner extends Component {
   state = {};
   render() {
-    return <div className='imageBanner'></div>;
+    return <div className='imageBanner-tournament'></div>;
   }
 }
 

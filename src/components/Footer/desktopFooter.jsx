@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "../../style/Footer/footer.scss";
 
 // logo
-import Logo from "../../assets/homePage/amature-Gaming.svg";
+import Logo from "../../assets/Footer/footer.svg";
 
 import Discord from "../../assets/Footer/Discord.svg";
 import Facebook from "../../assets/Footer/Facebook.svg";

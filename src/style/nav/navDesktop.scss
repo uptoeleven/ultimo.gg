@@ -33,6 +33,19 @@
     }
   }
 
+  @media only screen and (max-width: 1024px) {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    a {
+      width: -webkit-fill-available;
+      min-height: 70px;
+    }
+  }
+
   .activeRoute {
     background-color: rgba(194, 92, 255, 0.4);
     color: $LightPurple;
