@@ -44,6 +44,10 @@
       position: relative;
       height: 500px !important;
       z-index: 100;
+
+      @media only screen and (max-width: 1024px) {
+        height: 400px !important;
+      }
     }
   }
 }

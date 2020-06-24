@@ -24,7 +24,16 @@ class DesktopFooter extends Component {
         <div className='footer_content'>
           <div className='footer_content-links pages'>
             <h1 className='title'>PAGES</h1>
-            <div className='text-block col-2'>
+            <div className='text-block footer-mobile'>
+              <Link>TOURNAMENTS</Link>
+              <Link>SIGN UP</Link>
+              <Link>MERCH STORE</Link>
+              <Link>VIDEO LIBRARY</Link>
+              <Link>BOOTCAMP</Link>
+              <Link>DISCORD</Link>
+              <Link>CONTACT US</Link>
+            </div>
+            <div className='text-block col-2 margin-footer'>
               <Link>TOURNAMENTS</Link>
               <Link>SIGN UP</Link>
               <Link>MERCH STORE</Link>
@@ -54,6 +63,15 @@ class DesktopFooter extends Component {
           <div className='footer_content-links icon'>
             <h1 className='title'>FOLLOW US</h1>
             <div className=' icon-block'>
+              <div className='icon-block footer-mobile'>
+                <img src={Discord} alt='discord'></img>
+                <img src={Facebook} alt='facebook'></img>
+                <img src={Instagram} alt='instagram'></img>
+                <img src={Twitch} alt='twich'></img>
+                <img src={YouTube} alt='youtube'></img>
+                <img src={LinkedIn} alt='linkedin'></img>
+              </div>
+
               <div className='block'>
                 <img src={Discord} alt='discord'></img>
                 <img src={Facebook} alt='facebook'></img>

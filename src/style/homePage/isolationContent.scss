@@ -17,13 +17,17 @@
   &-info {
     display: flex;
     margin: 0 auto;
-    max-width: 1300px;
+    max-width: 1000px;
     color: white;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
     .content-block {
       box-sizing: border-box;
-      margin: 20px;
+
       width: 300px;
       min-width: 300px;
       display: flex;
@@ -31,7 +35,11 @@
       justify-content: center;
       background-color: rgba(255, 255, 255, 0.1);
       padding: 20px 25px;
+      @media only screen and (max-width: 1024px) {
+        margin: 10px auto;
 
+        width: 331px;
+      }
       .title {
         text-align: center;
         margin: 7px 0;
@@ -66,6 +74,10 @@
 
     .react-player {
       height: 500px !important;
+
+      @media only screen and (max-width: 1024px) {
+        height: 400px !important;
+      }
     }
   }
 }

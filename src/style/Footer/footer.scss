@@ -5,6 +5,12 @@
   display: flex;
   background-color: #340053;
   justify-content: space-between;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+
+    align-items: center;
+  }
   &-logo {
     width: 20%;
     max-width: 150px;
@@ -14,30 +20,47 @@
     width: 70%;
     max-width: 900px;
     display: flex;
+    justify-content: space-between;
 
-    .pages {
-      min-width: 220px;
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      width: 90%;
     }
 
     .icon {
       width: 120px;
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+        box-sizing: border-box;
+      }
     }
+
     &-links {
       padding: 20px;
       font-family: nimbus-sans-condensed, sans-serif;
       font-size: 14px;
       font-weight: bold;
       width: auto;
+
       .title {
         color: $LightPurple;
         width: 100%;
         font-size: 14px;
         font-family: nimbus-sans-condensed, sans-serif;
         margin-bottom: 20px;
+        @media only screen and (max-width: 1024px) {
+          text-align: center;
+        }
       }
       .text-block {
         display: flex;
         flex-direction: column;
+
+        @media only screen and (max-width: 1024px) {
+          flex-direction: row;
+          justify-content: space-evenly;
+          text-align: center;
+        }
 
         a {
           color: white;
@@ -48,12 +71,21 @@
       .icon-block {
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: 1024px) {
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 85%;
+          margin: 0 auto;
+        }
 
         .block {
           display: flex;
           flex-direction: row;
           max-width: 300px;
           margin-bottom: 10px;
+          @media only screen and (max-width: 1024px) {
+            display: none;
+          }
         }
 
         img {
@@ -61,13 +93,26 @@
           max-width: 40px;
           float: left;
           margin-right: 15px;
+
+          @media only screen and (max-width: 1024px) {
+            width: 30px;
+          }
         }
       }
       .col-2 {
-        box-sizing: border-box;
-        width: 50%;
-        min-width: 90px;
         float: left;
+        @media only screen and (max-width: 1024px) {
+          display: none;
+        }
+      }
+      .margin-footer {
+        margin-right: 20px;
+      }
+      .footer-mobile {
+        display: none;
+        @media only screen and (max-width: 1024px) {
+          display: flex;
+        }
       }
     }
   }
