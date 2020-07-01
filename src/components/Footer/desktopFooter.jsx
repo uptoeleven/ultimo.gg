@@ -25,31 +25,31 @@ class DesktopFooter extends Component {
           <div className='footer_content-links pages'>
             <h1 className='title'>PAGES</h1>
             <div className='text-block footer-mobile'>
-              <Link>TOURNAMENTS</Link>
+              {/* <Link>TOURNAMENTS</Link>
               <Link>SIGN UP</Link>
               <Link>MERCH STORE</Link>
               <Link>VIDEO LIBRARY</Link>
               <Link>BOOTCAMP</Link>
               <Link>DISCORD</Link>
-              <Link>CONTACT US</Link>
+              <Link>CONTACT US</Link> */}
             </div>
             <div className='text-block col-2 margin-footer'>
-              <Link>TOURNAMENTS</Link>
+              {/* <Link>TOURNAMENTS</Link>
               <Link>SIGN UP</Link>
               <Link>MERCH STORE</Link>
-              <Link>VIDEO LIBRARY</Link>
+              <Link>VIDEO LIBRARY</Link> */}
             </div>
             <div className='text-block col-2'>
-              <Link>BOOTCAMP</Link>
+              {/* <Link>BOOTCAMP</Link>
               <Link>DISCORD</Link>
-              <Link>CONTACT US</Link>
+              <Link>CONTACT US</Link> */}
             </div>
           </div>
           <div className='footer_content-links'>
             <h1 className='title'>LEGAL</h1>
             <div className='text-block '>
-              <Link>TERMS & CONDITIONS</Link>
-              <Link>PRIVACY POLICY</Link>
+              {/* <Link>TERMS & CONDITIONS</Link>
+              <Link>PRIVACY POLICY</Link> */}
             </div>
           </div>
           <div className='footer_content-links contact'>

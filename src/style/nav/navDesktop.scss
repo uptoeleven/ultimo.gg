@@ -50,4 +50,7 @@
     background-color: rgba(194, 92, 255, 0.4);
     color: $LightPurple;
   }
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
 }

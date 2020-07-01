@@ -43,8 +43,8 @@ class IsolationContent extends Component {
           biggest games and the best prizes.
         </p>
         <div className='isolation-content-info'>
-          {this.state.content.map((content) => (
-            <div className='content-block'>
+          {this.state.content.map((content, index) => (
+            <div key={index} className='content-block'>
               <img className='icon' src={content.icon}></img>
 
               <h1 className='title'>{content.title}</h1>

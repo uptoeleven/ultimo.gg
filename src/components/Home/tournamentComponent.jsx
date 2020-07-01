@@ -14,7 +14,7 @@ class TournamentComponent extends Component {
             <div className='start-date_header'>
               <span className='title'>Start Time</span>
 
-              <span class='time'>{this.props.time}</span>
+              <span className='time'>{this.props.time}</span>
             </div>
 
             <span className='start-date_date'>{this.props.date}</span>

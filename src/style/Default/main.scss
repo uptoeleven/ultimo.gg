@@ -17,6 +17,10 @@ html {
     margin-left: 0;
     padding-top: 70px;
   }
+  @media only screen and (max-width: 600px) {
+    padding-top: 0px;
+    width: 100%;
+  }
 }
 
 h1,
@@ -24,6 +28,16 @@ h2,
 h3,
 h4 {
   font-family: Legend;
+}
+h1,
+h2,
+h3,
+h4,
+span,
+a,
+p,
+label {
+  -webkit-font-smoothing: antialiased !important;
 }
 
 p {

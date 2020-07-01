@@ -58,12 +58,11 @@ class InfoSection extends Component {
     ],
   };
   render() {
-    console.log(this.state.stat);
     return (
       <div className='info'>
         <div className='info-container'>
-          {this.state.stats.map((stat) => (
-            <div className='info_content'>
+          {this.state.stats.map((stat, index) => (
+            <div key={index} className='info_content'>
               <div className='info_content-image'>
                 <img src={stat.icon} alt='intuative'></img>
               </div>

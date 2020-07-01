@@ -50,8 +50,8 @@ class TournamentSection extends Component {
         <h1 className='tournament_title'>TOURNAMENTS</h1>
 
         <div className='tournament_content'>
-          {this.state.tournament.map((tournament) => (
-            <div className='container'>
+          {this.state.tournament.map((tournament, index) => (
+            <div className='container' key={index}>
               <TournamentComponent
                 image={tournament.image}
                 date={tournament.date}
