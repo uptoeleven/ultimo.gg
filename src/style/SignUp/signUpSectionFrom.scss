@@ -15,6 +15,10 @@
     margin: 0;
     width: 100%;
   }
+  @media only screen and (max-width: 600px) {
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 
   .title-block {
     font-size: 40px;
@@ -51,7 +55,7 @@
       font-family: nimbus-sans, sans-serif;
 
       &:focus {
-        background-color: $DarkPurple;
+        background-color: rgba(194, 92, 255, 0.2);
         outline: none;
       }
     }
@@ -64,6 +68,11 @@
         width: 50%;
         display: flex;
         flex-direction: column;
+
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+          padding: 10px 20px;
+        }
       }
 
       &_bottom {
@@ -72,6 +81,9 @@
         box-sizing: border-box;
         padding: 10px;
         width: 100%;
+        @media only screen and (max-width: 600px) {
+          padding: 10px 20px;
+        }
       }
     }
 

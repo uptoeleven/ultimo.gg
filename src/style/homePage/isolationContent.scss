@@ -12,11 +12,18 @@
     line-height: 20px;
     font-size: 14px;
     min-width: 510px;
+    box-sizing: border-box;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      padding: 30px;
+      min-width: 200px;
+    }
   }
 
   &-info {
     display: flex;
     margin: 0 auto;
+    padding: 0 10px;
     max-width: 1000px;
     color: white;
     justify-content: space-between;
@@ -28,8 +35,8 @@
     .content-block {
       box-sizing: border-box;
 
-      width: 300px;
-      min-width: 300px;
+      width: 295px;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -77,6 +84,9 @@
 
       @media only screen and (max-width: 1024px) {
         height: 400px !important;
+      }
+      @media only screen and (max-width: 600px) {
+        height: 260px !important;
       }
     }
   }

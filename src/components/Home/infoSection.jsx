@@ -66,8 +66,12 @@ class InfoSection extends Component {
               <div className='info_content-image'>
                 <img src={stat.icon} alt='intuative'></img>
               </div>
-              <div className='info_content-title'>{stat.title}</div>
-              <div className='info_content-text'>{stat.text}</div>
+              <div className='info_content-title'>
+                <span>{stat.title}</span>
+              </div>
+              <div className='info_content-text'>
+                <span>{stat.text}</span>
+              </div>
             </div>
           ))}
         </div>

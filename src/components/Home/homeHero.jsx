@@ -36,6 +36,9 @@ class HomeBanner extends Component {
             </div>
           </Slider>
         </div>
+        <div
+          className='hero-mobile'
+          style={{ backgroundImage: `url(${BannerImageOne})` }}></div>
         <div className='hero-content'>
           <h2 className='hero-content_title'>BECOME AN ULTIMO WARRIOR</h2>
           <p className='hero-content_text'>

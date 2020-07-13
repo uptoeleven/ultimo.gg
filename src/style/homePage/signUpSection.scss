@@ -20,7 +20,9 @@
     margin: 0 auto;
     max-width: 1300px;
     flex-wrap: wrap;
-
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
     &-video,
     &-form {
       width: 50%;
@@ -30,8 +32,15 @@
       @media only screen and (max-width: 1024px) {
         width: 100%;
       }
+
+      .react-player {
+        @media only screen and (max-width: 600px) {
+          height: 260px !important;
+        }
+      }
     }
-    @media only screen and (max-width: 1024px) {
+
+    @media only screen and (max-width: 1024px) and (min-width: 600px) {
       &-form {
         width: 80%;
         margin: auto;
@@ -48,6 +57,13 @@
           text-transform: uppercase;
           font-size: 40px;
         }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      &-form {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
       }
     }
   }

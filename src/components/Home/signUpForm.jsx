@@ -8,6 +8,9 @@ class SignUpForm extends Component {
     return (
       <>
         <form className='SignUpform'>
+          <h1 className='title-block-mobile'>
+            Register <u>today</u>
+          </h1>
           <div className='field'>
             <label>First Name</label>
             <input type='text'></input>
@@ -26,6 +29,8 @@ class SignUpForm extends Component {
           </div>
           <div className='check-box'>
             <input type='checkbox'></input>
+            <span className='checkbox_custom'></span>
+
             <label>I AM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
           </div>
         </form>

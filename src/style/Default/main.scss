@@ -37,6 +37,7 @@ span,
 a,
 p,
 label {
+  text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -50,7 +51,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2px;
+  padding: 1px;
   border-radius: 7px;
   position: relative;
 

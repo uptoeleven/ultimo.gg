@@ -5,8 +5,11 @@
   padding: 20px;
   &_title {
     color: white;
-    font-family: nimbus-sans, sans-serif;
+    font-family: nimbus-sans-condensed, sans-serif;
     text-align: center;
+    font-weight: 900;
+    font-size: 45px;
+    margin: 10px 0;
   }
 
   &_content {

@@ -15,6 +15,51 @@ import DiscordIcon from "../../assets/Nav/Discord.svg";
 import ContactIcon from "../../assets/Nav/Contact_Us.svg";
 
 class MobileNav extends Component {
+  state = {
+    navButtons: [
+      {
+        icon: TournamentsIcon,
+        text: "Home",
+        page: "/",
+      },
+      {
+        icon: TournamentsIcon,
+        text: "Tournaments",
+        page: "/tournaments",
+      },
+      {
+        icon: SignUpIcon,
+        text: "Sign Up",
+        page: "/signUp",
+      },
+      {
+        icon: MerchIcon,
+        text: "Merch Store",
+        page: "/store",
+      },
+      {
+        icon: VideoIcon,
+        text: "Video Libary",
+        page: "/VideoLibary",
+      },
+      {
+        icon: BootcampIcon,
+        text: "Bootcamp",
+        page: "/Bootcamp",
+      },
+      {
+        icon: DiscordIcon,
+        text: "Discord",
+        page: "/Discord",
+      },
+      {
+        icon: ContactIcon,
+        text: "Contact Us",
+        page: "/ContactUs",
+      },
+    ],
+  };
+
   render() {
     // states of change
     let toggle = this.props.navState === true ? "change" : "";
@@ -40,17 +85,19 @@ class MobileNav extends Component {
           <div
             className='mobile-nav'
             style={{ transform: slide, top: positionNav }}>
-            <NavLink
-              exact
-              className='mobile-nav-button'
-              activeClassName='active-mobile'
-              to='/'>
-              <div className='button-label'>
-                <img src={TournamentsIcon} alt='Home'></img>
-                <span>Home</span>
-              </div>
-              <span className='dot'></span>
-            </NavLink>
+            {this.state.navButtons.map((button) => (
+              <NavLink
+                exact
+                className='mobile-nav-button'
+                activeClassName='active-mobile'
+                to={button.page}>
+                <div onClick={this.props.toggle} className='button-label'>
+                  <img src={button.icon} alt='Home'></img>
+                  <span>{button.text}</span>
+                </div>
+                <span className='dot'></span>
+              </NavLink>
+            ))}
           </div>
         </div>
       </>

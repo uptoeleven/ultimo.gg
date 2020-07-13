@@ -10,15 +10,24 @@
     max-width: 1300px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   &_content {
     width: 25%;
-    min-width: 150px;
-
+    min-width: 200px;
+    @media screen and (max-width: 1024px) {
+      width: 40%;
+      padding: 50px 0px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 80%;
+      padding: 25px 0px;
+    }
     box-sizing: border-box;
-    padding: 50px;
+    padding: 50px 25px;
     color: white;
     font-family: nimbus-sans, sans-serif;
+
     text-align: center;
     &-image {
       img {
@@ -28,15 +37,20 @@
       }
     }
     &-title {
-      font-size: 15px;
-      font-weight: bold;
+      font-size: 23px;
+      font-weight: 900;
       padding: 10px;
+      font-family: nimbus-sans-condensed, sans-serif;
+      letter-spacing: 0.23pt;
+      margin: 5px;
     }
 
     &-text {
-      width: 80%;
       margin: 0 auto;
-      max-width: 150px;
+      max-width: 200px;
+      line-height: 20px;
+      font-weight: bold;
+      font-size: 14px;
     }
   }
 }

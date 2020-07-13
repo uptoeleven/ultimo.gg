@@ -22,11 +22,17 @@
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
     &-icon {
       width: 250px;
     }
     &-title {
       font-family: nimbus-sans-condensed, sans-serif;
+      font-weight: 900;
+      letter-spacing: 1px;
     }
 
     &-text {
@@ -47,6 +53,9 @@
 
       @media only screen and (max-width: 1024px) {
         height: 400px !important;
+      }
+      @media only screen and (max-width: 600px) {
+        height: 260px !important;
       }
     }
   }
