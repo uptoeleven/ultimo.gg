@@ -15,15 +15,26 @@
     color: white;
     width: 60%;
     margin: auto;
+    @media screen and (max-width: 600px) {
+      margin: 50px auto;
+      justify-content: flex-start;
+    }
 
     img {
       width: 300px;
+      @media screen and (max-width: 600px) {
+        width: 150px;
+      }
     }
 
     p {
       text-align: center;
       line-height: 20px;
       font-size: 10px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
 }

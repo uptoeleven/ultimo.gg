@@ -4,16 +4,36 @@
   background-color: $LightBackground;
   padding: 20px;
   color: white;
+  @media screen and (max-width: 600px) {
+    padding: 0px;
+  }
   .title-block {
     text-align: center;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    &--mobile {
+      text-align: center;
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+    }
   }
   .form-container {
     width: 50%;
     margin: 0 auto;
-
+    @media screen and (min-width: 600px) {
+      min-width: 500px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
     .page-form {
       margin-bottom: 30px;
-      min-width: 500px;
+      @media screen and (max-width: 600px) {
+        margin-bottom: 0px;
+      }
       padding: 20px;
       font-family: nimbus-sans, sans-serif;
       border: 1px solid $DarkPurple;
@@ -37,7 +57,7 @@
         font-family: nimbus-sans, sans-serif;
 
         &:focus {
-          background-color: $DarkPurple;
+          background-color: rgba(194, 92, 255, 0.2);
           outline: none;
         }
       }
@@ -50,6 +70,10 @@
           width: 50%;
           display: flex;
           flex-direction: column;
+
+          @media screen and (max-width: 600px) {
+            width: 100%;
+          }
         }
 
         &_bottom {
@@ -73,6 +97,21 @@
     }
     .sign-up_button {
       margin: 30px auto 0 auto;
+    }
+
+    .mobile {
+      display: none;
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+    }
+
+    .desktop {
+      display: block;
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
   }
 }

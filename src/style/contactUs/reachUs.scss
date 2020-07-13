@@ -20,6 +20,9 @@
     width: 50%;
     margin: 0 auto;
     max-width: 1000px;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
     img {
       margin-top: 20px;
       height: 60px;
@@ -32,6 +35,11 @@
       text-transform: uppercase;
       font-family: nimbus-sans, sans-serif;
       font-size: 14px;
+
+      @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+      }
       a {
         color: $LightPurple;
       }

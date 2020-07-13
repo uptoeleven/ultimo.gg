@@ -33,6 +33,9 @@ class SignUpForm extends Component {
 
             <label>I AM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
           </div>
+          <div className='submit-button--mobile'>
+            <span className='sign-up_button'></span>
+          </div>
         </form>
         <div className='submit-button'>
           <span className='sign-up_button'></span>

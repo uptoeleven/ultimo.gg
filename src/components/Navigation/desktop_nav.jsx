@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 // css
 import "../../style/nav/navDesktop.scss";
+import Logo from "../../assets/Nav/homelogo.svg";
 
 // icons
 import TournamentsIcon from "../../assets/Nav/Tournaments.svg";
@@ -21,7 +22,7 @@ class DesktopNav extends Component {
         <div className='desktop-nav'>
           <NavLink exact activeClassName='activeRoute' to='/'>
             <div className='desktop-nav_button'>
-              <p>Home</p>
+              <img className='home-logo' src={Logo} alt='Home Logo'></img>
             </div>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/tournaments'>

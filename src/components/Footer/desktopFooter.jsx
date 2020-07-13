@@ -56,13 +56,13 @@ class DesktopFooter extends Component {
             <h1 className='title'>CONTACT US</h1>
             <div className='text-block '>
               <a href='#'>INFO@ULTIMOWARRIOR.COM</a>
-              <a href='#'>INFO@ULTIMOWARRIOR.COM</a>
-              <a href='#'>INFO@ULTIMOWARRIOR.COM</a>
+              <a href='#'>TOURNAMENTS@ULTIMOWARRIOR.COM</a>
+              <a href='#'>PARTNERSHIPS@ULTIMOWARRIOR.COM</a>
             </div>
           </div>
           <div className='footer_content-links icon'>
             <h1 className='title'>FOLLOW US</h1>
-            <div className=' icon-block'>
+            <div className='icon-block'>
               <div className='icon-block footer-mobile'>
                 <img src={Discord} alt='discord'></img>
                 <img src={Facebook} alt='facebook'></img>

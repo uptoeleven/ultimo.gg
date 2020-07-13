@@ -59,11 +59,24 @@
         }
       }
     }
-    @media only screen and (max-width: 600px) {
-      &-form {
+
+    &-form {
+      .submit-button--mobile {
+        display: none;
+      }
+      @media only screen and (max-width: 600px) {
         width: 100%;
         margin: auto;
         padding: 0px;
+
+        .submit-button--mobile {
+          display: flex;
+          margin: 0 auto;
+          width: fit-content;
+        }
+        .submit-button {
+          display: none;
+        }
       }
     }
   }

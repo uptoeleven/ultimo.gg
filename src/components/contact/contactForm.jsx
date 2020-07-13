@@ -11,6 +11,7 @@ class ContactForm extends Component {
         <h1 className='title-block'>FILL OUT A FORM</h1>
         <div className='form-container'>
           <form className='page-form'>
+            <h1 className='title-block--mobile'>FILL OUT A FORM</h1>
             <div className='field-group_top'>
               <label>First Name</label>
               <input type='text'></input>
@@ -37,8 +38,13 @@ class ContactForm extends Component {
               <input type='checkbox' />
               <label>IM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
             </div>
+            <div className='mobile'>
+              <div className='sign-up_button'></div>
+            </div>
           </form>
-          <div className='sign-up_button'></div>
+          <div className='desktop'>
+            <div className='sign-up_button'></div>
+          </div>
         </div>
       </div>
     );

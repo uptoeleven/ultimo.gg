@@ -64,7 +64,6 @@ class VideoContainer extends Component {
   };
 
   showLight = (url) => {
-    console.log("hit");
     if (this.state.showLight === false) {
       this.setState({
         showLight: true,
@@ -79,6 +78,7 @@ class VideoContainer extends Component {
   };
   render() {
     let lightBox = this.state.showLight === false ? "none" : "flex";
+
     return (
       <>
         <div className='video-section'>
@@ -97,7 +97,7 @@ class VideoContainer extends Component {
           className='lightBox'
           style={{ display: lightBox }}
           onClick={this.showLight}>
-          <ReactPlayer width='80%' height='60%' url={this.state.lightUrl} />
+          <ReactPlayer className='reactplayer-c' url={this.state.lightUrl} />
         </div>
       </>
     );

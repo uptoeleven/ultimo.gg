@@ -7,6 +7,10 @@
   color: white;
   font-family: nimbus-sans, sans-serif;
   box-shadow: inset 0px -4px 30px 10px rgba(194, 92, 255, 0.2);
+  @media only screen and (max-width: 600px) {
+    padding-bottom: 40px;
+    border-radius: 0px;
+  }
   .title-block-mobile {
     @media only screen and (min-width: 600px) {
       display: none;
@@ -83,6 +87,7 @@
       width: 100%;
       top: 0;
       left: 0;
+      z-index: 100;
     }
 
     .checkbox_custom {

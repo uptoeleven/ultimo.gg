@@ -15,17 +15,17 @@ class ReachUs extends Component {
         <div className='content'>
           <img src={Headset} alt='contact-us'></img>
           <div className='text-block'>
-            <span>GENRAL INFORMATION:</span> &nbsp;
+            <span>GENRAL INFORMATION:</span>
             <a href='#'>info@ultimowarrior.com</a>
           </div>
           <img src={Headset} alt='contact-us'></img>
           <div className='text-block'>
-            <span>Tournament/Event info:</span> &nbsp;
+            <span>Tournament/Event info:</span>
             <a href='#'>tournaments@ultimowarrior.com</a>
           </div>
           <img src={Headset} alt='contact-us'></img>
           <div className='text-block'>
-            <span>Branding & Sponsorship opportunities:</span> &nbsp;
+            <span>Branding & Sponsorship opportunities:</span>
             <a href='#'>partnerships@ultimowarrior.com</a>
           </div>
         </div>

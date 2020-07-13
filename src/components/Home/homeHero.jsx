@@ -7,8 +7,6 @@ import "../../style/homePage/hero.scss";
 import BannerImageOne from "../../assets/homePage/ultimo_stadium.jpg";
 import BannerImageTwo from "../../assets/homePage/ultimo_banner.png";
 
-import UltimoWarrior from "../../assets/homePage/ultimoWarrior.svg";
-
 class HomeBanner extends Component {
   render() {
     const settings = {
@@ -49,9 +47,7 @@ class HomeBanner extends Component {
           </p>
           <span className='sign-up_button'></span>
         </div>
-        <div className='hero-image'>
-          <img src={UltimoWarrior} alt='Warrior'></img>
-        </div>
+        <div className='hero-image'></div>
       </div>
     );
   }
