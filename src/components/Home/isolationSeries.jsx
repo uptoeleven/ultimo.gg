@@ -16,10 +16,10 @@ class IsolationSeries extends Component {
     return (
       <div className='isolation'>
         <div className='isolation_content'>
-          <h1 className='isolation_content-title'>THE ISOLATION SERIES</h1>
           <div className='isolation_content-image'>
             <img src={Logo} alt='isolation'></img>
           </div>
+          <h1 className='isolation_content-title'>ISOLATION SERIES</h1>
           <div className='isolation_content-partner'>
             <h1 className='title-block'>OUR PARTNERS</h1>
             <div className='image-container'>

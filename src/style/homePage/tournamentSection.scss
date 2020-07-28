@@ -2,7 +2,20 @@
 
 .tournament {
   background-color: $DarkBackground;
+  box-shadow: inset 0 0 0 1000px $DarkerPurple;
   padding: 20px;
+  position: relative;
+
+  &_background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../../assets/homePage/logo_background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom -80px right -120px;
+  }
   &_title {
     color: white;
     font-family: nimbus-sans-condensed, sans-serif;
@@ -22,9 +35,19 @@
     .container {
       margin: 0;
       padding: 20px;
-      min-width: 50%;
-      min-height: 400px;
+      width: 50%;
+      height: 400px;
       box-sizing: border-box;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+      @media only screen and (max-width: 500px) {
+        height: 340px;
+      }
+      @media only screen and (max-width: 400px) {
+        height: 310px;
+      }
     }
   }
 

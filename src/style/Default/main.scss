@@ -46,28 +46,37 @@ p {
 
 .sign-up_button {
   border: none;
-  background-color: rgb(18, 239, 44);
+  background-color: rgba(18, 239, 44, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1px;
-  border-radius: 7px;
+  border-radius: 4px;
   position: relative;
-
-  width: fit-content;
+  width: 110px;
   font-family: nimbus-sans, sans-serif;
+  transition: all ease 0.3s;
+  cursor: pointer;
 
   &:before {
     content: "SIGN-UP";
-    color: rgb(18, 239, 44);
+    color: white;
     background-color: rgb(3, 3, 18);
-    padding: 6px 30px;
-    border-radius: 7px;
+    width: 110px;
+    padding: 7px 0;
+    border-radius: 4px;
     transition: all ease 0.3s;
-    font-size: 0.8em;
+    font-size: 12.2px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
 
   &:hover:before {
-    transform: scale(0.94);
+    transform: scale(0.98, 0.96);
+  }
+
+  &:hover {
+    background-color: rgba(18, 239, 44, 1);
   }
 }

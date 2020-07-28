@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 // css
 import "../../style/nav/navDesktop.scss";
-import Logo from "../../assets/Nav/homelogo.svg";
+import Logo from "../../assets/Nav/homeLogo.svg";
 
 // icons
 import TournamentsIcon from "../../assets/Nav/Tournaments.svg";

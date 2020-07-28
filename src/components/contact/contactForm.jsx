@@ -34,9 +34,10 @@ class ContactForm extends Component {
               <textarea type='text-area'></textarea>
             </div>
 
-            <div className='checkbox'>
-              <input type='checkbox' />
-              <label>IM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
+            <div className='check-box'>
+              <input type='checkbox'></input>
+              <span className='checkbox_custom'></span>
+              <label>I AM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
             </div>
             <div className='mobile'>
               <div className='sign-up_button'></div>

@@ -8,6 +8,8 @@ class VideoBanner extends Component {
   render() {
     return (
       <div className='Video-Banner'>
+        <div className='background-one'></div>
+        <div className='background-two'></div>
         <h1 className='Video-Banner_title'>Video Libary</h1>
       </div>
     );

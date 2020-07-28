@@ -1,13 +1,32 @@
+@import "../Default/variables.scss";
+
 .Video-Banner {
-  background-image: url(../../assets/homePage/Landscape-wide.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20px;
-  background-position: center;
+  position: relative;
+  padding-top: 1px;
+  height: 300px;
+  background-color: $DarkBackground;
+  display: flex;
+  .background-one,
+  .background-two {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(../../assets/homePage/logo_background.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+
+  .background-one {
+    background-position: bottom -50px left -150px;
+  }
+
+  .background-two {
+    background-position: top -50px right -150px;
+  }
 
   &_title {
     text-align: center;
-    margin: 100px 0;
+    margin: auto;
     color: white;
     font-size: 50px;
   }

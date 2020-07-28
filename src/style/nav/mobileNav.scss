@@ -58,7 +58,7 @@
     z-index: 99;
     width: 85vw;
     background: $DarkBackground;
-    height: calc(100% - 80px);
+    height: calc(100%);
     top: 80px;
     transition: transform ease-out 0.4s;
 
@@ -70,6 +70,10 @@
       justify-content: space-between;
       padding: 15px 35px;
       text-decoration: none;
+
+      @media only screen and (max-width: 400px) {
+        padding: 10px 35px;
+      }
       .button-label {
         display: flex;
         align-items: center;

@@ -12,8 +12,7 @@
     align-items: center;
   }
   &-logo {
-    width: 20%;
-    max-width: 150px;
+    width: 150px;
   }
 
   &_content {
@@ -67,8 +66,15 @@
         a {
           color: rgba(255, 255, 255, 0.9);
           text-decoration: none;
+          padding: 0 2px;
           @media only screen and (max-width: 600px) {
             padding: 5px 10px;
+            text-align: center;
+            font-size: 8px;
+            text-align: center;
+          }
+          @media only screen and (max-width: 400px) {
+            padding: 5px 0px;
           }
         }
       }

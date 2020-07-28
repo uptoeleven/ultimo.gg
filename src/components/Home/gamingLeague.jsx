@@ -7,14 +7,13 @@ import "../../style/homePage/gamingLeague.scss";
 import Video from "./videoComponent";
 
 // icons
-import GamingLogo from "../../assets/homePage/amature-Gaming.svg";
+import GamingLogo from "../../assets/homePage/isolation-logo.svg";
 
 class GamingLeague extends Component {
   state = {};
   render() {
     return (
       <div className='gaming'>
-        <div className='gaming-background'></div>
         <div className='gaming_content'>
           <img
             className='gaming_content-icon'

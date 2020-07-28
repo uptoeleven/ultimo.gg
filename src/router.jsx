@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import disableScroll from "disable-scroll";
 
 // components
 import DesktopNav from "./components/Navigation/desktop_nav";
@@ -31,13 +32,14 @@ class App extends Component {
   };
 
   toggle = () => {
-    console.log(this.windowPos());
+    // disableScroll.on();
     if (!this.state.toggle) {
       this.setState({
         toggle: true,
         windowPos: this.windowPos(),
       });
     } else {
+      // disableScroll.off();
       this.setState({
         toggle: false,
       });

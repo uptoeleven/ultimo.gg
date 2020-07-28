@@ -25,28 +25,19 @@ class HomeBanner extends Component {
             <div>
               <div
                 className='carosel-image'
-                style={{ backgroundImage: `url(${BannerImageOne})` }}></div>
+                style={{ backgroundImage: `url(${BannerImageTwo})` }}></div>
             </div>
             <div>
               <div
                 className='carosel-image'
-                style={{ backgroundImage: `url(${BannerImageTwo})` }}></div>
+                style={{ backgroundImage: `url(${BannerImageOne})` }}></div>
             </div>
           </Slider>
         </div>
         <div
           className='hero-mobile'
           style={{ backgroundImage: `url(${BannerImageOne})` }}></div>
-        <div className='hero-content'>
-          <h2 className='hero-content_title'>BECOME AN ULTIMO WARRIOR</h2>
-          <p className='hero-content_text'>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
-          </p>
-          <span className='sign-up_button'></span>
-        </div>
+
         <div className='hero-image'></div>
       </div>
     );

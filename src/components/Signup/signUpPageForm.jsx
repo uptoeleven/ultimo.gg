@@ -2,8 +2,12 @@ import React, { Component } from "react";
 
 import "../../style/SignUp/signUpSectionFrom.scss";
 
+// Logo
+import Logo from "../../assets/homePage/ultimoGGLogo.svg";
+
 class SignUpPageForm extends Component {
   state = {};
+
   render() {
     return (
       <div className='sign-up_form'>
@@ -45,12 +49,15 @@ class SignUpPageForm extends Component {
             <input type='text'></input>
           </div>
 
-          <div className='checkbox'>
-            <input type='checkbox' />
-            <label>IM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
+          <div className='check-box'>
+            <input type='checkbox'></input>
+            <span className='checkbox_custom'></span>
+
+            <label>I AM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
           </div>
 
           <div className='sign-up_button'></div>
+          <img className='logoGG' src={Logo} alt='UltimoGG' />
         </form>
       </div>
     );

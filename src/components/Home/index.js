@@ -11,6 +11,7 @@ import PlatformSection from "./platformSection";
 import InfoSection from "./infoSection";
 import IsolationSeries from "./isolationSeries";
 import IsolationContent from "./isolationSeriesContent";
+import MerchSection from "./merchSection";
 import GamingLeague from "./gamingLeague";
 import TournamentSection from "./tournamentSection";
 import PartnersComponent from "./partnersComponent";
@@ -29,6 +30,7 @@ class HomePage extends Component {
           <InfoSection />
           <IsolationSeries />
           <IsolationContent />
+          <MerchSection />
           <GamingLeague />
           <TournamentSection />
           <PartnersComponent />

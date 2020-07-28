@@ -8,6 +8,7 @@ class SignUpForm extends Component {
     return (
       <>
         <form className='SignUpform'>
+          <div className='border'></div>
           <h1 className='title-block-mobile'>
             Register <u>today</u>
           </h1>

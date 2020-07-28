@@ -67,7 +67,7 @@ class MobileNav extends Component {
       this.props.navState === true ? "translateX(0%)" : "translateX(-100%)";
     let positionNav =
       this.props.navState === false ? `${this.props.windowPos + 80}px` : "";
-
+    let fixer = this.props.navState === true ? "fixed" : "absolute";
     return (
       <>
         <div className='mobile'>
@@ -84,7 +84,7 @@ class MobileNav extends Component {
           </div>
           <div
             className='mobile-nav'
-            style={{ transform: slide, top: positionNav }}>
+            style={{ transform: slide, top: positionNav, position: fixer }}>
             {this.state.navButtons.map((button) => (
               <NavLink
                 exact

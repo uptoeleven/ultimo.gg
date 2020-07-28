@@ -16,28 +16,28 @@ class TournamentSection extends Component {
     tournament: [
       {
         image: Fortnite,
-        date: "07 Febuary 2020",
+        date: "07/02/20",
         time: "36:31:28",
         prize: "1000000",
         prizeColor: "yellow",
       },
       {
         image: Fortnite,
-        date: "07 Febuary 2020",
+        date: "07/02/20",
         time: "36:31:28",
         prize: "1000000",
         prizeColor: "green",
       },
       {
         image: Fortnite,
-        date: "07 Febuary 2020",
+        date: "07/02/20",
         time: "36:31:28",
         prize: "1000000",
         prizeColor: "yellow",
       },
       {
         image: Fortnite,
-        date: "07 Febuary 2020",
+        date: "07/02/20",
         time: "36:31:28",
         prize: "1000000",
         prizeColor: "green",
@@ -47,6 +47,7 @@ class TournamentSection extends Component {
   render() {
     return (
       <div className='tournament'>
+        <div className='tournament_background'></div>
         <h1 className='tournament_title'>TOURNAMENTS</h1>
 
         <div className='tournament_content'>
