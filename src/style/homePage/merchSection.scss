@@ -1,0 +1,32 @@
+@import "../Default/variables.scss";
+
+.merch_section {
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  &-hover {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    transition: all 0.5s;
+    img {
+      height: 50px;
+    }
+  }
+
+  &:hover .merch_section-hover {
+    opacity: 1;
+  }
+}
