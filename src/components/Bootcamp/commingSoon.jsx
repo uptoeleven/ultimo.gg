@@ -10,6 +10,8 @@ class ComingSoon extends Component {
   render() {
     return (
       <div className='comingSoon'>
+        <div className='background-one'></div>
+        <div className='background-two'></div>
         <div className='comingSoon-container'>
           <img src={Bootcamp} alt='bootcamp'></img>
           <h1>COMING SOON</h1>

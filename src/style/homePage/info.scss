@@ -1,9 +1,12 @@
 @import "../Default/variables.scss";
 .info {
-  background-image: url(../../assets/homePage/eSportsEnvolved.png);
-  background-position: left;
-  background-size: cover;
-
+  background-color: #110128;
+  @media screen and (min-width: 1024px) {
+    background-image: url(../../assets/homePage/eSportsEnvolved.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .info-container {
     width: 90%;
     margin: 0 auto;
