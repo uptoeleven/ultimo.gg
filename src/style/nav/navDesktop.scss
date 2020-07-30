@@ -24,16 +24,12 @@
     padding: 10px;
     letter-spacing: 0.14px;
     &:hover {
-      background-color: rgba(194, 92, 255, 0.4);
-      color: $LightPurple;
-    }
-
-    img {
-      height: 25px;
+      background-color: $Purple30;
+      color: white;
     }
 
     .home-logo {
-      height: 50px;
+      height: 30px !important;
     }
   }
 
@@ -49,10 +45,20 @@
       min-height: 70px;
     }
   }
-
+  .home-logo-active {
+    display: none;
+  }
   .activeRoute {
-    background-color: rgba(194, 92, 255, 0.4);
-    color: $LightPurple;
+    background-color: $Purple30;
+    color: White;
+
+    .home-logo {
+      display: none;
+    }
+    .home-logo-active {
+      display: flex;
+      height: 30px !important;
+    }
   }
   @media only screen and (max-width: 600px) {
     display: none;

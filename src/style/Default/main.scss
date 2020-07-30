@@ -1,6 +1,12 @@
 @font-face {
-  font-family: Legend;
-  src: url(../../assets/fonts/legend_m54/LegendM54.ttf) format("truetype");
+  font-family: "Metral-Extra-Bold";
+  src: url("../../assets/fonts/Web_Fonts/metral_extrabold_macroman/metral-extrabold-webfont.woff")
+    format("woff");
+}
+@font-face {
+  font-family: "Metral-Medium";
+  src: url("../../assets/fonts/Web_Fonts/metral_medium_macroman/metral-medium-webfont.woff")
+    format("woff");
 }
 
 body,
@@ -26,7 +32,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Legend;
+  font-family: Metral-Extra-Bold;
 }
 h1,
 h2,
@@ -40,8 +46,11 @@ label {
   -webkit-font-smoothing: antialiased !important;
 }
 
-p {
-  font-family: nimbus-sans, sans-serif;
+p,
+input,
+span,
+a {
+  font-family: Metral-Medium, sans-serif;
 }
 
 .sign-up_button {
@@ -54,7 +63,7 @@ p {
   border-radius: 4px;
   position: relative;
   width: 110px;
-  font-family: nimbus-sans, sans-serif;
+  font-family: Metral-Medium, sans-serif;
   transition: all ease 0.3s;
   cursor: pointer;
 

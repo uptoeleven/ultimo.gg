@@ -2,7 +2,7 @@
   background-image: url(../../assets/homePage/japlandscape.png);
   background-size: cover;
   background-position: center;
-  padding: 25px;
+  padding: 50px 25px;
   color: white;
   width: 100%;
   box-sizing: border-box;
@@ -13,6 +13,9 @@
 
     &-image {
       margin: 0 auto;
+      img {
+        max-width: 100%;
+      }
     }
     &-title {
       font-size: 50px;
@@ -25,7 +28,7 @@
       }
 
       .image-container {
-        width: 30%;
+        width: 50%;
         min-width: 400px;
         margin: 0 auto;
 
@@ -37,7 +40,7 @@
         }
 
         img {
-          width: 33%;
+          max-width: 100%;
         }
       }
     }

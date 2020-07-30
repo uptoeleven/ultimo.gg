@@ -18,19 +18,19 @@ class IsolationContent extends Component {
         icon: Torn,
         title: "Weekly Tournaments",
         text:
-          "wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan..",
+          "Weekly elimination tournaments designed to fight the boredom of self-isolation and giving players a chance to compete around the globe across all skill levels. Game modes & tournament structures will rotate weekly to keep things fresh and keep you on your A-game.",
       },
       {
         icon: Badge,
         title: "Big Prizes",
         text:
-          "wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan..",
+          "The Isolation Series prize pool consists of huge cash prizes and top spec hardware provided by some of the biggest brands in the industry. We aim to provide the largest prize pools outside of the professional esports circuits.",
       },
       {
         icon: Stars,
         title: "Top Titles",
         text:
-          "wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan..",
+          "The Isolation Series will feature the biggest esports titles over a range of genres to make sure everybody has something to play. From Battle Royales and classic fighting games to MOBAs and AAA racing titles, there’s something for everyone and their friends, from 1v1s to 5v5s and more.",
       },
     ],
   };
@@ -51,9 +51,6 @@ class IsolationContent extends Component {
               <p className='text'>{content.text}</p>
             </div>
           ))}
-        </div>
-        <div className='video-container'>
-          <Video />
         </div>
       </div>
     );

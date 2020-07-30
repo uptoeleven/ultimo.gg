@@ -16,6 +16,10 @@ import LinkedIn from "../../assets/Footer/Linkedin.svg";
 
 class DesktopFooter extends Component {
   state = {};
+
+  openSocial = (url) => {
+    window.open(url);
+  };
   render() {
     return (
       <div className='footer'>
@@ -25,24 +29,24 @@ class DesktopFooter extends Component {
           <div className='footer_content-links pages'>
             <h1 className='title'>PAGES</h1>
             <div className='text-block footer-mobile'>
-              <Link>TOURNAMENTS</Link>
-              <Link>SIGN UP</Link>
-              <Link>MERCH STORE</Link>
-              <Link>VIDEO LIBRARY</Link>
-              <Link>BOOTCAMP</Link>
-              <Link>DISCORD</Link>
-              <Link>CONTACT US</Link>
+              <Link to='/tournaments'>TOURNAMENTS</Link>
+              <Link to='/signUp'>SIGN UP</Link>
+              <Link to='/store'>MERCH STORE</Link>
+              <Link to='/VideoLibary'>VIDEO LIBRARY</Link>
+              <Link to='/Bootcamp'>BOOTCAMP</Link>
+              <a href='https://discord.com/invite/e9p5YZE'>DISCORD</a>
+              <Link to='/ContactUs'>CONTACT US</Link>
             </div>
             <div className='text-block col-2 margin-footer'>
-              <Link>TOURNAMENTS</Link>
-              <Link>SIGN UP</Link>
-              <Link>MERCH STORE</Link>
+              <Link to='/tournaments'>TOURNAMENTS</Link>
+              <Link to='/signUp'>SIGN UP</Link>
+              <Link to='/store'>MERCH STORE</Link>
               <Link>VIDEO LIBRARY</Link>
             </div>
             <div className='text-block col-2'>
-              <Link>BOOTCAMP</Link>
-              <Link>DISCORD</Link>
-              <Link>CONTACT US</Link>
+              <Link to='/Bootcamp'>BOOTCAMP</Link>
+              <a href='https://discord.com/invite/e9p5YZE'>DISCORD</a>
+              <Link to='/ContactUs'>CONTACT US</Link>
             </div>
           </div>
           <div className='footer_content-links'>
@@ -64,24 +68,84 @@ class DesktopFooter extends Component {
             <h1 className='title'>FOLLOW US</h1>
             <div className='icon-block'>
               <div className='icon-block footer-mobile'>
-                <img src={Discord} alt='discord'></img>
-                <img src={Facebook} alt='facebook'></img>
-                <img src={Instagram} alt='instagram'></img>
-                <img src={Twitch} alt='twich'></img>
-                <img src={YouTube} alt='youtube'></img>
-                <img src={LinkedIn} alt='linkedin'></img>
+                <img
+                  src={Discord}
+                  onClick={() =>
+                    this.openSocial("https://discord.com/invite/e9p5YZE")
+                  }
+                  alt='discord'></img>
+                <img
+                  src={Facebook}
+                  onClick={() =>
+                    this.openSocial("https://www.facebook.com/UltimoHombregg/")
+                  }
+                  alt='facebook'></img>
+                <img
+                  src={Instagram}
+                  onClick={() =>
+                    this.openSocial("https://www.instagram.com/ultimo_warrior/")
+                  }
+                  alt='instagram'></img>
+                <img
+                  src={Twitch}
+                  onClick={() =>
+                    this.openSocial("https://www.twitch.tv/ultimowarrior")
+                  }
+                  alt='twich'></img>
+                <img
+                  src={YouTube}
+                  onClick={() =>
+                    this.openSocial(
+                      "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA"
+                    )
+                  }
+                  alt='youtube'></img>
+                <img
+                  src={LinkedIn}
+                  onClick={() => this.openSocial()}
+                  alt='linkedin'></img>
               </div>
 
               <div className='block'>
-                <img src={Discord} alt='discord'></img>
-                <img src={Facebook} alt='facebook'></img>
-                <img src={Instagram} alt='instagram'></img>
+                <img
+                  src={Discord}
+                  onClick={() =>
+                    this.openSocial("https://discord.com/invite/e9p5YZE")
+                  }
+                  alt='discord'></img>
+                <img
+                  src={Facebook}
+                  onClick={() =>
+                    this.openSocial("https://www.facebook.com/UltimoHombregg/")
+                  }
+                  alt='facebook'></img>
+                <img
+                  src={Instagram}
+                  onClick={() =>
+                    this.openSocial("https://www.instagram.com/ultimo_warrior/")
+                  }
+                  alt='instagram'></img>
               </div>
 
               <div className='block'>
-                <img src={Twitch} alt='twich'></img>
-                <img src={YouTube} alt='youtube'></img>
-                <img src={LinkedIn} alt='linkedin'></img>
+                <img
+                  src={Twitch}
+                  onClick={() =>
+                    this.openSocial("https://www.twitch.tv/ultimowarrior")
+                  }
+                  alt='twich'></img>
+                <img
+                  src={YouTube}
+                  onClick={() =>
+                    this.openSocial(
+                      "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA"
+                    )
+                  }
+                  alt='youtube'></img>
+                <img
+                  src={LinkedIn}
+                  onClick={() => this.openSocial()}
+                  alt='linkedin'></img>
               </div>
             </div>
           </div>

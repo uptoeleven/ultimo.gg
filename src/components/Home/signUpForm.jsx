@@ -32,15 +32,17 @@ class SignUpForm extends Component {
             <input type='checkbox'></input>
             <span className='checkbox_custom'></span>
 
-            <label>I AM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
+            <label>I AM HAPPY FOR ULTIMO GG TO CONTACT ME</label>
           </div>
           <div className='submit-button--mobile'>
             <span className='sign-up_button'></span>
           </div>
         </form>
-        <div className='submit-button'>
-          <span className='sign-up_button'></span>
-        </div>
+        <a href='https://discord.com/invite/e9p5YZE'>
+          <div className='submit-button'>
+            <span className='sign-up_button'></span>
+          </div>
+        </a>
       </>
     );
   }

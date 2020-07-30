@@ -1,7 +1,7 @@
 @import "../Default/variables.scss";
 
 .gaming {
-  background-color: $LightBackground;
+  background-color: $DarkBackground;
   position: relative;
 
   &_content {
@@ -10,7 +10,7 @@
     color: white;
     margin: 0 auto;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0;
 
     @media only screen and (max-width: 600px) {
       width: 80%;
@@ -22,9 +22,8 @@
       }
     }
     &-title {
-      font-family: nimbus-sans-condensed, sans-serif;
       font-weight: 900;
-      letter-spacing: 1px;
+      font-style: italic;
     }
 
     &-text {

@@ -15,7 +15,7 @@ class TournamentPage extends Component {
       <>
         <FeaturedTournament />
         <Tornaments />
-        <ImageBanner />
+
         <IsolationSeries />
         <IsolationContent />
         <Footer />

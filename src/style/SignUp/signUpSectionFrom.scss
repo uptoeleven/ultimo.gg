@@ -27,6 +27,7 @@
     font-size: 40px;
     margin: 10px 0;
     text-align: center;
+    text-transform: uppercase;
   }
   .text-block {
     width: 80%;
@@ -51,7 +52,8 @@
       padding-bottom: 5px;
       font-size: 14px;
     }
-    input {
+    input,
+    select {
       box-sizing: border-box;
       padding: 7px;
       background-color: rgba(255, 255, 255, 0.1);
@@ -153,8 +155,7 @@
       }
 
       label {
-        font-size: 11px;
-        font-family: nimbus-sans, sans-serif;
+        font-size: 10px;
         font-weight: bold;
         @media only screen and (max-width: 400px) {
           font-size: 8px;
@@ -163,8 +164,8 @@
     }
     .logoGG {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 50px;
+      right: 40px;
       transform: translate(39%, 50%);
       width: 20%;
       @media only screen and (max-width: 1024px) {

@@ -8,10 +8,10 @@ class ContactForm extends Component {
   render() {
     return (
       <div className='contact-form'>
-        <h1 className='title-block'>FILL OUT A FORM</h1>
+        <h1 className='title-block'>Get in touch</h1>
         <div className='form-container'>
           <form className='page-form'>
-            <h1 className='title-block--mobile'>FILL OUT A FORM</h1>
+            <h1 className='title-block--mobile'>Get in touch</h1>
             <div className='field-group_top'>
               <label>First Name</label>
               <input type='text'></input>
@@ -37,7 +37,7 @@ class ContactForm extends Component {
             <div className='check-box'>
               <input type='checkbox'></input>
               <span className='checkbox_custom'></span>
-              <label>I AM HAPPY FOR ULTIMO WARRIOR TO CONTACT ME</label>
+              <label>I am happy for Ultimo GG to contact me</label>
             </div>
             <div className='mobile'>
               <div className='sign-up_button'></div>

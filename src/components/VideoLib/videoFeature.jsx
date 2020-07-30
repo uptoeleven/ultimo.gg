@@ -12,21 +12,16 @@ class VideoFeature extends Component {
         <div className='wrapper'>
           <div
             className='video-feature-video'
-            style={{ backgroundImage: `url(${this.props.thumbnail})` }}>
+            style={{ backgroundImage: `url(${this.props.thumbnail})` }}
+            onClick={() => this.props.showLight(this.props.url)}>
             <div className='button'>
               <span className='play'></span>
             </div>
           </div>
           <div className='video-content'>
-            <h2 className='heading'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </h2>
-            <p className='text-block'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </p>
-            <span className='date'>22 August 2020</span>
+            <h2 className='heading'>{this.props.heading}</h2>
+            <p className='text-block'>{this.props.subHeading}</p>
+            <span className='date'>{this.props.date}</span>
           </div>
         </div>
       </div>

@@ -18,42 +18,51 @@ class InfoSection extends Component {
       {
         icon: Intuative,
         title: "INTUATIVE PLATFORM",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
+        text:
+          "Our intuitive platform makes it easy for gamers to play their favourite games, win prizes and become part of a thriving global community. ",
+      },
+      {
+        icon: Pad,
+        title: "ADRENALINE-FUELED LEAGUES",
+        text:
+          "Become a gaming legend by competing in our global Ultimo Amateur Gaming League and stake your claim for the top of our leader boards. History awaits. ",
+      },
+      {
+        icon: Torn,
+        title: "WEEKLY TOURNAMENTS",
+        text:
+          "Prove your skill in combat in our weekly tournaments, featuring all the biggest and best titles in gaming.  ",
       },
       {
         icon: Bootcamp,
         title: "BOOTCAMP",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
+        text:
+          "Ultimo’s leader boards make it easy for gamers to chart their progress and taste esports glory by seeing their name in lights. ",
       },
       {
-        icon: Torn,
-        title: "TOURNAMENTS",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
+        icon: Prizes,
+        title: "KILLER PRIZES",
+        text:
+          "Live to events replicate the rush of adrenaline found in our online tournaments.",
       },
       {
         icon: LeaderBoard,
         title: "LEADERBOARD",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
+        text:
+          "Ultimo’s leader boards make it easy for gamers to chart their progress and taste esports glory by seeing their name in lights.",
       },
-      {
-        icon: Prizes,
-        title: "PRIZES",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
-      },
+
       {
         icon: Team,
-        title: "OFFICIAL ESPORTS TEAM",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
+        title: "NEWS AND CONTENT",
+        text:
+          "All the best gaming news from around the world, the latest reviews and awesome content.",
       },
       {
         icon: Live,
         title: "LIVE EVENTS",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
-      },
-      {
-        icon: Pad,
-        title: "TOURNAMENT PLATFORM",
-        text: "Lorum Ipsum dolor sit amet, cpmsecletir",
+        text:
+          "Live to events replicate the rush of adrenaline found in our online tournaments.",
       },
     ],
   };

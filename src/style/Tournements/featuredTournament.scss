@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $LightBackground;
+    background-color: $DarkBackground;
     font-family: nimbus-sans, sans-serif;
     color: white;
     padding-top: 30px;
@@ -29,8 +29,7 @@
     }
 
     h1 {
-      font-family: nimbus-sans-condensed, sans-serif;
-      font-size: 40px;
+      font-size: 25px;
       font-weight: 900;
       margin: 10px 0;
       text-align: center;
@@ -52,7 +51,7 @@
       display: flex;
       justify-content: space-around;
       padding: 20px 30px;
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(144, 5, 227, 0.2);
       width: 100%;
       align-items: flex-start;
       box-sizing: border-box;
@@ -71,6 +70,13 @@
 
       .prize {
         font-size: 20px;
+      }
+      .sign-up_button {
+        background-color: #9005e3;
+
+        &:hover {
+          background-color: #9005e3;
+        }
       }
     }
   }

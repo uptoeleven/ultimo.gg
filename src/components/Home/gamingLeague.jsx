@@ -20,21 +20,20 @@ class GamingLeague extends Component {
             src={GamingLogo}
             alt='icon'></img>
           <h1 className='gaming_content-title'>
-            THE GLOBAL AMATEUR GAMING LEAGUE
+            THE ULTIMO AMATEUR GAMING LEAGUE
           </h1>
           <p className='gaming_content-text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget
-            consequat sapien. Aliquam erat volutpat. Donec in hendrerit justo,
-            non rhoncus libero. Cras ac aliquam tortor. Integer maximus nulla
-            quis leo sodales pulvinar. Donec eu luctus nibh, a luctus orci.
-            Aliquam eu risus blandit, tincidunt nibh sit amet, egestas tellus.
-            Donec fringilla et dui vitae lacinia. Nulla nec tempus turpis.
-            Pellentesque enim augue, tincidunt eu nisi vitae, consectetur varius
-            nibh. Nulla id ante ac augue pellentesque vestibulum sed eget neque.
+            The UAGL is ultimo gg's fiercely contested league where gamers
+            battle each week, vying to climb the leader boards for their chance
+            to win huge prizes across a range of games, bragging rights and
+            fight for a position in ultimo gg's official esports team. Splitting
+            into divisions ensures a level playing field, with higher divisions
+            offering tougher competition and larger prizes. Each league will be
+            sponsored by big name brands and finals will be broadcasted on the
+            platform and hosted by gaming personalities and key esports players.
+            The UAGL is exclusively hosted on ultimo gg’s game-changing online
+            esports tournament platform.
           </p>
-        </div>
-        <div className='video-container'>
-          <Video />
         </div>
       </div>
     );

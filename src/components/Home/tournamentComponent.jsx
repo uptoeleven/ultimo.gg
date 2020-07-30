@@ -10,11 +10,16 @@ class TournamentComponent extends Component {
         <div
           className='image-container'
           style={{ backgroundImage: `url(${this.props.image})` }}>
-          <div className='start-time'>
-            <div className='start-time_header'>
-              <span className='title'>Start Time</span>
-
-              <span className='time'>{this.props.time}</span>
+          <div
+            className='gradient'
+            style={{
+              backgroundImage: this.props.gradient,
+            }}>
+            <div className='start-time'>
+              <div className='start-time_header'>
+                <span className='title'>Start Time</span>
+                <span className='time'>{this.props.time}</span>
+              </div>
             </div>
           </div>
         </div>

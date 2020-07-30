@@ -3,9 +3,11 @@
 .footer {
   padding: 40px 30px;
   display: flex;
-  background-color: #340053;
-  justify-content: space-between;
 
+  background-color: #210038;
+  justify-content: space-between;
+  position: relative;
+  z-index: 99;
   @media only screen and (max-width: 1024px) {
     flex-direction: column;
 
@@ -37,7 +39,6 @@
     &-links {
       padding: 20px 0px;
 
-      font-family: nimbus-sans, sans-serif;
       font-size: 12px;
       font-weight: bold;
       width: auto;
@@ -46,7 +47,7 @@
         color: $LightPurple;
         width: 100%;
         font-size: 14px;
-        font-family: nimbus-sans-condensed, sans-serif;
+
         margin-bottom: 20px;
         @media only screen and (max-width: 1024px) {
           text-align: center;
@@ -102,6 +103,7 @@
         }
 
         img {
+          cursor: pointer;
           width: 33%;
           max-width: 25px;
           float: left;

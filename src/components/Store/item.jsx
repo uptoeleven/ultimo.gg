@@ -4,9 +4,14 @@ import "../../style/Shop/item.scss";
 
 class Item extends Component {
   state = {};
+
+  openShop = (url) => {
+    window.open(url);
+  };
+
   render() {
     return (
-      <div className='item'>
+      <div className='item' onClick={() => this.openShop(this.props.url)}>
         <div className='item_image'>
           <img src={this.props.image} alt='item'></img>
         </div>

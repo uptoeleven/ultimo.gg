@@ -2,7 +2,9 @@
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-
+  .gradient {
+    height: 100%;
+  }
   .image-container {
     height: 70%;
     width: 100%;
@@ -17,7 +19,6 @@
       box-sizing: border-box;
       width: 100%;
 
-      font-family: nimbus-sans, sans-serif;
       color: white;
       text-transform: uppercase;
 
@@ -58,7 +59,7 @@
 
       span {
         color: white;
-        font-family: nimbus-sans, sans-serif;
+
         @media only screen and (max-width: 600px) {
           font-size: 10px;
         }

@@ -1,7 +1,7 @@
 @import "../Default/variables.scss";
 
 .contact-form {
-  background-color: $LightBackground;
+  background-color: $DarkBackground;
   padding: 20px;
   color: white;
   @media screen and (max-width: 600px) {
@@ -9,6 +9,7 @@
   }
   .title-block {
     text-align: center;
+    text-transform: uppercase;
     @media screen and (max-width: 600px) {
       display: none;
     }
