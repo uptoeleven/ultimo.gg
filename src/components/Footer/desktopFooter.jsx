@@ -13,6 +13,7 @@ import Instagram from "../../assets/Footer/Instagram.svg";
 import Twitch from "../../assets/Footer/Twitch.svg";
 import YouTube from "../../assets/Footer/Youtube.svg";
 import LinkedIn from "../../assets/Footer/Linkedin.svg";
+import Twitter from "../../assets/Footer/Twitter.svg";
 
 class DesktopFooter extends Component {
   state = {};
@@ -30,18 +31,18 @@ class DesktopFooter extends Component {
             <h1 className='title'>PAGES</h1>
             <div className='text-block footer-mobile'>
               <Link to='/tournaments'>TOURNAMENTS</Link>
-              <Link to='/signUp'>SIGN UP</Link>
+              <Link to='/signup'>SIGN UP</Link>
               <Link to='/store'>MERCH STORE</Link>
-              <Link to='/VideoLibary'>VIDEO LIBRARY</Link>
+              <Link to='/VideoLibrary'>VIDEO LIBRARY</Link>
               <Link to='/Bootcamp'>BOOTCAMP</Link>
               <a href='https://discord.com/invite/e9p5YZE'>DISCORD</a>
               <Link to='/ContactUs'>CONTACT US</Link>
             </div>
             <div className='text-block col-2 margin-footer'>
               <Link to='/tournaments'>TOURNAMENTS</Link>
-              <Link to='/signUp'>SIGN UP</Link>
+              <Link to='/signup'>SIGN UP</Link>
               <Link to='/store'>MERCH STORE</Link>
-              <Link>VIDEO LIBRARY</Link>
+              <Link to='/VideoLibrary'>VIDEO LIBRARY</Link>
             </div>
             <div className='text-block col-2'>
               <Link to='/Bootcamp'>BOOTCAMP</Link>
@@ -59,9 +60,9 @@ class DesktopFooter extends Component {
           <div className='footer_content-links contact'>
             <h1 className='title'>CONTACT US</h1>
             <div className='text-block '>
-              <a href='#'>INFO@ULTIMOWARRIOR.COM</a>
-              <a href='#'>TOURNAMENTS@ULTIMOWARRIOR.COM</a>
-              <a href='#'>PARTNERSHIPS@ULTIMOWARRIOR.COM</a>
+              <a href='#'>INFO@ULTIMOGG.COM</a>
+              <a href='#'>TOURNAMENTS@ULTIMOGG.COM</a>
+              <a href='#'>PARTNERSHIPS@ULTIMOGG.COM</a>
             </div>
           </div>
           <div className='footer_content-links icon'>
@@ -77,32 +78,30 @@ class DesktopFooter extends Component {
                 <img
                   src={Facebook}
                   onClick={() =>
-                    this.openSocial("https://www.facebook.com/UltimoHombregg/")
+                    this.openSocial("https://www.facebook.com/UltimoGG")
                   }
                   alt='facebook'></img>
                 <img
                   src={Instagram}
-                  onClick={() =>
-                    this.openSocial("https://www.instagram.com/ultimo_warrior/")
-                  }
+                  onClick={() => this.openSocial("www.instagram.com/ultimo.gg")}
                   alt='instagram'></img>
                 <img
                   src={Twitch}
-                  onClick={() =>
-                    this.openSocial("https://www.twitch.tv/ultimowarrior")
-                  }
+                  onClick={() => this.openSocial("http://twitch.tv/UltimoGG")}
                   alt='twich'></img>
                 <img
                   src={YouTube}
                   onClick={() =>
                     this.openSocial(
-                      "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA"
+                      "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA?disable_polymer=true"
                     )
                   }
                   alt='youtube'></img>
                 <img
-                  src={LinkedIn}
-                  onClick={() => this.openSocial()}
+                  src={Twitter}
+                  onClick={() =>
+                    this.openSocial("www.twitter.com/ultimoggesports")
+                  }
                   alt='linkedin'></img>
               </div>
 
@@ -116,35 +115,33 @@ class DesktopFooter extends Component {
                 <img
                   src={Facebook}
                   onClick={() =>
-                    this.openSocial("https://www.facebook.com/UltimoHombregg/")
+                    this.openSocial("https://www.facebook.com/UltimoGG")
                   }
                   alt='facebook'></img>
                 <img
                   src={Instagram}
-                  onClick={() =>
-                    this.openSocial("https://www.instagram.com/ultimo_warrior/")
-                  }
+                  onClick={() => this.openSocial("www.instagram.com/ultimo.gg")}
                   alt='instagram'></img>
               </div>
 
               <div className='block'>
                 <img
                   src={Twitch}
-                  onClick={() =>
-                    this.openSocial("https://www.twitch.tv/ultimowarrior")
-                  }
+                  onClick={() => this.openSocial("http://twitch.tv/UltimoGG")}
                   alt='twich'></img>
                 <img
                   src={YouTube}
                   onClick={() =>
                     this.openSocial(
-                      "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA"
+                      "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA?disable_polymer=true"
                     )
                   }
                   alt='youtube'></img>
                 <img
-                  src={LinkedIn}
-                  onClick={() => this.openSocial()}
+                  src={Twitter}
+                  onClick={() =>
+                    this.openSocial("www.twitter.com/ultimoggesports")
+                  }
                   alt='linkedin'></img>
               </div>
             </div>

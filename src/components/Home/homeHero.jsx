@@ -7,8 +7,13 @@ import "../../style/homePage/hero.scss";
 import BannerImageOne from "../../assets/homePage/WarefareWednesdayBanner.png";
 import BannerImageTwo from "../../assets/homePage/ultimo_banner.png";
 import BannerImageThree from "../../assets/shop/BFGBanner.png";
+import BannerImageFour from "../../assets/homePage/UltimoGG_Web-90.jpg";
 
 class HomeBanner extends Component {
+  openbanner = () => {
+    // console.log("hit");
+    window.open("https://challonge.com/communities/UltimoGG/tournaments");
+  };
   render() {
     const settings = {
       arrows: false,
@@ -19,8 +24,9 @@ class HomeBanner extends Component {
       slidesToScroll: 1,
       autoplay: true,
     };
+
     return (
-      <div className='hero'>
+      <div className='hero' onClick={this.openbanner}>
         <div className='hero-carosel'>
           <Slider {...settings}>
             <div>
@@ -37,6 +43,14 @@ class HomeBanner extends Component {
               <div
                 className='carosel-image'
                 style={{ backgroundImage: `url(${BannerImageThree})` }}></div>
+            </div>
+            <div>
+              <div
+                className='carosel-image fix-height'
+                style={{
+                  backgroundImage: `url(${BannerImageFour})`,
+                  backgroundPosition: "0 -150px",
+                }}></div>
             </div>
           </Slider>
         </div>

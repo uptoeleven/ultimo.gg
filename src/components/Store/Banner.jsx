@@ -52,6 +52,11 @@ class StoreCarosel extends Component {
             </div>
           </Slider>
         </div>
+        <div
+          className='hero-mobile'
+          style={{ backgroundImage: `url(${BannerImageFour})` }}></div>
+
+        <div className='hero-image'></div>
       </div>
     );
   }

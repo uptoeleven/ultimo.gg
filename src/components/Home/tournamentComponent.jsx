@@ -4,22 +4,27 @@ import React, { Component } from "react";
 import "../../style/homePage/tournamentComponent.scss";
 class TournamentComponent extends Component {
   state = {};
+
+  openTournament = (url) => {
+    window.open(url);
+  };
   render() {
+    let closed = this.props.closed === true ? "gradient closed" : "gradient";
     return (
       <div className='tournament_component'>
         <div
           className='image-container'
           style={{ backgroundImage: `url(${this.props.image})` }}>
           <div
-            className='gradient'
+            className={closed}
             style={{
               backgroundImage: this.props.gradient,
             }}>
             <div className='start-time'>
-              <div className='start-time_header'>
+              {/* <div className='start-time_header'>
                 <span className='title'>Start Time</span>
                 <span className='time'>{this.props.time}</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -36,7 +41,9 @@ class TournamentComponent extends Component {
               <h2>{this.props.date}</h2>
             </div>
           </div>
-          <div className='sign-up_button'></div>
+          <div
+            onClick={() => this.openTournament(this.props.link)}
+            className='sign-up_button'></div>
         </div>
       </div>
     );

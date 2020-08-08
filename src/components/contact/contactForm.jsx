@@ -29,11 +29,6 @@ class ContactForm extends Component {
               <input type='text'></input>
             </div>
 
-            <div className='field-group_bottom'>
-              <label>Country Of Residence</label>
-              <textarea type='text-area'></textarea>
-            </div>
-
             <div className='check-box'>
               <input type='checkbox'></input>
               <span className='checkbox_custom'></span>

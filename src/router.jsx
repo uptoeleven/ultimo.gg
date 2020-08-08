@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Router, Route, Switch } from "react-router-dom";
 import disableScroll from "disable-scroll";
 
 // components
@@ -12,6 +12,7 @@ import Store from "./components/Store/index";
 import VideoPage from "./components/VideoLib/index";
 import BootcampPage from "./components/Bootcamp/index";
 import ContactPage from "./components/contact/index";
+import Sony from "./components/sony/index";
 
 class App extends Component {
   state = {
@@ -52,7 +53,7 @@ class App extends Component {
     // this.state.toggle === false && this.scrollToMyRef();
     return (
       <>
-        <Router>
+        <BrowserRouter>
           <DesktopNav></DesktopNav>
           <MobileNav
             toggle={this.toggle}
@@ -67,15 +68,16 @@ class App extends Component {
             }}>
             <Switch>
               <Route exact path='/' component={HomePage}></Route>
-              <Route exact path='/signUp' component={SignUp}></Route>
+              <Route exact path='/signup' component={SignUp}></Route>
               <Route exact path='/tournaments' component={Tournament}></Route>
               <Route exact path='/store' component={Store}></Route>
-              <Route exact path='/VideoLibary' component={VideoPage}></Route>
+              <Route exact path='/VideoLibrary' component={VideoPage}></Route>
               <Route exact path='/Bootcamp' component={BootcampPage}></Route>
               <Route exact path='/ContactUs' component={ContactPage}></Route>
+              <Route exact path='/Sony' component={Sony}></Route>
             </Switch>
           </div>
-        </Router>
+        </BrowserRouter>
       </>
     );
   }

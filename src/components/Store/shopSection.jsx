@@ -41,7 +41,7 @@ class Shop extends Component {
       },
       {
         image: WAT,
-        name: "Samuri TEE",
+        name: "Warrior TEE",
         price: "£25",
         url: "https://ultimomerch.com/products/ultimo-tee",
       },

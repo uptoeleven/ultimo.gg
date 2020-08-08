@@ -1,0 +1,25 @@
+@import "../Default/variables.scss";
+
+.info-phone {
+  background-color: $DarkBackground;
+  .wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    .xperia-logo {
+      width: 40%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .text-block {
+      color: white;
+      padding: 0 40px;
+    }
+  }
+}

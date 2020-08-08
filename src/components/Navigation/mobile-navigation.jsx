@@ -6,6 +6,7 @@ import Logo from "../../assets/Footer/footer.svg";
 import "../../style/nav/mobileNav.scss";
 
 // icons
+import logo from "../../assets/Nav/Logo.svg";
 import TournamentsIcon from "../../assets/Nav/Tournaments.svg";
 import SignUpIcon from "../../assets/Nav/SIgn_Up.svg";
 import MerchIcon from "../../assets/Nav/Merch_Store.svg";
@@ -18,7 +19,7 @@ class MobileNav extends Component {
   state = {
     navButtons: [
       {
-        icon: TournamentsIcon,
+        icon: logo,
         text: "Home",
         page: "/",
       },
@@ -30,7 +31,7 @@ class MobileNav extends Component {
       {
         icon: SignUpIcon,
         text: "Sign Up",
-        page: "/signUp",
+        page: "/signup",
       },
       {
         icon: MerchIcon,
@@ -40,18 +41,14 @@ class MobileNav extends Component {
       {
         icon: VideoIcon,
         text: "Video Libary",
-        page: "/VideoLibary",
+        page: "/VideoLibrary",
       },
       {
         icon: BootcampIcon,
         text: "Bootcamp",
         page: "/Bootcamp",
       },
-      {
-        icon: DiscordIcon,
-        text: "Discord",
-        page: "/Discord",
-      },
+
       {
         icon: ContactIcon,
         text: "Contact Us",
@@ -85,19 +82,31 @@ class MobileNav extends Component {
           <div
             className='mobile-nav'
             style={{ transform: slide, top: positionNav, position: fixer }}>
-            {this.state.navButtons.map((button) => (
+            {this.state.navButtons.map((button, index) => (
               <NavLink
+                key={index}
                 exact
                 className='mobile-nav-button'
                 activeClassName='active-mobile'
                 to={button.page}>
-                <div onClick={this.props.toggle} className='button-label'>
-                  <img src={button.icon} alt='Home'></img>
-                  <span>{button.text}</span>
-                </div>
-                <span className='dot'></span>
+                <a href={button.link}>
+                  <div onClick={this.props.toggle} className='button-label'>
+                    <img src={button.icon} alt='Home'></img>
+                    <span>{button.text}</span>
+                  </div>
+                  <span className='dot'></span>
+                </a>
               </NavLink>
             ))}
+            <div className='mobile-nav-button'>
+              <a href='https://discord.com/invite/e9p5YZE'>
+                <div onClick={this.props.toggle} className='button-label'>
+                  <img src={DiscordIcon} alt='Home'></img>
+                  <span>Discord</span>
+                </div>
+                <span className='dot'></span>
+              </a>
+            </div>
           </div>
         </div>
       </>

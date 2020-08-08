@@ -9,7 +9,7 @@ import Bootcamp from "../../assets/homePage/Bootcamp-icon.svg";
 import Torn from "../../assets/homePage/torn-icon.svg";
 import LeaderBoard from "../../assets/homePage/leaderboard-icon.svg";
 import Prizes from "../../assets/homePage/prizes-icon.svg";
-import Team from "../../assets/homePage/team-icon.svg";
+import Team from "../../assets/homePage/news.svg";
 import Live from "../../assets/homePage/LiveEvent-icon.svg";
 import Pad from "../../assets/homePage/pad-icon.svg";
 class InfoSection extends Component {
@@ -17,15 +17,15 @@ class InfoSection extends Component {
     stats: [
       {
         icon: Intuative,
-        title: "INTUATIVE PLATFORM",
+        title: "Intuitive PLATFORM",
         text:
-          "Our intuitive platform makes it easy for gamers to play their favourite games, win prizes and become part of a thriving global community. ",
+          "Our Intuitive platform makes it easy for gamers to play their favourite games, win prizes and become part of a thriving global community. ",
       },
       {
         icon: Pad,
         title: "ADRENALINE-FUELED LEAGUES",
         text:
-          "Become a gaming legend by competing in our global Ultimo Amateur Gaming League and stake your claim for the top of our leader boards. History awaits. ",
+          "Become a gaming legend by competing in our Adrenaline-Fueled Leagues and stake your claim for the top of our leader boards. History awaits. ",
       },
       {
         icon: Torn,
@@ -37,17 +37,17 @@ class InfoSection extends Component {
         icon: Bootcamp,
         title: "BOOTCAMP",
         text:
-          "Ultimo’s leader boards make it easy for gamers to chart their progress and taste esports glory by seeing their name in lights. ",
+          "Learn from player and coaches in our bootcamps, one-on-one training and tutorials.",
       },
       {
         icon: Prizes,
         title: "KILLER PRIZES",
         text:
-          "Live to events replicate the rush of adrenaline found in our online tournaments.",
+          "Killer prizes from top-end hardware to big money for competing in our tournaments.",
       },
       {
         icon: LeaderBoard,
-        title: "LEADERBOARD",
+        title: "LEADERBOARDS",
         text:
           "Ultimo’s leader boards make it easy for gamers to chart their progress and taste esports glory by seeing their name in lights.",
       },
@@ -62,7 +62,7 @@ class InfoSection extends Component {
         icon: Live,
         title: "LIVE EVENTS",
         text:
-          "Live to events replicate the rush of adrenaline found in our online tournaments.",
+          "Live events replicate the rush of adrenaline found in our online tournaments.",
       },
     ],
   };

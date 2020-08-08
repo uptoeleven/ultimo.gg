@@ -13,7 +13,7 @@ class ItTakesSection extends Component {
     return (
       <div className='sign-up'>
         <h2 className='sign-up_title-block'>
-          THE GAME CHANGING ESPORTS PLATFORM
+          THE GAME-CHANGING ESPORTS PLATFORM
         </h2>
         <div className='sign-up_content'>
           <div className='sign-up_content-video'>

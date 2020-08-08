@@ -18,9 +18,9 @@ class ReachUs extends Component {
           <div className='block'>
             <img src={Headset} alt='contact-us'></img>
             <div className='text-block'>
-              <p>GENRAL INFORMATION:</p>
+              <p>GENERAL INFORMATION:</p>
               <p>
-                <a href='#'>info@ultimowarrior.com</a>
+                <a href='#'>info@ultimogg.com</a>
               </p>
             </div>
           </div>
@@ -29,7 +29,7 @@ class ReachUs extends Component {
             <div className='text-block'>
               <p>Tournament/Event info:</p>
               <p>
-                <a href='#'>tournaments@ultimowarrior.com</a>
+                <a href='#'>tournaments@ultimogg.com</a>
               </p>
             </div>
           </div>
@@ -38,7 +38,7 @@ class ReachUs extends Component {
             <div className='text-block'>
               <p>Branding & Sponsorship opportunities:</p>
               <p>
-                <a href='#'>partnerships@ultimowarrior.com</a>
+                <a href='#'>partnerships@ultimogg.com</a>
               </p>
             </div>
           </div>

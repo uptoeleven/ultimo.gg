@@ -10,7 +10,7 @@ class VideoComponent extends Component {
       <ReactPlayer
         className='react-player'
         controls={false}
-        url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+        url='https://www.youtube.com/watch?v=U1EketBgL0s'
         width='100%'
       />
     );

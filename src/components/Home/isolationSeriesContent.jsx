@@ -18,7 +18,7 @@ class IsolationContent extends Component {
         icon: Torn,
         title: "Weekly Tournaments",
         text:
-          "Weekly elimination tournaments designed to fight the boredom of self-isolation and giving players a chance to compete around the globe across all skill levels. Game modes & tournament structures will rotate weekly to keep things fresh and keep you on your A-game.",
+          "Weekly elimination tournaments designed to fight the boredom of self-isolation, giving players a chance to compete around the globe across all skill levels. Game modes & tournament structures will rotate weekly to keep things fresh and keep you on your A-game.",
       },
       {
         icon: Badge,

@@ -25,6 +25,11 @@ import ContactActive from "../../assets/Nav/Contact.svg";
 
 class DesktopNav extends Component {
   state = {};
+
+  openWindow = () => {
+    window.open("https://discord.com/invite/e9p5YZE");
+  };
+
   render() {
     return (
       <>
@@ -40,64 +45,74 @@ class DesktopNav extends Component {
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/tournaments'>
             <img
-              class='home-logo'
+              className='home-logo'
               src={TournamentsIcon}
               alt='Tournaments Icon'></img>
             <img
-              class='home-logo home-logo-active'
+              className='home-logo home-logo-active'
               src={TournamentIconActive}
               alt='Tournaments Icon'></img>
             <span>TOURNAMENTS</span>
           </NavLink>
-          <NavLink activeClassName='activeRoute' to='/signUp'>
-            <img class='home-logo' src={SignUpIcon} alt='SignUp Icon'></img>
+          <NavLink activeClassName='activeRoute' to='/signup'>
+            <img className='home-logo' src={SignUpIcon} alt='SignUp Icon'></img>
             <img
-              class='home-logo home-logo-active'
+              className='home-logo home-logo-active'
               src={SignUpActive}
               alt='Tournaments Icon'></img>
             <span>SIGN UP</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/store'>
-            <img class='home-logo' src={MerchIcon} alt='Merch Icon'></img>
+            <img className='home-logo' src={MerchIcon} alt='Merch Icon'></img>
             <img
-              class='home-logo home-logo-active'
+              className='home-logo home-logo-active'
               src={MechActive}
               alt='Tournaments Icon'></img>
             <span>MERCH STORE</span>
           </NavLink>
-          <NavLink activeClassName='activeRoute' to='/VideoLibary'>
-            <img class='home-logo' src={VideoIcon} alt='Video Icon'></img>
+          <NavLink activeClassName='activeRoute' to='/VideoLibrary'>
+            <img className='home-logo' src={VideoIcon} alt='Video Icon'></img>
             <img
-              class='home-logo home-logo-active'
+              className='home-logo home-logo-active'
               src={VideoIconActive}
               alt='Tournaments Icon'></img>
             <span>VIDEO LIBRARY</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/Bootcamp'>
-            <img class='home-logo' src={BootcampIcon} alt='Bootcamp Icon'></img>
             <img
-              class='home-logo home-logo-active'
+              className='home-logo'
+              src={BootcampIcon}
+              alt='Bootcamp Icon'></img>
+            <img
+              className='home-logo home-logo-active'
               src={BootcampActive}
               alt='Tournaments Icon'></img>
             <span>BOOTCAMP</span>
           </NavLink>
-          <a
-            href='https://discord.com/invite/e9p5YZE'
-            activeClassName='activeRoute'>
-            <img class='home-logo' src={DiscordIcon} alt='Discord Icon'></img>
+          <a href='#' onClick={this.openWindow} activeClassName='activeRoute'>
             <img
-              class='home-logo home-logo-active'
+              className='home-logo'
+              src={DiscordIcon}
+              alt='Discord Icon'></img>
+            <img
+              className='home-logo home-logo-active'
               src={DiscordActive}
               alt='Tournaments Icon'></img>
             <span>DISCORD</span>
           </a>
           <NavLink activeClassName='activeRoute' to='/ContactUs'>
-            <img class='home-logo' src={ContactIcon} alt='ContactUs Icon'></img>
             <img
-              class='home-logo home-logo-active'
+              className='home-logo'
+              src={ContactIcon}
+              alt='ContactUs Icon'></img>
+            <img
+              className='home-logo home-logo-active'
               src={ContactActive}
               alt='Tournaments Icon'></img>
             <span>CONTACT US</span>
+          </NavLink>
+          <NavLink activeClassName='activeRoute' to='/Sony'>
+            <span>Sony</span>
           </NavLink>
         </div>
       </>

@@ -23,15 +23,15 @@ class GamingLeague extends Component {
             THE ULTIMO AMATEUR GAMING LEAGUE
           </h1>
           <p className='gaming_content-text'>
-            The UAGL is ultimo gg's fiercely contested league where gamers
+            The UAGL is ULTIMO GG's fiercely contested league where gamers
             battle each week, vying to climb the leader boards for their chance
             to win huge prizes across a range of games, bragging rights and
-            fight for a position in ultimo gg's official esports team. Splitting
+            fight for a position in ULTIMO GG's official esports team. Splitting
             into divisions ensures a level playing field, with higher divisions
             offering tougher competition and larger prizes. Each league will be
-            sponsored by big name brands and finals will be broadcasted on the
+            sponsored by big name brands and finals will be broadcast on the
             platform and hosted by gaming personalities and key esports players.
-            The UAGL is exclusively hosted on ultimo gg’s game-changing online
+            The UAGL is exclusively hosted on ULTIMO GG's game-changing online
             esports tournament platform.
           </p>
         </div>

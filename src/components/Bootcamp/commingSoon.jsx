@@ -18,7 +18,7 @@ class ComingSoon extends Component {
           <h1>COMING SOON</h1>
           <p>
             Listen up, recruit. Our bootcamps are opening soon and will make you
-            the warrior you were born to be. Improve your gaming skills with our
+            the Warrior you were born to be. Improve your gaming skills with our
             player and coach-led bootcamps and training sessions. Want to be an
             esports star? <Link to='/signUp'>Sign up now.</Link>
           </p>
