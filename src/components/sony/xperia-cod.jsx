@@ -16,10 +16,16 @@ class XperiaCOD extends Component {
           Sony’s latest flagship device, Xperia 1 II, is the perfect device for
           mobile gaming.
         </p>
-        <img className='phone' src={controllerPhone} alt='controller'></img>
         <div className='sign-up-container'>
           <p className='text-block'>CLICK HERE TO ENTER NOW</p>
           <div className='sign-up_button'></div>
+        </div>
+        <img className='phone' src={controllerPhone} alt='controller'></img>
+        <div className='disclamer'>
+          <span>
+            *Disclaimer: Players may not use an external device or attachment
+            that modifies the game’s controls in the tournament
+          </span>
         </div>
       </div>
     );

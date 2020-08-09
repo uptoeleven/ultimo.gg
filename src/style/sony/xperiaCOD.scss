@@ -9,12 +9,23 @@
   align-content: center;
   overflow: hidden;
   height: 1000px;
-
+  @media only screen and (max-width: 1024px) {
+    height: 700px;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 600px;
+  }
   .xperia-title {
     width: 490px;
     margin: 0 auto;
     img {
       max-width: 100%;
+    }
+    @media only screen and (max-width: 1024px) {
+      width: 360px;
+    }
+    @media only screen and (max-width: 600px) {
+      width: 260px;
     }
   }
 
@@ -26,6 +37,9 @@
     text-align: center;
     min-width: 300px;
     margin-top: 50px;
+    @media only screen and (max-width: 1024px) {
+      font-size: 20px;
+    }
   }
 
   .phone {
@@ -43,6 +57,9 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    @media only screen and (max-width: 1024px) {
+      position: relative;
+    }
     p {
       font-size: 20px;
       font-weight: bold;
@@ -60,6 +77,20 @@
       &:hover {
         background-color: #d5585c;
       }
+    }
+  }
+
+  .disclamer {
+    position: absolute;
+    left: 40px;
+    bottom: 20px;
+    font-size: 10px;
+    width: 300px;
+    color: white;
+    @media only screen and (max-width: 1024px) {
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
     }
   }
 }

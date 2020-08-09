@@ -12,6 +12,11 @@
     left: 50px;
     padding: 0px;
     color: white;
+
+    @media only screen and (max-width: 1024px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .home-logo {
     height: 600px;
@@ -37,6 +42,10 @@
     min-width: 400px;
     img {
       max-height: 100%;
+    }
+    @media only screen and (max-width: 1024px) {
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

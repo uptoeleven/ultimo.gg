@@ -1,0 +1,62 @@
+.display-container {
+  background-color: rgb(249, 250, 251);
+  padding: 20px;
+  .wrapper {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+
+    .title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30%;
+      top: 50px;
+      max-width: 350px;
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .phone {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .sign-up-container {
+      width: 300px;
+
+      margin: 0 auto;
+
+      text-align: center;
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .sign-up_button {
+        margin: 20px auto 0 auto;
+        position: relative;
+        z-index: 98;
+        border-radius: 20px;
+        background-color: #909090;
+
+        &:before {
+          border-radius: 20px;
+          background-color: rgb(249, 250, 251);
+          color: #909090;
+
+          &:hover {
+            color: #d5585c;
+          }
+        }
+        &:hover {
+          background-color: #d5585c;
+        }
+      }
+    }
+  }
+}
