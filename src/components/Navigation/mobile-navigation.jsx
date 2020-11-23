@@ -14,6 +14,7 @@ import VideoIcon from "../../assets/Nav/Video_Library.svg";
 import BootcampIcon from "../../assets/Nav/Bootcamp.svg";
 import DiscordIcon from "../../assets/Nav/Discord.svg";
 import ContactIcon from "../../assets/Nav/Contact_Us.svg";
+import Xperia from "../../assets/Nav/Xperia.svg";
 
 class MobileNav extends Component {
   state = {
@@ -23,6 +24,7 @@ class MobileNav extends Component {
         text: "Home",
         page: "/",
       },
+
       {
         icon: TournamentsIcon,
         text: "Tournaments",

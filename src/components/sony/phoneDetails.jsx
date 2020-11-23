@@ -65,7 +65,7 @@ class PhoneDetails extends Component {
             onClick={this.closeInfo}>
             <h3 className='title-block'>4,000mAh battery.</h3>
             <span className='text-block'>
-              With fast charge that charges up to 50% in just 30 minutes14 and
+              With fast charge that charges up to 50% in just 30 minutes and
               features Qi fast wireless charging for a fast battery boost on the
               move.
             </span>
@@ -84,7 +84,7 @@ class PhoneDetails extends Component {
             onClick={this.closeInfo}>
             <h3 className='title-block'>4K HDR OLED Display.</h3>
             <span className='text-block'>
-              21:9 CinemaWide 6.5” 4K HDR OLED display6 delivers unprecedented
+              21:9 CinemaWide 6.5” 4K HDR OLED display delivers unprecedented
               colour accuracy with Creator mode “powered by CineAlta”.
             </span>
           </div>
@@ -133,7 +133,7 @@ class PhoneDetails extends Component {
             <div className=' bar bar-left'></div>
             <h3 className='title-block'>4,000mAh battery.</h3>
             <span className='text-block'>
-              With fast charge that charges up to 50% in just 30 minutes14 and
+              With fast charge that charges up to 50% in just 30 minutes and
               features Qi fast wireless charging for a fast battery boost on the
               move.
             </span>
@@ -152,7 +152,7 @@ class PhoneDetails extends Component {
             <div className='bar bar-right'></div>
             <h3 className='title-block'>4K HDR OLED Display.</h3>
             <span className='text-block'>
-              21:9 CinemaWide 6.5” 4K HDR OLED display6 delivers unprecedented
+              21:9 CinemaWide 6.5” 4K HDR OLED display delivers unprecedented
               colour accuracy with Creator mode “powered by CineAlta”.
             </span>
           </div>

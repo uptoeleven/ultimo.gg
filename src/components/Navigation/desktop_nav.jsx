@@ -22,6 +22,8 @@ import DiscordIcon from "../../assets/Nav/Discord.svg";
 import DiscordActive from "../../assets/Nav//Discordactive.svg";
 import ContactIcon from "../../assets/Nav/Contact_Us.svg";
 import ContactActive from "../../assets/Nav/Contact.svg";
+import Xperia from "../../assets/Nav/Xperia.svg";
+import XperiaActive from "../../assets/Nav/xperialogobluegreen.svg";
 
 class DesktopNav extends Component {
   state = {};
@@ -43,13 +45,14 @@ class DesktopNav extends Component {
                 alt='Home Logo'></img>
             </div>
           </NavLink>
+
           <NavLink activeClassName='activeRoute' to='/tournaments'>
             <img
               className='home-logo'
               src={TournamentsIcon}
               alt='Tournaments Icon'></img>
             <img
-              className='home-logo home-logo-active'
+              className='home-logo home-logo-active margin-remove'
               src={TournamentIconActive}
               alt='Tournaments Icon'></img>
             <span>TOURNAMENTS</span>
@@ -57,15 +60,15 @@ class DesktopNav extends Component {
           <NavLink activeClassName='activeRoute' to='/signup'>
             <img className='home-logo' src={SignUpIcon} alt='SignUp Icon'></img>
             <img
-              className='home-logo home-logo-active'
+              className='home-logo home-logo-active sign-up-active margin-remove'
               src={SignUpActive}
-              alt='Tournaments Icon'></img>
+              alt='Sign-Up Icon'></img>
             <span>SIGN UP</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/store'>
             <img className='home-logo' src={MerchIcon} alt='Merch Icon'></img>
             <img
-              className='home-logo home-logo-active'
+              className='home-logo home-logo-active margin-remove'
               src={MechActive}
               alt='Tournaments Icon'></img>
             <span>MERCH STORE</span>
@@ -73,7 +76,7 @@ class DesktopNav extends Component {
           <NavLink activeClassName='activeRoute' to='/VideoLibrary'>
             <img className='home-logo' src={VideoIcon} alt='Video Icon'></img>
             <img
-              className='home-logo home-logo-active'
+              className='home-logo home-logo-active margin-remove'
               src={VideoIconActive}
               alt='Tournaments Icon'></img>
             <span>VIDEO LIBRARY</span>
@@ -84,7 +87,7 @@ class DesktopNav extends Component {
               src={BootcampIcon}
               alt='Bootcamp Icon'></img>
             <img
-              className='home-logo home-logo-active'
+              className='home-logo home-logo-active margin-remove bootcamp-active'
               src={BootcampActive}
               alt='Tournaments Icon'></img>
             <span>BOOTCAMP</span>
@@ -95,7 +98,7 @@ class DesktopNav extends Component {
               src={DiscordIcon}
               alt='Discord Icon'></img>
             <img
-              className='home-logo home-logo-active'
+              className='home-logo home-logo-active margin-remove'
               src={DiscordActive}
               alt='Tournaments Icon'></img>
             <span>DISCORD</span>
@@ -106,13 +109,10 @@ class DesktopNav extends Component {
               src={ContactIcon}
               alt='ContactUs Icon'></img>
             <img
-              className='home-logo home-logo-active'
+              className='home-logo home-logo-active margin-remove'
               src={ContactActive}
               alt='Tournaments Icon'></img>
             <span>CONTACT US</span>
-          </NavLink>
-          <NavLink activeClassName='activeRoute' to='/Sony'>
-            <span>Sony</span>
           </NavLink>
         </div>
       </>

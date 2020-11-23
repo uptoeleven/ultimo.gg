@@ -14,7 +14,7 @@
   }
 
   &-image {
-    background-image: url(../../assets/Tournaments/WarefareWednesday.png);
+    background-image: url(../../assets/Tournaments/afcb-featured.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,7 +94,17 @@
 
     @media only screen and (max-width: 1024px) {
       width: 100%;
-      min-height: 350px;
+      height: 500px;
+      // min-height: 350px;
+    }
+    @media only screen and (max-width: 800px) {
+      height: 400px;
+    }
+    @media only screen and (max-width: 650px) {
+      height: 320px;
+    }
+    @media only screen and (max-width: 550px) {
+      height: 250px !important;
     }
   }
 }

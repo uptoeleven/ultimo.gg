@@ -12,7 +12,7 @@
     text-align: center;
     box-sizing: border-box;
     min-height: 75px;
-    transition: 0.8s all;
+    transition: 0.4s all;
     color: $GreyIcon;
     display: flex;
     justify-content: space-evenly;
@@ -23,13 +23,44 @@
     flex-direction: column;
     padding: 10px;
     letter-spacing: 0.14px;
+    position: relative;
+
     &:hover {
       background-color: $Purple30;
       color: white;
+
+      & .home-logo {
+        opacity: 0 !important;
+      }
+      & .home-logo-active {
+        opacity: 1 !important;
+        transition: 0.4s all;
+      }
     }
 
     .home-logo {
       height: 30px !important;
+      transition: 0.4s all;
+    }
+    .xperia {
+      width: 80% !important;
+    }
+
+    .margin-remove {
+      margin-top: -9px;
+    }
+    .sign-up-active {
+      height: 34px !important;
+      margin-left: -1px !important;
+      margin-top: -8px !important;
+    }
+    .xperia-active {
+      width: 80px !important;
+      margin-top: -12px !important;
+    }
+    .bootcamp-active {
+      height: 39px !important;
+      margin-top: -7px !important;
     }
   }
 
@@ -46,17 +77,24 @@
     }
   }
   .home-logo-active {
-    display: none;
+    // display: none;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .activeRoute {
     background-color: $Purple30;
     color: White;
 
     .home-logo {
-      display: none;
+      opacity: 0;
     }
+
     .home-logo-active {
       display: flex;
+      opacity: 1;
       height: 30px !important;
     }
   }

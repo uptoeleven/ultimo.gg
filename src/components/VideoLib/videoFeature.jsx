@@ -6,7 +6,7 @@ import "../../style/videoLibary/videoFeature.scss";
 class VideoFeature extends Component {
   state = {};
   render() {
-    console.log(this.props);
+    console.log(this.props.subHeading);
     return (
       <div className='video-feature'>
         <div className='wrapper'>

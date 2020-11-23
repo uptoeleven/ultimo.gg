@@ -14,7 +14,7 @@ class SonyPage extends Component {
     return (
       <>
         <HomeHero />
-        <ImageBanner />
+
         <VideoSection />
         <Xperia />
         <PhoneInfo />

@@ -6,6 +6,9 @@ import xperiaLogo from "../../assets/sony/xperia-logo.png";
 import controllerPhone from "../../assets/sony/Controller_Phone.svg";
 class XperiaCOD extends Component {
   state = {};
+  openFeature = () => {
+    window.open("https://acgl.co.za/ultimogg");
+  };
   render() {
     return (
       <div className='xperia-cod-container'>
@@ -18,7 +21,7 @@ class XperiaCOD extends Component {
         </p>
         <div className='sign-up-container'>
           <p className='text-block'>CLICK HERE TO ENTER NOW</p>
-          <div className='sign-up_button'></div>
+          <div onClick={this.openFeature} className='sign-up_button'></div>
         </div>
         <img className='phone' src={controllerPhone} alt='controller'></img>
         <div className='disclamer'>

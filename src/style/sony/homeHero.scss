@@ -6,6 +6,22 @@
   background-position: center;
   position: relative;
 
+  .disclaimer {
+    color: white;
+
+    text-align: center;
+    font-size: 10px;
+
+    @media only screen and (min-width: 1024px) {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+    @media only screen and (max-width: 1024px) {
+      position: relative;
+      width: 100%;
+    }
+  }
   .date {
     position: absolute;
     top: 10px;
@@ -14,19 +30,35 @@
     color: white;
 
     @media only screen and (max-width: 1024px) {
-      left: 50%;
-      transform: translateX(-50%);
+      position: relative;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      left: 0;
     }
   }
   .home-logo {
-    height: 600px;
+    height: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    cursor: pointer;
     img {
       max-height: 100%;
+    }
+    .sign-up_button {
+      margin: 20px auto 0 auto;
+      position: relative;
+      z-index: 98;
+      border-radius: 20px;
+      background-color: white;
+      &:before {
+        border-radius: 20px;
+      }
+      &:hover {
+        background-color: #d5585c;
+      }
     }
   }
 

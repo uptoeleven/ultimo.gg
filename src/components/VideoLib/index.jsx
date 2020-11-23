@@ -6,7 +6,10 @@ import VideoContainer from "./videoContainer";
 import Footer from "../Footer/desktopFooter";
 
 class VideoPage extends Component {
-  state = {};
+  state = {
+    videos: {},
+  };
+
   render() {
     return (
       <>

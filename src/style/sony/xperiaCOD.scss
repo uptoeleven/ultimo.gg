@@ -10,7 +10,7 @@
   overflow: hidden;
   height: 1000px;
   @media only screen and (max-width: 1024px) {
-    height: 700px;
+    height: 800px;
   }
   @media only screen and (max-width: 600px) {
     height: 600px;
@@ -57,6 +57,7 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    z-index: 95;
     @media only screen and (max-width: 1024px) {
       position: relative;
     }

@@ -8,45 +8,43 @@ import VideoFeature from "./videoFeature";
 
 class VideoContainer extends Component {
   state = {
-    video: [
-      {
-        thumbnail: "http://img.youtube.com/vi/U1EketBgL0s/0.jpg",
-        url: "https://www.youtube.com/watch?v=U1EketBgL0s",
-        text: "Welcome to Ultimo GG",
-        date: "30 July 2020",
-        heading:
-          "Welcome to Ultimo GG, a game-changing esports tournament platform",
-        subHeading:
-          "Thanks for watching! Be sure to subscribe and hit that notification button to make sure you're up to date with everything in Utimo's world!",
-      },
-      {
-        thumbnail: "http://img.youtube.com/vi/tokYYeXdZ10/0.jpg",
-        url: "https://www.youtube.com/watch?v=tokYYeXdZ10",
-        text: "Xbox Games Showcase! Weekly Intel July Week 4",
-      },
-      {
-        thumbnail: "http://img.youtube.com/vi/UQfK-63-twA/0.jpg",
-        url: "https://www.youtube.com/watch?v=UQfK-63-twA",
-        text: "Ghost of Tsushima: Review",
-      },
-      {
-        thumbnail: "http://img.youtube.com/vi/jFwUdQdLgUE/0.jpg",
-        url: "https://www.youtube.com/watch?v=jFwUdQdLgUE",
-        text: "Halo 3 PC FINALLY released! - Weekly Intel July Week 3",
-      },
-      {
-        thumbnail: "http://img.youtube.com/vi/8AC293VBSDM/0.jpg",
-        url: "https://www.youtube.com/watch?v=8AC293VBSDM",
-        text: "The Last of Us 2: The Review (and gameplay)",
-      },
-      {
-        thumbnail: "http://img.youtube.com/vi/rNzTXJAIiEM/0.jpg",
-        url: "https://www.youtube.com/watch?v=rNzTXJAIiEM",
-        text: "Call of Duty Season 4 New Features: Review by Gus & Jay",
-      },
-    ],
+    video: [],
+    featured: {},
     showLight: false,
     lightUrl: " ",
+  };
+
+  componentDidMount() {
+    this.fetchVideos();
+  }
+
+  fetchVideos = () => {
+    let object = {};
+    let currentArray = [];
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    fetch(
+      "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PL4cp5cthhKaUfA4zKCuVcgUdBGOPV2nce&key=AIzaSyB26uyH-MplPGcr2_b2nuuXbYwf7kO7t_k",
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) =>
+        this.setState({
+          video: JSON.parse(result).items,
+          featured: {
+            id: JSON.parse(result).items[6].snippet.resourceId.videoId,
+            title: JSON.parse(result).items[6].snippet.title,
+            subHeading: JSON.parse(result).items[6].snippet.description.split(
+              "!"
+            )[0],
+            date: JSON.parse(result).items[6].snippet.publishedAt.split("T")[0],
+          },
+        })
+      )
+      .catch((error) => console.log("error", error));
   };
 
   showLight = (url) => {
@@ -64,24 +62,25 @@ class VideoContainer extends Component {
   };
   render() {
     let lightBox = this.state.showLight === false ? "none" : "flex";
-
+    console.log(this.state.featured);
     return (
       <>
         <div className='video-section'>
           <VideoFeature
             showLight={this.showLight}
-            thumbnail={this.state.video[0].thumbnail}
-            heading={this.state.video[0].heading}
-            subHeading={this.state.video[0].subHeading}
-            date={this.state.video[0].date}
-            url={this.state.video[0].url}></VideoFeature>
+            thumbnail={`http://img.youtube.com/vi/${this.state.featured.id}/0.jpg`}
+            heading={this.state.featured.title}
+            subHeading={this.state.featured.subHeading}
+            date={this.state.featured.date}
+            url={`https://www.youtube.com/watch?v=${this.state.featured.id}`}></VideoFeature>
           <div className='content'>
-            {this.state.video.map((video) => (
+            {this.state.video.map((video, index) => (
               <Video
+                key={index}
                 showLight={this.showLight}
-                url={video.url}
-                thumbnail={video.thumbnail}
-                text={video.text}
+                url={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
+                thumbnail={`http://img.youtube.com/vi/${video.snippet.resourceId.videoId}/0.jpg`}
+                text={video.snippet.title}
               />
             ))}
           </div>

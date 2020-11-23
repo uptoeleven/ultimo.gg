@@ -7,6 +7,9 @@ import phone from "../../assets/sony/xperiaShad.png";
 
 class XperiaDisplay extends Component {
   state = {};
+  openFeature = () => {
+    window.open("https://acgl.co.za/ultimogg");
+  };
   render() {
     return (
       <div className='display-container'>
@@ -19,7 +22,7 @@ class XperiaDisplay extends Component {
           </div>
           <div className='sign-up-container'>
             <h3>CLICK HERE TO ENTER NOW</h3>
-            <div className='sign-up_button'></div>
+            <div onClick={this.openFeature} className='sign-up_button'></div>
           </div>
         </div>
       </div>

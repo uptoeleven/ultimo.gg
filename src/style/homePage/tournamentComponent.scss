@@ -3,10 +3,14 @@
   height: 100%;
   box-sizing: border-box;
   position: relative;
-  .gradient {
+  .winner {
+    position: absolute;
     height: 100%;
-    position: relative;
     width: 100%;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: center;
   }
   .closed:before {
     content: "";
@@ -91,6 +95,12 @@
 
       h2 {
         color: white;
+        font-size: 21px;
+      }
+
+      .smaller {
+        font-size: 20px;
+        margin: 5px 0;
       }
     }
 

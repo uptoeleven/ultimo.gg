@@ -32,16 +32,17 @@
         cursor: pointer;
       }
       .tripple-lense {
-        top: 140px !important;
+        top: 23% !important;
         left: 93px;
       }
 
       .water-resistant {
         left: 93px;
-        top: 240px !important;
+        top: 43% !important;
       }
       .battery {
         left: 93px;
+        top: 70% !important;
       }
       .speed,
       .display,
@@ -50,16 +51,16 @@
         right: 100px;
       }
       .speed {
-        top: 100px !important;
+        top: 20% !important;
       }
       .display {
-        top: 200px !important;
+        top: 35% !important;
       }
       .game {
-        top: 300px !important;
+        top: 50% !important;
       }
       .pro {
-        top: 400px !important;
+        top: 70% !important;
       }
 
       .details-content-mobile {
@@ -77,6 +78,8 @@
         justify-content: center;
         text-align: center;
         opacity: 0;
+        padding: 50px;
+        box-sizing: border-box;
       }
     }
     .details-content {

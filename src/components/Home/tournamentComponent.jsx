@@ -9,7 +9,9 @@ class TournamentComponent extends Component {
     window.open(url);
   };
   render() {
-    let closed = this.props.closed === true ? "gradient closed" : "gradient";
+    console.log(this.props.winner);
+    let closed = this.props.closed === true ? "closed " : "winner";
+    let smaller = this.props.smaller === true ? "smaller" : " ";
     return (
       <div className='tournament_component'>
         <div
@@ -18,7 +20,7 @@ class TournamentComponent extends Component {
           <div
             className={closed}
             style={{
-              backgroundImage: this.props.gradient,
+              backgroundImage: `url(${this.props.winner})`,
             }}>
             <div className='start-time'>
               {/* <div className='start-time_header'>
@@ -32,7 +34,7 @@ class TournamentComponent extends Component {
           <div className='wrap'>
             <div className='text-content_info'>
               <span>Prize Pool</span>
-              <h1 style={{ color: this.props.prizeColor }}>
+              <h1 className={smaller} style={{ color: this.props.prizeColor }}>
                 {this.props.prize}
               </h1>
             </div>

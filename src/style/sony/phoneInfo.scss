@@ -10,15 +10,15 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+      padding-top: 50px;
+      text-align: center;
+    }
     .xperia-logo {
       width: 40%;
       margin: 0 auto;
-      @media only screen and (max-width: 1024px) {
-        padding-top: 50px;
-        width: 100%;
-        width: 300px;
-      }
+
       img {
         max-width: 100%;
       }
@@ -28,11 +28,8 @@
       color: #909090;
       padding: 0 40px;
       font-size: 14px;
-
       @media only screen and (max-width: 1024px) {
-        width: 100%;
-        text-align: center;
-        padding: 40px 20px;
+        padding: 0;
       }
     }
   }
