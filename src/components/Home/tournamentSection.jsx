@@ -29,6 +29,10 @@ import WarzoneTrio from "../../assets/winners/warzone-trio.png";
 import IsoRocket from "../../assets/winners/rocket-league.png";
 import SonyWinner from "../../assets/winners/mrjuicy.png";
 import FortniteWinner from "../../assets/winners/Over.png";
+import WarzoneMonthly from "../../assets/winners/Ali123.png";
+import WarfairWed from "../../assets/winners/AliSheikhn159.png";
+import RocketLeague from "../../assets/winners/Smashy.png";
+import FifaWinnerTwo from "../../assets/winners/HarryJH.png";
 
 class TournamentSection extends Component {
   state = {
@@ -40,6 +44,7 @@ class TournamentSection extends Component {
         prize: "AFCB Signed Merch",
         prizeColor: "#9005E3",
         smaller: true,
+        winner: FifaWinnerTwo,
         link: "https://www.challengermode.com/s/TheWeekendClash",
       },
       {
@@ -48,7 +53,7 @@ class TournamentSection extends Component {
         time: "01:00:00",
         prize: "2400CP",
         prizeColor: "#9005E3",
-
+        winner: WarzoneMonthly,
         link: "https://discord.com/invite/e9p5YZE",
       },
       {
@@ -57,6 +62,7 @@ class TournamentSection extends Component {
         time: "Monday",
         prize: "3000 Credits",
         prizeColor: "#9005E3",
+        winner: RocketLeague,
         smaller: true,
         link: "https://ultimogg.challonge.com/tournaments",
       },
@@ -66,6 +72,7 @@ class TournamentSection extends Component {
         time: "01:00:00",
         prize: "£80",
         prizeColor: "#5FF5F9",
+        winner: WarfairWed,
         link: "https://ultimogg.challonge.com/tournaments",
       },
 
@@ -86,8 +93,7 @@ class TournamentSection extends Component {
         prize: "£50",
         prizeColor: "#9005E3",
         winner: FortniteWinner,
-        link:
-          "https://www.toornament.com/en_GB/tournaments/3787726097955209216/information",
+        link: "https://www.toornament.com/en_GB/tournaments/3787726097955209216/information",
       },
       {
         image: WarzoneFeature,
@@ -95,8 +101,7 @@ class TournamentSection extends Component {
         time: "01:00:00",
         prize: "£90",
         prizeColor: "#5FF5F9",
-        link:
-          "https://www.toornament.com/en_GB/tournaments/3788523690568450048/information",
+        link: "https://www.toornament.com/en_GB/tournaments/3788523690568450048/information",
         winner: WarzoneTrio,
       },
       {
@@ -106,8 +111,7 @@ class TournamentSection extends Component {
         prize: "£50",
         prizeColor: "#9005E3",
 
-        link:
-          "https://www.toornament.com/en_GB/tournaments/3787723761044373504/information",
+        link: "https://www.toornament.com/en_GB/tournaments/3787723761044373504/information",
         winner: IsoRocket,
       },
       {

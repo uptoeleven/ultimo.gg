@@ -9,6 +9,9 @@ class VideoPage extends Component {
   state = {
     videos: {},
   };
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   render() {
     return (

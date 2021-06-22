@@ -11,7 +11,7 @@ import BFGT from "../../assets/shop/bfg-t.png";
 import GGB from "../../assets/shop/gg-t.png";
 import GGW from "../../assets/shop/gg-t-wite.png";
 import WAT from "../../assets/shop/t-warrior.png";
-import Hoodie from "../../assets/shop/Hoodie.png";
+import Hoodie from "../../assets/shop/hoodie.png";
 import Hat from "../../assets/shop/hat.png";
 import Beanie from "../../assets/shop/beanie.png";
 import Mask from "../../assets/shop/mask.png";

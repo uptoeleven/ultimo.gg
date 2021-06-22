@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 // css
 import "../../style/nav/navDesktop.scss";
-import Logo from "../../assets/Nav/homeLogo.svg";
+import Logo from "../../assets/Nav/homelogo.svg";
 import LogoActive from "../../assets/Nav/Logo.svg";
 
 // icons
@@ -42,7 +42,8 @@ class DesktopNav extends Component {
               <img
                 className='home-logo home-logo-active'
                 src={LogoActive}
-                alt='Home Logo'></img>
+                alt='Home Logo'
+              ></img>
             </div>
           </NavLink>
 
@@ -50,11 +51,13 @@ class DesktopNav extends Component {
             <img
               className='home-logo'
               src={TournamentsIcon}
-              alt='Tournaments Icon'></img>
+              alt='Tournaments Icon'
+            ></img>
             <img
               className='home-logo home-logo-active margin-remove'
               src={TournamentIconActive}
-              alt='Tournaments Icon'></img>
+              alt='Tournaments Icon'
+            ></img>
             <span>TOURNAMENTS</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/signup'>
@@ -62,7 +65,8 @@ class DesktopNav extends Component {
             <img
               className='home-logo home-logo-active sign-up-active margin-remove'
               src={SignUpActive}
-              alt='Sign-Up Icon'></img>
+              alt='Sign-Up Icon'
+            ></img>
             <span>SIGN UP</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/store'>
@@ -70,7 +74,8 @@ class DesktopNav extends Component {
             <img
               className='home-logo home-logo-active margin-remove'
               src={MechActive}
-              alt='Tournaments Icon'></img>
+              alt='Tournaments Icon'
+            ></img>
             <span>MERCH STORE</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/VideoLibrary'>
@@ -78,40 +83,47 @@ class DesktopNav extends Component {
             <img
               className='home-logo home-logo-active margin-remove'
               src={VideoIconActive}
-              alt='Tournaments Icon'></img>
+              alt='Tournaments Icon'
+            ></img>
             <span>VIDEO LIBRARY</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/Bootcamp'>
             <img
               className='home-logo'
               src={BootcampIcon}
-              alt='Bootcamp Icon'></img>
+              alt='Bootcamp Icon'
+            ></img>
             <img
               className='home-logo home-logo-active margin-remove bootcamp-active'
               src={BootcampActive}
-              alt='Tournaments Icon'></img>
+              alt='Tournaments Icon'
+            ></img>
             <span>BOOTCAMP</span>
           </NavLink>
           <a href='#' onClick={this.openWindow} activeClassName='activeRoute'>
             <img
               className='home-logo'
               src={DiscordIcon}
-              alt='Discord Icon'></img>
+              alt='Discord Icon'
+            ></img>
             <img
               className='home-logo home-logo-active margin-remove'
               src={DiscordActive}
-              alt='Tournaments Icon'></img>
+              alt='Tournaments Icon'
+            ></img>
             <span>DISCORD</span>
           </a>
           <NavLink activeClassName='activeRoute' to='/ContactUs'>
             <img
               className='home-logo'
               src={ContactIcon}
-              alt='ContactUs Icon'></img>
+              alt='ContactUs Icon'
+            ></img>
             <img
               className='home-logo home-logo-active margin-remove'
               src={ContactActive}
-              alt='Tournaments Icon'></img>
+              alt='Tournaments Icon'
+            ></img>
             <span>CONTACT US</span>
           </NavLink>
         </div>

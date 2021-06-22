@@ -14,11 +14,14 @@ import IsolationContent from "./isolationSeriesContent";
 
 import GamingLeague from "./gamingLeague";
 import TournamentSection from "./tournamentSection";
-import PartnersComponent from "./partnersComponent";
+
 import Footer from "../Footer/desktopFooter";
 
 class HomePage extends Component {
   state = {};
+  componentDidMount(){
+    window.scrollTo(0, 0)
+  }
   render() {
     return (
       <>

@@ -4,15 +4,22 @@
   position: relative;
   background-color: $DarkBackground;
   padding: 40px;
-
+  width: 100%;
+  box-sizing: border-box;
+  .title-color-change {
+    color: rgb(101, 239, 242);
+  }
+  @media screen and (max-width: 800px) {
+    box-sizing: border-box;
+    width: 100%;
+  }
   &_wrapper {
-    max-width: 1000px;
     margin: 0 auto;
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @media screen and (max-width: 600px) {
-      flex-direction: column-reverse;
-
       .sign-up_button {
         margin: 0 auto;
       }
@@ -35,15 +42,13 @@
 
   &_image {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
+    margin-bottom: 20px;
     @media screen and (max-width: 600px) {
       width: 100%;
     }
     img {
-      height: 220px;
-
+      height: 150px;
+      margin: 0 auto;
       @media screen and (max-width: 1024px) {
         height: 180px;
       }
@@ -55,7 +60,9 @@
   }
 
   &_content {
-    width: 55%;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
     @media screen and (max-width: 600px) {
       width: 80%;
       margin: 0 auto;
@@ -79,6 +86,7 @@
       font-weight: bold;
       font-family: nimbus-sans, sans-serif;
       padding: 20px 0;
+      font-size: 0.5em;
 
       a {
         color: $LightPurple;
@@ -93,7 +101,7 @@
     }
     .sign-up_button {
       background-color: #9005e3;
-
+      margin: 0 auto;
       &:hover {
         background-color: #9005e3;
       }
