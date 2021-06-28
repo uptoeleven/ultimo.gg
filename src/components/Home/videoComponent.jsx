@@ -12,6 +12,7 @@ class VideoComponent extends Component {
         controls={false}
         url='https://www.youtube.com/watch?v=U1EketBgL0s'
         width='100%'
+        height='100%'
       />
     );
   }

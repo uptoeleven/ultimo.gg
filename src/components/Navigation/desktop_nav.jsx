@@ -25,11 +25,17 @@ import ContactActive from "../../assets/Nav/Contact.svg";
 import Xperia from "../../assets/Nav/Xperia.svg";
 import XperiaActive from "../../assets/Nav/xperialogobluegreen.svg";
 
+import TokenActive from "../../assets/Nav/ULTGG-Token-nav.svg";
+import Token from "../../assets/Nav/ult-tab-normal.svg";
+
 class DesktopNav extends Component {
   state = {};
 
   openWindow = () => {
     window.open("https://discord.com/invite/e9p5YZE");
+  };
+  openToken = () => {
+    window.open("https://ultgg.io");
   };
 
   render() {
@@ -46,6 +52,15 @@ class DesktopNav extends Component {
               ></img>
             </div>
           </NavLink>
+          <a href='#' onClick={this.openToken} activeClassName='activeRoute'>
+            <img className='home-logo' src={Token} alt='Discord Icon'></img>
+            <img
+              className='home-logo home-logo-active margin-remove'
+              src={TokenActive}
+              alt='Tournaments Icon'
+            ></img>
+            <span>ULTGG</span>
+          </a>
 
           <NavLink activeClassName='activeRoute' to='/tournaments'>
             <img
@@ -60,7 +75,7 @@ class DesktopNav extends Component {
             ></img>
             <span>TOURNAMENTS</span>
           </NavLink>
-          <NavLink activeClassName='activeRoute' to='/signup'>
+          {/* <NavLink activeClassName='activeRoute' to='/signup'>
             <img className='home-logo' src={SignUpIcon} alt='SignUp Icon'></img>
             <img
               className='home-logo home-logo-active sign-up-active margin-remove'
@@ -68,7 +83,7 @@ class DesktopNav extends Component {
               alt='Sign-Up Icon'
             ></img>
             <span>SIGN UP</span>
-          </NavLink>
+          </NavLink> */}
           <NavLink activeClassName='activeRoute' to='/store'>
             <img className='home-logo' src={MerchIcon} alt='Merch Icon'></img>
             <img

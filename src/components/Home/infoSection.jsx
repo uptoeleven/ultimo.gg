@@ -23,7 +23,7 @@ class InfoSection extends Component {
     stats: [
       {
         icon: Intuative,
-        title: "Intuitive PLATFORM",
+        title: "INTUITIVE PLATFORM",
         text: "Our Intuitive platform makes it easy for gamers to play their favourite games, win prizes and become part of a thriving global community. ",
       },
       {
@@ -38,13 +38,13 @@ class InfoSection extends Component {
       },
       {
         icon: NFT,
-        title: "NFTS",
-        text: "The Ultimo GG platform NFT marketplace will give creators the chance to not only sell NFTS but create new ones directly from the platform itself. Just delivered the killing blow to win a tournament? Capture that moment and sell it with Ultimo GG.",
+        title: "NFTs",
+        text: "The Ultimo GG platform NFT marketplace will give creators the chance to not only sell NFTs but create new ones directly from the platform itself. Just delivered the killing blow to win a tournament? Capture that moment and sell it with Ultimo GG.",
       },
       {
         icon: StreamingPlatform,
         title: "STREAMING PLATFORM",
-        text: "The Ultimo GG platform NFT marketplace will give creators the chance to not only sell NFTS but create new ones directly from the platform itself. Just delivered the killing blow to win a tournament? Capture that moment and sell it with Ultimo GG.",
+        text: "Streaming & on demand video content capabilities fully integrated into the platform.",
       },
       {
         icon: Bootcamp,
@@ -99,7 +99,7 @@ class InfoSection extends Component {
               <span>
                 The ULTGG token is the beating heart of Ultimo GG, a currency
                 used across our entire ecosystem and can be exchanged for real
-                money
+                money.
               </span>
             </div>
           </div>

@@ -8,7 +8,7 @@ import "../../style/Footer/footer.scss";
 import Logo from "../../assets/Footer/footer.svg";
 
 import Discord from "../../assets/Footer/Discord.svg";
-import Facebook from "../../assets/Footer/Facebook.svg";
+import Telegram from "../../assets/Footer/Telegram.svg";
 import Instagram from "../../assets/Footer/Instagram.svg";
 import Twitch from "../../assets/Footer/Twitch.svg";
 import YouTube from "../../assets/Footer/Youtube.svg";
@@ -74,21 +74,25 @@ class DesktopFooter extends Component {
                   onClick={() =>
                     this.openSocial("https://discord.com/invite/e9p5YZE")
                   }
-                  alt='discord'></img>
+                  alt='discord'
+                ></img>
                 <img
-                  src={Facebook}
-                  onClick={() =>
-                    this.openSocial("https://www.facebook.com/UltimoGG")
-                  }
-                  alt='facebook'></img>
+                  src={Telegram}
+                  onClick={() => this.openSocial("https://t.me/ultgg")}
+                  alt='facebook'
+                ></img>
                 <img
                   src={Instagram}
-                  onClick={() => this.openSocial("www.instagram.com/ultimo.gg")}
-                  alt='instagram'></img>
+                  onClick={() =>
+                    this.openSocial("https://www.instagram.com/ultimo.gg")
+                  }
+                  alt='instagram'
+                ></img>
                 <img
                   src={Twitch}
                   onClick={() => this.openSocial("http://twitch.tv/UltimoGG")}
-                  alt='twich'></img>
+                  alt='twich'
+                ></img>
                 <img
                   src={YouTube}
                   onClick={() =>
@@ -96,13 +100,15 @@ class DesktopFooter extends Component {
                       "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA?disable_polymer=true"
                     )
                   }
-                  alt='youtube'></img>
+                  alt='youtube'
+                ></img>
                 <img
                   src={Twitter}
                   onClick={() =>
-                    this.openSocial("www.twitter.com/ultimoggesports")
+                    this.openSocial("https://www.twitter.com/ultimoggesports")
                   }
-                  alt='linkedin'></img>
+                  alt='linkedin'
+                ></img>
               </div>
 
               <div className='block'>
@@ -111,24 +117,28 @@ class DesktopFooter extends Component {
                   onClick={() =>
                     this.openSocial("https://discord.com/invite/e9p5YZE")
                   }
-                  alt='discord'></img>
+                  alt='discord'
+                ></img>
                 <img
-                  src={Facebook}
-                  onClick={() =>
-                    this.openSocial("https://www.facebook.com/UltimoGG")
-                  }
-                  alt='facebook'></img>
+                  src={Telegram}
+                  onClick={() => this.openSocial("https://t.me/ultgg")}
+                  alt='facebook'
+                ></img>
                 <img
                   src={Instagram}
-                  onClick={() => this.openSocial("www.instagram.com/ultimo.gg")}
-                  alt='instagram'></img>
+                  onClick={() =>
+                    this.openSocial("https://www.instagram.com/ultimo.gg")
+                  }
+                  alt='instagram'
+                ></img>
               </div>
 
               <div className='block'>
                 <img
                   src={Twitch}
                   onClick={() => this.openSocial("http://twitch.tv/UltimoGG")}
-                  alt='twich'></img>
+                  alt='twich'
+                ></img>
                 <img
                   src={YouTube}
                   onClick={() =>
@@ -136,13 +146,15 @@ class DesktopFooter extends Component {
                       "https://www.youtube.com/channel/UCvfH-N53wPvInD2qGRqMyQA?disable_polymer=true"
                     )
                   }
-                  alt='youtube'></img>
+                  alt='youtube'
+                ></img>
                 <img
                   src={Twitter}
                   onClick={() =>
-                    this.openSocial("www.twitter.com/ultimoggesports")
+                    this.openSocial("https://www.twitter.com/ultimoggesports")
                   }
-                  alt='linkedin'></img>
+                  alt='linkedin'
+                ></img>
               </div>
             </div>
           </div>

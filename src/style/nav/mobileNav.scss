@@ -5,6 +5,10 @@
     display: none;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   &-nav-bar {
     position: fixed;
     z-index: 100;

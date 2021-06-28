@@ -56,16 +56,14 @@ class PlatformSection extends Component {
                 <span className='title-color-change'>ESPORTS TOKEN</span>
               </h1>
               <p className='platform_content_text-block'>
-                ULTGGs, is the revolutionary gaming token from Ultimo GG. Get
-                rewarded for everything you do on the platform, from winning
+                ULTGG is the revolutionary gaming token from Ultimo GG. Get
+                rewarded for everything you do on the platform, from winning
                 tournaments to creating content and contributing to the
-                community, then spend your ULTGGs on the ULTIMO GG platform and
-                our partners. Purchase NFTs or even create your own featuring
-                your greatest gaming moments with ULTIMO GG or convert ULTGGs
-                into real-world money to turn your dream of a career in gaming
-                into a reality.
-              </p>
-              <p className='platform_content_text-block'>
+                community, then spend your ULTGG on the platform and with our
+                partners. Purchase NFTs or even create your own featuring your
+                greatest gaming moments or convert ULTGG into real-world money
+                to turn your dream of a career in gaming into a reality.
+                <br />
                 ULTGG will democratise esports and give gamers & content
                 creators around the world the power to build a better future
                 through gaming and set to rival YouTube & Twitch.

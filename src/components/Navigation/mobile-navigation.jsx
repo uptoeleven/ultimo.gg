@@ -16,6 +16,8 @@ import DiscordIcon from "../../assets/Nav/Discord.svg";
 import ContactIcon from "../../assets/Nav/Contact_Us.svg";
 import Xperia from "../../assets/Nav/Xperia.svg";
 
+import Token from "../../assets/Nav/ult-tab-normal.svg";
+
 class MobileNav extends Component {
   state = {
     navButtons: [
@@ -24,17 +26,16 @@ class MobileNav extends Component {
         text: "Home",
         page: "/",
       },
-
+      {
+        text: "ULTGG",
+        page: "OTher",
+      },
       {
         icon: TournamentsIcon,
         text: "Tournaments",
         page: "/tournaments",
       },
-      {
-        icon: SignUpIcon,
-        text: "Sign Up",
-        page: "/signup",
-      },
+
       {
         icon: MerchIcon,
         text: "Merch Store",
@@ -75,7 +76,8 @@ class MobileNav extends Component {
 
             <div
               onClick={this.props.toggle}
-              className={`hamburger-menu ${toggle}`}>
+              className={`hamburger-menu ${toggle}`}
+            >
               <div className='bar1'></div>
               <div className='bar2'></div>
               <div className='bar3'></div>
@@ -83,23 +85,37 @@ class MobileNav extends Component {
           </div>
           <div
             className='mobile-nav'
-            style={{ transform: slide, top: positionNav, position: fixer }}>
-            {this.state.navButtons.map((button, index) => (
-              <NavLink
-                key={index}
-                exact
-                className='mobile-nav-button'
-                activeClassName='active-mobile'
-                to={button.page}>
-                <a href={button.link}>
-                  <div onClick={this.props.toggle} className='button-label'>
-                    <img src={button.icon} alt='Home'></img>
-                    <span>{button.text}</span>
-                  </div>
-                  <span className='dot'></span>
-                </a>
-              </NavLink>
-            ))}
+            style={{ transform: slide, top: positionNav, position: fixer }}
+          >
+            {this.state.navButtons.map((button, index) =>
+              index === 1 ? (
+                <div className='mobile-nav-button'>
+                  <a href='https://ultgg.io/' target='__blank'>
+                    <div onClick={this.props.toggle} className='button-label'>
+                      <img src={Token} alt='Home'></img>
+                      <span>ULTGG</span>
+                    </div>
+                    <span className='dot'></span>
+                  </a>
+                </div>
+              ) : (
+                <NavLink
+                  key={index}
+                  exact
+                  className='mobile-nav-button'
+                  activeClassName='active-mobile'
+                  to={button.page}
+                >
+                  <a href={button.link}>
+                    <div onClick={this.props.toggle} className='button-label'>
+                      <img src={button.icon} alt='Home'></img>
+                      <span>{button.text}</span>
+                    </div>
+                    <span className='dot'></span>
+                  </a>
+                </NavLink>
+              )
+            )}
             <div className='mobile-nav-button'>
               <a href='https://discord.com/invite/e9p5YZE'>
                 <div onClick={this.props.toggle} className='button-label'>
