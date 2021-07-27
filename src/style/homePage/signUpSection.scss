@@ -41,20 +41,21 @@
 
     &-video,
     &-form {
-      // width: 50%;
-      // box-sizing: border-box;
-      // padding: 30px;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0px 30px 0px 30px;
 
-      // @media only screen and (max-width: 1024px) {
-      //   width: 100%;
-      // }
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+      }
+    }
 
-      // .react-player {
-      //   height: 310px !important;
-      //   @media only screen and (max-width: 600px) {
-      //     height: 210px !important;
-      //   }
-      // }
+    &-video {
+      height: 310px !important;
+      margin-top: 10px;
+      @media only screen and (max-width: 600px) {
+        height: 210px !important;
+      }
     }
 
     @media only screen and (max-width: 1024px) and (min-width: 600px) {

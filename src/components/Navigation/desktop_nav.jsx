@@ -75,7 +75,7 @@ class DesktopNav extends Component {
             ></img>
             <span>TOURNAMENTS</span>
           </NavLink>
-          {/* <NavLink activeClassName='activeRoute' to='/signup'>
+          <NavLink activeClassName='activeRoute' to='/signup'>
             <img className='home-logo' src={SignUpIcon} alt='SignUp Icon'></img>
             <img
               className='home-logo home-logo-active sign-up-active margin-remove'
@@ -83,7 +83,7 @@ class DesktopNav extends Component {
               alt='Sign-Up Icon'
             ></img>
             <span>SIGN UP</span>
-          </NavLink> */}
+          </NavLink>
           <NavLink activeClassName='activeRoute' to='/store'>
             <img className='home-logo' src={MerchIcon} alt='Merch Icon'></img>
             <img

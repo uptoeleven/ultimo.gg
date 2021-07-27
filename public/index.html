@@ -10,18 +10,19 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="https://use.typekit.net/wto2bfg.css" />
 
-    <!-- Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S3KVEFTGKW"
+    ></script>
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-5RNTVM8");
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-S3KVEFTGKW");
     </script>
     <!-- End Google Tag Manager -->
     <title>Ultimo GG</title>
@@ -34,7 +35,7 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-5RNTVM8"
         height="0"
         width="0"
-        style="display: none; visibility: hidden;"
+        style="display: none; visibility: hidden"
       ></iframe
     ></noscript>
   </body>

@@ -17,7 +17,7 @@ class ContactPage extends Component {
       <>
         <ContactBanner />
         <ReachUs />
-        {/* <ContactForm /> */}
+        <ContactForm />
         <SocialSection />
         <Footer />
       </>

@@ -16,9 +16,9 @@ class ItTakesSection extends Component {
           <div className='sign-up_content-video'>
             <VideoCompoent />
           </div>
-          {/* <div className='sign-up_content-form'>
+          <div className='sign-up_content-form'>
             <SignUpForm />
-          </div> */}
+          </div>
         </div>
       </div>
     );

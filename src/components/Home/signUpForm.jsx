@@ -7,12 +7,18 @@ class SignUpForm extends Component {
     firstName: "",
     lastName: "",
     emailAddress: "",
+    phoneNumber: "",
+    country: "",
     check: false,
-    signedUp: false,
+    formHit: false,
+    formResponse: "",
   };
 
   onHandleInput = (event) => {
     this.setState({ [event.target.name]: event.target.value });
+    if (this.state.emailAddress.includes("@")) {
+      console.log(this.state.emailAddress.split("@").length);
+    }
   };
 
   changeCheck = () => {
@@ -28,17 +34,35 @@ class SignUpForm extends Component {
   };
   submitForm = async () => {
     await fetch(
-      `https://ultimo-mailchimp-api.herokuapp.com/${this.state.firstName}/${this.state.lastName}/${this.state.emailAddress}`
+      `https://ultimo-mailchimp-api.herokuapp.com/userPost/${this.state.firstName}/${this.state.lastName}/${this.state.emailAddress}/${this.state.phoneNumber}/${this.state.country}`
     )
       .then((response) => response.text())
-      .then((result) =>
-        this.setState({
-          signedUp: true,
-          firstName: "",
-          lastName: "",
-          emailAddress: "",
-        })
+      .then(
+        function (result) {
+          if (result.includes("{")) {
+            console.log("form entered");
+            this.setState({
+              formResponse: "You have already signed up for Ultimo GG",
+            });
+          } else {
+            console.log("hit");
+            this.setState({
+              formResponse: "You have signed up for Ultimo GG",
+            });
+          }
+
+          this.setState({
+            formHit: true,
+            firstName: "",
+            lastName: "",
+            emailAddress: "",
+            country: "",
+            phoneNumber: "",
+            check: false,
+          });
+        }.bind(this)
       )
+
       .catch((error) => {
         console.error("Error:", error);
       });
@@ -49,12 +73,14 @@ class SignUpForm extends Component {
       this.state.emailAddress !== "" &&
       this.state.firstName !== "" &&
       this.state.lastName &&
+      this.state.country !== "" &&
       this.state.emailAddress.includes("@") &&
-      this.state.check
+      this.state.check &&
+      this.state.emailAddress.split("@").length < 3
         ? "submit-button "
         : "submit-button button-disable";
 
-    let hasSubmit = this.state.signedUp
+    let hasSubmit = this.state.formHit
       ? "sign-up-resp resp-show"
       : "sign-up-resp";
     return (
@@ -65,7 +91,7 @@ class SignUpForm extends Component {
             Register <u>today</u>
           </h1>
           <div className='field'>
-            <label>First Name</label>
+            <label>First Name*</label>
             <input
               type='text'
               name='firstName'
@@ -74,7 +100,7 @@ class SignUpForm extends Component {
             ></input>
           </div>
           <div className='field'>
-            <label>Last Name</label>
+            <label>Last Name*</label>
             <input
               type='text'
               name='lastName'
@@ -82,8 +108,27 @@ class SignUpForm extends Component {
               value={this.state.lastName}
             ></input>
           </div>
+
+          <div className='field'>
+            <label>Phone Number (optional)</label>
+            <input
+              type='tel'
+              name='phoneNumber'
+              onChange={this.onHandleInput}
+              value={this.state.phoneNumber}
+            ></input>
+          </div>
+          <div className='field'>
+            <label>Country*</label>
+            <input
+              type='text'
+              name='country'
+              onChange={this.onHandleInput}
+              value={this.state.country}
+            ></input>
+          </div>
           <div className='field email'>
-            <label>Email Address</label>
+            <label>Email Address*</label>
             <input
               type='text'
               name='emailAddress'
@@ -91,12 +136,12 @@ class SignUpForm extends Component {
               value={this.state.emailAddress}
             ></input>
           </div>
-
           <div className='check-box'>
             <input
               type='checkbox'
               name='check'
               onClick={this.changeCheck}
+              checked={this.state.check || false}
             ></input>
             <span className='checkbox_custom'></span>
 
@@ -105,7 +150,7 @@ class SignUpForm extends Component {
           <div className='submit-button--mobile'>
             <span className='sign-up_button'></span>
           </div>
-          <p className={hasSubmit}>You have signed up for Ultimo GG</p>
+          <p className={hasSubmit}>{this.state.formResponse}</p>
         </form>
 
         <div className={disableButton} onClick={this.submitForm}>
