@@ -33,8 +33,14 @@ class SignUpForm extends Component {
     }
   };
   submitForm = async () => {
+    let phoneNumber = this.state.phoneNumber;
+
+    if (this.state.phoneNumber.length === 0) {
+      phoneNumber = 0;
+    }
+
     await fetch(
-      `https://ultimo-mailchimp-api.herokuapp.com/userPost/${this.state.firstName}/${this.state.lastName}/${this.state.emailAddress}/${this.state.phoneNumber}/${this.state.country}`
+      `https://ultimo-mailchimp-api.herokuapp.com/userPost/${this.state.firstName}/${this.state.lastName}/${this.state.emailAddress}/${phoneNumber}/${this.state.country}`
     )
       .then((response) => response.text())
       .then(
@@ -68,10 +74,23 @@ class SignUpForm extends Component {
       });
   };
 
+  isValid = (str) => {
+    return !/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(str);
+  };
+
+  isNum = (str) => {
+    return /^\d+$/.test(str);
+  };
+
   render() {
     let disableButton =
       this.state.emailAddress !== "" &&
       this.state.firstName !== "" &&
+      this.isValid(this.state.firstName) === true &&
+      this.isValid(this.state.lastName) === true &&
+      this.isValid(this.state.country) === true &&
+      this.isValid(this.state.emailAddress) === true &&
+      this.isValid(this.state.phoneNumber) === true &&
       this.state.lastName &&
       this.state.country !== "" &&
       this.state.emailAddress.includes("@") &&
@@ -83,6 +102,7 @@ class SignUpForm extends Component {
     let hasSubmit = this.state.formHit
       ? "sign-up-resp resp-show"
       : "sign-up-resp";
+
     return (
       <>
         <form className='SignUpform'>
