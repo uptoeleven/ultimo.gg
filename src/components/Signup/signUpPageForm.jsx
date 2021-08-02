@@ -71,10 +71,23 @@ class SignUpPageForm extends Component {
       });
   };
 
+  isValid = (str) => {
+    return !/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(str);
+  };
+
+  isNum = (str) => {
+    return /^\d+$/.test(str);
+  };
+
   render() {
     let disableButton =
       this.state.emailAddress !== "" &&
       this.state.firstName !== "" &&
+      this.isValid(this.state.firstName) === true &&
+      this.isValid(this.state.lastName) === true &&
+      this.isValid(this.state.country) === true &&
+      this.isValid(this.state.emailAddress) === true &&
+      this.isValid(this.state.phoneNumber) === true &&
       this.state.lastName &&
       this.state.country !== "" &&
       this.state.emailAddress.includes("@") &&
