@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import "../../style/SignUp/signUpSectionFrom.scss";
 
@@ -15,6 +16,7 @@ class SignUpPageForm extends Component {
     check: false,
     formHit: false,
     formResponse: "",
+    captureValue: "",
   };
 
   onHandleInput = (event) => {
@@ -36,8 +38,13 @@ class SignUpPageForm extends Component {
     }
   };
   submitForm = async () => {
+    let phoneNumber = this.state.phoneNumber;
+
+    if (this.state.phoneNumber.length === 0) {
+      phoneNumber = 0;
+    }
     await fetch(
-      `https://ultimo-mailchimp-api.herokuapp.com/userPost/${this.state.firstName}/${this.state.lastName}/${this.state.emailAddress}/${this.state.phoneNumber}/${this.state.country}`
+      `https://ultimo-mailchimp-api.herokuapp.com/userPost/${this.state.firstName}/${this.state.lastName}/${this.state.emailAddress}/${phoneNumber}/${this.state.country}`
     )
       .then((response) => response.text())
       .then(
@@ -79,6 +86,12 @@ class SignUpPageForm extends Component {
     return /^\d+$/.test(str);
   };
 
+  recapture = (value) => {
+    this.setState({
+      captureValue: value,
+    });
+  };
+
   render() {
     let disableButton =
       this.state.emailAddress !== "" &&
@@ -88,6 +101,7 @@ class SignUpPageForm extends Component {
       this.isValid(this.state.country) === true &&
       this.isValid(this.state.emailAddress) === true &&
       this.isValid(this.state.phoneNumber) === true &&
+      this.state.captureValue.length !== 0 &&
       this.state.lastName &&
       this.state.country !== "" &&
       this.state.emailAddress.includes("@") &&
@@ -165,6 +179,21 @@ class SignUpPageForm extends Component {
             <span className='checkbox_custom'></span>
 
             <label>I AM HAPPY FOR ULTIMO GG TO CONTACT ME</label>
+          </div>
+          <div
+            style={{
+              position: "relative",
+              zIndex: "1000",
+              margin: "0 auto",
+              paddingTop: "10px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <ReCAPTCHA
+              sitekey='6Lfw0dUbAAAAAG6RBSr6bTrvVQq4COn7a7PflcJ-'
+              onChange={this.recapture}
+            />
           </div>
 
           <p className={hasSubmit}>{this.state.formResponse}</p>
