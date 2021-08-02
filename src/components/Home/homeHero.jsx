@@ -8,7 +8,7 @@ import "../../style/homePage/hero.scss";
 import BannerImageTwo from "../../assets/homePage/ultimo_banner.png";
 import BannerImageThree from "../../assets/shop/BFGBanner.png";
 import BannerImageFour from "../../assets/homePage/UltimoGG_Web-90.jpg";
-import AFCBbanner from "../../assets/homePage/afcb-banner.jpg";
+import Brumbanner from "../../assets/homePage/Brum-Announcement-Banner.jpg";
 import UltimoGGToken from "../../assets/homePage/ULTGG-01.png";
 import WinBig from "../../assets/homePage/ULTGG-02.png";
 import TurnPro from "../../assets/homePage/UltimoGG-01.png";
@@ -53,55 +53,14 @@ class HomeBanner extends Component {
             <div>
               <div
                 className='carosel-image'
-                style={{ backgroundImage: `url(${AFCBbanner})` }}
-              >
-                <button
-                  onClick={() =>
-                    this.openbanner(
-                      "https://challonge.com/communities/UltimoGG/tournaments"
-                    )
-                  }
-                  className='hero-button'
-                ></button>
-              </div>
-            </div>
-            <div>
-              <div
-                className='carosel-image'
-                style={{ backgroundImage: `url(${BannerImageTwo})` }}
+                style={{ backgroundImage: `url(${Brumbanner})` }}
               ></div>
-            </div>
-
-            <div>
-              <div
-                className='carosel-image'
-                style={{ backgroundImage: `url(${BannerImageThree})` }}
-              >
-                <button
-                  onClick={() => this.openbanner("https://ultimomerch.com/")}
-                  className='hero-button'
-                ></button>
-              </div>
-            </div>
-            <div>
-              <div
-                className='carosel-image fix-height'
-                style={{
-                  backgroundImage: `url(${BannerImageFour})`,
-                  backgroundPosition: "0 -150px",
-                }}
-              >
-                <button
-                  onClick={() => this.openbanner("https://ultimomerch.com/")}
-                  className='hero-button'
-                ></button>
-              </div>
             </div>
           </Slider>
         </div>
         <div
           className='hero-mobile'
-          style={{ backgroundImage: `url(${AFCBbanner})` }}
+          style={{ backgroundImage: `url(${Brumbanner})` }}
         ></div>
 
         <div className='hero-image'></div>
