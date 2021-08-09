@@ -76,15 +76,19 @@ class VideoContainer extends Component {
           <div className='content'>
             {Object.keys(this.state.video)
               .reverse()
-              .map((video, index) => (
-                <Video
-                  key={index}
-                  showLight={this.showLight}
-                  url={`https://www.youtube.com/watch?v=${this.state.video[video].snippet.resourceId.videoId}`}
-                  thumbnail={`http://img.youtube.com/vi/${this.state.video[video].snippet.resourceId.videoId}/0.jpg`}
-                  text={this.state.video[video].snippet.title}
-                />
-              ))}
+              .map(
+                (video, index) =>
+                  this.state.video[video].snippet.title !== "Deleted video" &&
+                  this.state.video[video].snippet.title !== "Private video" && (
+                    <Video
+                      key={index}
+                      showLight={this.showLight}
+                      url={`https://www.youtube.com/watch?v=${this.state.video[video].snippet.resourceId.videoId}`}
+                      thumbnail={`http://img.youtube.com/vi/${this.state.video[video].snippet.resourceId.videoId}/0.jpg`}
+                      text={this.state.video[video].snippet.title}
+                    />
+                  )
+              )}
           </div>
         </div>
         <div
