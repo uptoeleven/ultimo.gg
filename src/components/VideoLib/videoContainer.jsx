@@ -37,9 +37,8 @@ class VideoContainer extends Component {
           featured: {
             id: JSON.parse(result).items[6].snippet.resourceId.videoId,
             title: JSON.parse(result).items[6].snippet.title,
-            subHeading: JSON.parse(result).items[6].snippet.description.split(
-              "!"
-            )[0],
+            subHeading:
+              JSON.parse(result).items[6].snippet.description.split("!")[0],
             date: JSON.parse(result).items[6].snippet.publishedAt.split("T")[0],
           },
         })
@@ -72,23 +71,31 @@ class VideoContainer extends Component {
             heading={this.state.featured.title}
             subHeading={this.state.featured.subHeading}
             date={this.state.featured.date}
-            url={`https://www.youtube.com/watch?v=${this.state.featured.id}`}></VideoFeature>
+            url={`https://www.youtube.com/watch?v=${this.state.featured.id}`}
+          ></VideoFeature>
           <div className='content'>
-            {this.state.video.map((video, index) => (
-              <Video
-                key={index}
-                showLight={this.showLight}
-                url={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}
-                thumbnail={`http://img.youtube.com/vi/${video.snippet.resourceId.videoId}/0.jpg`}
-                text={video.snippet.title}
-              />
-            ))}
+            {Object.keys(this.state.video)
+              .reverse()
+              .map(
+                (video, index) =>
+                  this.state.video[video].snippet.title !== "Deleted video" &&
+                  this.state.video[video].snippet.title !== "Private video" && (
+                    <Video
+                      key={index}
+                      showLight={this.showLight}
+                      url={`https://www.youtube.com/watch?v=${this.state.video[video].snippet.resourceId.videoId}`}
+                      thumbnail={`http://img.youtube.com/vi/${this.state.video[video].snippet.resourceId.videoId}/0.jpg`}
+                      text={this.state.video[video].snippet.title}
+                    />
+                  )
+              )}
           </div>
         </div>
         <div
           className='lightBox'
           style={{ display: lightBox }}
-          onClick={this.showLight}>
+          onClick={this.showLight}
+        >
           <ReactPlayer className='reactplayer-c' url={this.state.lightUrl} />
         </div>
       </>
