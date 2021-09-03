@@ -44,7 +44,7 @@ class SignUpDevPageForm extends Component {
       PHONE_NUMBER = 0;
     }
     await fetch(
-      `https://cors-anywhere.herokuapp.com/https://ultimo.gg/userPost`, {
+      `https://ultimo.gg/userPost`, {
           method: 'POST',
           crossDomain: true,
           headers: {
