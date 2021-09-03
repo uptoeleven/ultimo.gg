@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-// css
-import "../../style/homePage/signUpFrom.scss";
-class SignUpForm extends Component {
+import "../../style/SignUp/signUpSectionFrom.scss";
+
+// Logo
+import Logo from "../../assets/homePage/ultimoGGLogo.svg";
+
+class SignUpDevPageForm extends Component {
   state = {
     FNAME: "",
     LNAME: "",
@@ -40,46 +43,54 @@ class SignUpForm extends Component {
     if (this.state.PHONE_NUMBER.length === 0) {
       PHONE_NUMBER = 0;
     }
-    if (this.state.captureValue.length !== 0) {
-      await fetch(
-        `https://ultimo-mailchimp-api.herokuapp.com/userPost/${this.state.FNAME}/${this.state.LNAME}/${this.state.EMAIL}/${PHONE_NUMBER}/${this.state.COUNTRY}`
-      )
-        .then((response) => response.text())
-        .then(
-          function (result) {
-            console.log(result);
-            if (result.includes("{")) {
-              this.setState({
-                formResponse: "You have already signed up for Ultimo GG",
-              });
-            } else {
-              if (result.status_code === 404) {
-                this.setState({
-                  formResponse: "invalid request",
-                });
-              } else {
-                this.setState({
-                  formResponse: "You have signed up for Ultimo GG",
-                });
-              }
-            }
-
+    await fetch(
+      `https://cors-anywhere.herokuapp.com/https://ultimo.gg/userPost`, {
+          method: 'POST',
+          crossDomain: true,
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            FNAME: this.state.FNAME,
+            LNAME: this.state.LNAME,
+            EMAIL: this.state.EMAIL,
+            PHONE_NUMBER: this.state.PHONE_NUMBER,
+            COUNTRY: this.state.COUNTRY
+          })
+        }
+    )
+      .then((response) => response.text())
+      .then(
+        function (result) {
+          console.log(result);
+          if (result.includes("{")) {
+            console.log("form previously entered");
             this.setState({
-              formHit: true,
-              FNAME: "",
-              LNAME: "",
-              EMAIL: "",
-              COUNTRY: "",
-              PHONE_NUMBER: "",
-              check: false,
+              formResponse: "You have already signed up for Ultimo GG",
             });
-          }.bind(this)
-        )
+          } else {
+            console.log("hit");
+            this.setState({
+              formResponse: "Thank you for signing up for Ultimo GG",
+            });
+          }
 
-        .catch((error) => {
-          console.error("Error:", error);
-        });
-    }
+          this.setState({
+            formHit: true,
+            FNAME: "",
+            LNAME: "",
+            EMAIL: "",
+            COUNTRY: "",
+            PHONE_NUMBER: "",
+            check: false,
+          });
+        }.bind(this)
+      )
+
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   isValid = (str) => {
@@ -117,15 +128,16 @@ class SignUpForm extends Component {
     let hasSubmit = this.state.formHit
       ? "sign-up-resp resp-show"
       : "sign-up-resp";
-    console.log(this.state.captureValue.length);
     return (
-      <>
-        <form className='SignUpform'>
-          <div className='border'></div>
-          <h1 className='title-block-mobile'>
-            Register <u>today</u>
-          </h1>
-          <div className='field'>
+      <div className='sign-up_form'>
+        <h1 className='title-block'>Sign up to join our global community</h1>
+        <p className='text-block'>
+          Sign up now to stay up to date with everything Ultimo GG & our
+          game-changing esports token ULTGG
+        </p>
+
+        <form className='page-form'>
+          <div className='field-group_top'>
             <label>First Name*</label>
             <input
               type='text'
@@ -134,7 +146,7 @@ class SignUpForm extends Component {
               value={this.state.FNAME}
             ></input>
           </div>
-          <div className='field'>
+          <div className='field-group_top'>
             <label>Last Name*</label>
             <input
               type='text'
@@ -143,8 +155,16 @@ class SignUpForm extends Component {
               value={this.state.LNAME}
             ></input>
           </div>
-
-          <div className='field'>
+          <div className='field-group_top'>
+            <label>Email Address*</label>
+            <input
+              type='email'
+              name='EMAIL'
+              onChange={this.onHandleInput}
+              value={this.state.EMAIL}
+            ></input>
+          </div>
+          <div className='field-group_top'>
             <label>Phone Number (optional)</label>
             <input
               type='tel'
@@ -153,8 +173,9 @@ class SignUpForm extends Component {
               value={this.state.PHONE_NUMBER}
             ></input>
           </div>
-          <div className='field'>
-            <label>COUNTRY*</label>
+
+          <div className='field-group_bottom'>
+            <label>COUNTRY Of Residence*</label>
             <input
               type='text'
               name='COUNTRY'
@@ -162,15 +183,7 @@ class SignUpForm extends Component {
               value={this.state.COUNTRY}
             ></input>
           </div>
-          <div className='field email'>
-            <label>Email Address*</label>
-            <input
-              type='text'
-              name='EMAIL'
-              onChange={this.onHandleInput}
-              value={this.state.EMAIL}
-            ></input>
-          </div>
+
           <div className='check-box'>
             <input
               type='checkbox'
@@ -182,10 +195,6 @@ class SignUpForm extends Component {
 
             <label>I AM HAPPY FOR ULTIMO GG TO CONTACT ME</label>
           </div>
-          <div className='submit-button--mobile'>
-            <span className='sign-up_button'></span>
-          </div>
-          <p className={hasSubmit}>{this.state.formResponse}</p>
           <div
             style={{
               position: "relative",
@@ -201,14 +210,17 @@ class SignUpForm extends Component {
               onChange={this.recapture}
             />
           </div>
-        </form>
 
-        <div className={disableButton} onClick={this.submitForm}>
-          <span className='sign-up_button'></span>
-        </div>
-      </>
+          <p className={hasSubmit}>{this.state.formResponse}</p>
+          <div className={disableButton} onClick={this.submitForm}>
+            <div className='sign-up_button'></div>
+          </div>
+
+          <img className='logoGG' src={Logo} alt='UltimoGG' />
+        </form>
+      </div>
     );
   }
 }
 
-export default SignUpForm;
+export default SignUpDevPageForm;
