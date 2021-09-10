@@ -1,9 +1,9 @@
 <?php
-    require_once __DIR__ . './vendor/autoload.php';
+    require_once __DIR__ . '/vendor/autoload.php';
 
 // configuration object
     $config = new EmsApi\Config([
-        'apiUrl'    => 'https://mw.ultgg.io/api',
+        'apiUrl'    => 'https://mw.ultgg.io/api/index.php/',
         'apiKey'    => '3b1be39c33761bc77ee4fdedcad737bb4c425e8c',
 
         // components
@@ -23,13 +23,10 @@
 
     $endpoint = new EmsApi\Endpoint\ListSubscribers();
 // CREATE / UPDATE EXISTING SUBSCRIBER
-    $response = $endpoint->createUpdate('LIST-UNIQUE-ID', [
-        'EMAIL'    => 'john.doe@doe.com',
-        'FNAME'    => 'John',
-        'LNAME'    => 'Doe Updated Second time'
+    $response = $endpoint->createUpdate('ov9123zvrc048', [
+        'EMAIL' => $_POST['EMAIL'],
+        'FNAME' => $_POST['FNAME'],
+        'LNAME' => $_POST['LNAME'],
+        'PHONE_NUMBER' => $_POST['PHONE_NUMBER'],
+        'COUNTRY' => $_POST['COUNTRY'],
     ]);
-
-// DISPLAY RESPONSE
-    echo '<hr /><pre>';
-    print_r($response->body);
-    echo '</pre>';
