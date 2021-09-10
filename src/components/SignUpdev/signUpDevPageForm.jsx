@@ -43,23 +43,20 @@ class SignUpDevPageForm extends Component {
     if (this.state.PHONE_NUMBER.length === 0) {
       PHONE_NUMBER = 0;
     }
-    await fetch(
-      `https://cors-anywhere.herokuapp.com/https://ultimo.gg/userPost`, {
-          method: 'POST',
-          crossDomain: true,
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            FNAME: this.state.FNAME,
-            LNAME: this.state.LNAME,
-            EMAIL: this.state.EMAIL,
-            PHONE_NUMBER: this.state.PHONE_NUMBER,
-            COUNTRY: this.state.COUNTRY
-          })
-        }
-    )
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        FNAME: this.state.FNAME,
+        LNAME: this.state.LNAME,
+        EMAIL: this.state.EMAIL,
+        PHONE_NUMBER: this.state.PHONE_NUMBER,
+        COUNTRY: this.state.COUNTRY
+      })
+    }
+    await fetch('https://ultimo.gg/userPost/index.php', requestOptions)
       .then((response) => response.text())
       .then(
         function (result) {
