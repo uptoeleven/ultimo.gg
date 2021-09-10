@@ -41,9 +41,20 @@ class SignUpForm extends Component {
       PHONE_NUMBER = 0;
     }
     if (this.state.captureValue.length !== 0) {
-      await fetch(
-        `https://ultimo-mailchimp-api.herokuapp.com/userPost/${this.state.FNAME}/${this.state.LNAME}/${this.state.EMAIL}/${PHONE_NUMBER}/${this.state.COUNTRY}`
-      )
+      const requestOptions = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          FNAME: this.state.FNAME,
+          LNAME: this.state.LNAME,
+          EMAIL: this.state.EMAIL,
+          PHONE_NUMBER: this.state.PHONE_NUMBER,
+          COUNTRY: this.state.COUNTRY
+        })
+      }
+      await fetch('https://ultimo.gg/userPost/index.php', requestOptions)
         .then((response) => response.text())
         .then(
           function (result) {

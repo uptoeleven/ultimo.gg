@@ -1,9 +1,9 @@
 <?php
-    require_once __DIR__ . './vendor/autoload.php';
+    require_once __DIR__ . '/vendor/autoload.php';
 
 // configuration object
     $config = new EmsApi\Config([
-        'apiUrl'    => 'https://mw.ultgg.io/api',
+        'apiUrl'    => 'https://mw.ultgg.io/api/index.php/',
         'apiKey'    => '3b1be39c33761bc77ee4fdedcad737bb4c425e8c',
 
         // components
@@ -21,15 +21,20 @@
 // start UTC
     date_default_timezone_set('UTC');
 
+// Takes raw data from the request
+    $json = file_get_contents('php://input');
+
+// Converts it into a PHP object
+    $data = json_decode($json, true);
+    error_log("string: " . $json);
+    error_log(print_r($data, true));
+
     $endpoint = new EmsApi\Endpoint\ListSubscribers();
 // CREATE / UPDATE EXISTING SUBSCRIBER
-    $response = $endpoint->createUpdate('LIST-UNIQUE-ID', [
-        'EMAIL'    => 'john.doe@doe.com',
-        'FNAME'    => 'John',
-        'LNAME'    => 'Doe Updated Second time'
+    $response = $endpoint->createUpdate('ov9123zvrc048', [
+        'EMAIL' => $data['EMAIL'],
+        'FNAME' => $data['FNAME'] ?? '',
+        'LNAME' => $data['LNAME'] ?? '',
+        'PHONE_NUMBER' => $data['PHONE_NUMBER'] ?? '',
+        'COUNTRY' => $data['COUNTRY'] ?? '',
     ]);
-
-// DISPLAY RESPONSE
-    echo '<hr /><pre>';
-    print_r($response->body);
-    echo '</pre>';
