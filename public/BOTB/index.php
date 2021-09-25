@@ -1,3 +1,3 @@
 <?php
-header("Location: http://invite.cm/9pDFLw");
+header("Location: https://www.challengermode.com/invite/9pDFLw");
 exit;
