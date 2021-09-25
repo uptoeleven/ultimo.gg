@@ -1,3 +1,3 @@
 <?php
-header("Location: http://go.cmode.gg/BOTB");
+header("Location: http://invite.cm/9pDFLw");
 exit;
