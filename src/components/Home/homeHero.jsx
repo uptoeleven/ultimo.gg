@@ -12,6 +12,7 @@ import Brumbanner from "../../assets/homePage/Brum-Announcement-Banner.jpg";
 import UltimoGGToken from "../../assets/homePage/ULTGG-01.png";
 import WinBig from "../../assets/homePage/ULTGG-02.png";
 import TurnPro from "../../assets/homePage/UltimoGG-01.png";
+import BtobBanner from "../../assets/homePage/btob-banner.png";
 
 class HomeBanner extends Component {
   openbanner = (url) => {
@@ -32,6 +33,12 @@ class HomeBanner extends Component {
       <div className='hero'>
         <div className='hero-carosel'>
           <Slider {...settings}>
+            <div>
+              <div
+                className='carosel-image'
+                style={{ backgroundImage: `url(${BtobBanner})` }}
+              ></div>
+            </div>
             <div>
               <div
                 className='carosel-image'

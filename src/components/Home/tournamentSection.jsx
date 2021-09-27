@@ -20,6 +20,7 @@ import CupLogo from "../../assets/Nav/Tournaments.svg";
 import Sony from "../../assets/sony/xperiacodTourn.jpg";
 import warZoneMonth from "../../assets/Tournaments/warzone-monthly-league.png";
 import AFC from "../../assets/Tournaments/e-Ultimo-Thumbnail.jpg";
+import BTOB from "../../assets/Tournaments/btob-thumbnail.png";
 
 // winner image
 import FifaWinner from "../../assets/winners/iso-fifa.png";
@@ -37,6 +38,15 @@ import FifaWinnerTwo from "../../assets/winners/HarryJH.png";
 class TournamentSection extends Component {
   state = {
     tournament: [
+      {
+        image: BTOB,
+        date: "16th - 17th Oct",
+        time: "01:00:00",
+        prize: "£1750",
+        prizeColor: "#9005E3",
+        smaller: true,
+        link: "https://www.challengermode.com/invite/9pDFLw",
+      },
       {
         image: AFC,
         date: "14th - 15th Nov",
