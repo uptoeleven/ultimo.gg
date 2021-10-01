@@ -7,6 +7,7 @@ import TournamentComponent from "./tournamentComponent";
 import "../../style/homePage/tournamentSection.scss";
 
 // images
+import ULTGGseries from "../../assets/Tournaments/series-featured.jpg"
 import WarzoneFeature from "../../assets/Tournaments/warzone.jpeg";
 import Rocket from "../../assets/Tournaments/rocket.jpg";
 import RocketNew from "../../assets/Tournaments/rocket-league-n.png";
@@ -38,6 +39,24 @@ import FifaWinnerTwo from "../../assets/winners/HarryJH.png";
 class TournamentSection extends Component {
   state = {
     tournament: [
+      {
+        image: ULTGGseries,
+        date: "13th Nov '21 - 17th Apr '22",
+        time: "01:00:00",
+        prize: "Total Prize Pool: £50,000",
+        prizeColor: "#9005E3",
+        smaller: true,
+        link: "https://www.challengermode.com/s/ultimogg",
+      },
+      {
+        image: BTOB,
+        date: "16th - 17th Oct",
+        time: "01:00:00",
+        prize: "£1750",
+        prizeColor: "#9005E3",
+        smaller: true,
+        link: "https://www.challengermode.com/invite/9pDFLw",
+      },
       {
         image: BTOB,
         date: "16th - 17th Oct",

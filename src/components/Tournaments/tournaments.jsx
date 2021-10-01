@@ -3,6 +3,7 @@ import TournamentComponent from "../Home/tournamentComponent";
 //  css
 import "../../style/homePage/tournamentSection.scss";
 
+import ULTGGseries from "../../assets/Tournaments/series-featured.jpg"
 import WarzoneFeature from "../../assets/Tournaments/warzone.jpeg";
 import Rocket from "../../assets/Tournaments/rocket.jpg";
 import FortniteNew from "../../assets/Tournaments/fortnite.jpeg";
@@ -27,9 +28,18 @@ import WarzoneMonthly from "../../assets/winners/Ali123.png";
 import WarfairWed from "../../assets/winners/AliSheikhn159.png";
 import RocketLeague from "../../assets/winners/Smashy.png";
 import FifaWinnerTwo from "../../assets/winners/HarryJH.png";
-class Tornaments extends Component {
+class Tournaments extends Component {
   state = {
     tournament: [
+      {
+        image: ULTGGseries,
+        date: "13th Nov '21 - 17th Apr '22",
+        time: "01:00:00",
+        prize: "Total Prize Pool: £50,000",
+        prizeColor: "#9005E3",
+        smaller: true,
+        link: "https://www.challengermode.com/s/ultimogg",
+      },
       {
         image: BTOB,
         date: "16th - 17th Oct",
@@ -178,4 +188,4 @@ class Tornaments extends Component {
   }
 }
 
-export default Tornaments;
+export default Tournaments;
