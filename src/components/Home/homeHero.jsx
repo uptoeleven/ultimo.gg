@@ -9,10 +9,11 @@ import BannerImageTwo from "../../assets/homePage/ultimo_banner.png";
 import BannerImageThree from "../../assets/shop/BFGBanner.png";
 import BannerImageFour from "../../assets/homePage/UltimoGG_Web-90.jpg";
 import Brumbanner from "../../assets/homePage/Brum-Announcement-Banner.jpg";
-import UltimoGGToken from "../../assets/homePage/ULTGG-01.png";
-import WinBig from "../../assets/homePage/ULTGG-02.png";
-import TurnPro from "../../assets/homePage/UltimoGG-01.png";
-import BtobBanner from "../../assets/homePage/btob-banner.png";
+import UltimoGGToken from "../../assets/homePage/ULTGG-01.jpg";
+import WinBig from "../../assets/homePage/ULTGG-02.jpg";
+import TurnPro from "../../assets/homePage/UltimoGG-01.jpg";
+import BtobBanner from "../../assets/homePage/btob-banner.jpg";
+import TournBanner from "../../assets/homePage/ULTGG-series.jpg";
 
 class HomeBanner extends Component {
   openbanner = (url) => {
@@ -37,6 +38,12 @@ class HomeBanner extends Component {
               <div
                 className='carosel-image'
                 style={{ backgroundImage: `url(${BtobBanner})` }}
+              ></div>
+            </div>
+            <div>
+              <div
+                className='carosel-image'
+                style={{ backgroundImage: `url(${TournBanner})` }}
               ></div>
             </div>
             <div>
