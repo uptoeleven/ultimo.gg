@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 // components
 import FeaturedTournament from "./featuredTournament";
-import Tornaments from "./tornaments";
+import Tournaments from "./tournaments";
 import ImageBanner from "./imageBanner";
 import IsolationSeries from "../Home/isolationSeries";
 import IsolationContent from "../Home/isolationSeriesContent";
@@ -17,7 +17,7 @@ class TournamentPage extends Component {
     return (
       <>
         <FeaturedTournament />
-        <Tornaments />
+        <Tournaments />
 
         <IsolationSeries />
         <IsolationContent />
