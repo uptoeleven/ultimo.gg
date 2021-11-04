@@ -5,7 +5,6 @@ import "../../style/homePage/signUpSection.scss";
 
 // components
 import VideoCompoent from "./videoComponent";
-import SignUpForm from "./signUpForm.jsx";
 
 class ItTakesSection extends Component {
   state = {};
@@ -17,7 +16,7 @@ class ItTakesSection extends Component {
             <VideoCompoent />
           </div>
           <div className='sign-up_content-form'>
-            <SignUpForm />
+            <iframe src="https://ultgg-io.eo.page/dd4zz" width="600" height="400"></iframe>
           </div>
         </div>
       </div>

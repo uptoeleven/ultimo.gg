@@ -9,7 +9,8 @@ import Cup from "../../assets/homePage/torn-icon.svg";
 
 class FeaturedTournament extends Component {
   openFeature = () => {
-    window.open("https://www.challengermode.com/s/TheWeekendClash");
+    // window.open("https://go.cmode.gg/UltimoGGSeries");
+    window.open("https://www.challengermode.com/invite/9pDFLw");
   };
 
   render() {
@@ -17,12 +18,12 @@ class FeaturedTournament extends Component {
       <div className='featured'>
         <div className='featured-content'>
           <img src={Cup} alt='tournament'></img>
-          <h1>FEATURED TOURNAMENT</h1>
-          <span className='date'>14th - 15th November</span>
+          <h1>BATTLE OF THE BLUES</h1>
+          <span className='date'>16th - 17th October 2021</span>
           <div className='featured-content-prize'>
             <div className='text'>
               <span className='prize-pool'>PRIZE POOL</span>
-              <span className='prize'>AFCB Signed Shirt</span>
+              <span className='prize'>£1750 Cash Prize</span>
             </div>
             <div onClick={this.openFeature} className='sign-up_button'></div>
           </div>

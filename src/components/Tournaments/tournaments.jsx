@@ -1,28 +1,21 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-// component
-import TournamentComponent from "./tournamentComponent";
-
-// css
+import TournamentComponent from "../Home/tournamentComponent";
+//  css
 import "../../style/homePage/tournamentSection.scss";
 
-// images
 import ULTGGseries from "../../assets/Tournaments/series-featured.jpg"
 import WarzoneFeature from "../../assets/Tournaments/warzone.jpeg";
 import Rocket from "../../assets/Tournaments/rocket.jpg";
-import RocketNew from "../../assets/Tournaments/rocket-league-n.png";
-
 import FortniteNew from "../../assets/Tournaments/fortnite.jpeg";
 import Fortnite from "../../assets/Tournaments/fortnite.png";
 import Fifa from "../../assets/Tournaments/fifa.png";
 import Warzone from "../../assets/Tournaments/warzone.png";
 import WarefairW from "../../assets/Tournaments/WarefareWednesday.png";
-import CupLogo from "../../assets/Nav/Tournaments.svg";
 import Sony from "../../assets/sony/xperiacodTourn.jpg";
 import warZoneMonth from "../../assets/Tournaments/warzone-monthly-league.png";
+import RocketNew from "../../assets/Tournaments/rocket-league-n.png";
 import AFC from "../../assets/Tournaments/e-Ultimo-Thumbnail.jpg";
 import BTOB from "../../assets/Tournaments/btob-thumbnail.png";
-
 // winner image
 import FifaWinner from "../../assets/winners/iso-fifa.png";
 import IsoWarzone from "../../assets/winners/iso-warzone.png";
@@ -35,8 +28,7 @@ import WarzoneMonthly from "../../assets/winners/Ali123.png";
 import WarfairWed from "../../assets/winners/AliSheikhn159.png";
 import RocketLeague from "../../assets/winners/Smashy.png";
 import FifaWinnerTwo from "../../assets/winners/HarryJH.png";
-
-class TournamentSection extends Component {
+class Tournaments extends Component {
   state = {
     tournament: [
       {
@@ -47,15 +39,6 @@ class TournamentSection extends Component {
         prizeColor: "#9005E3",
         smaller: true,
         link: "https://www.challengermode.com/s/ultimogg",
-      },
-      {
-        image: BTOB,
-        date: "16th - 17th Oct",
-        time: "01:00:00",
-        prize: "£1750",
-        prizeColor: "#9005E3",
-        smaller: true,
-        link: "https://www.challengermode.com/invite/9pDFLw",
       },
       {
         image: BTOB,
@@ -181,12 +164,10 @@ class TournamentSection extends Component {
   render() {
     return (
       <div className='tournament'>
-        <div className='tournament_background'></div>
         <h1 className='tournament_title'>TOURNAMENTS</h1>
-
         <div className='tournament_content'>
-          {this.state.tournament.map((tournament, index) => (
-            <div className='container' key={index}>
+          {this.state.tournament.map((tournament) => (
+            <div className='container'>
               <TournamentComponent
                 image={tournament.image}
                 date={tournament.date}
@@ -202,17 +183,9 @@ class TournamentSection extends Component {
             </div>
           ))}
         </div>
-
-        <div className='tournament_seemore'>
-          <Link to='./tournaments'>
-            <span className='title'>SEE MORE TOURNAMENTS</span>
-          </Link>
-          <img className='cup' src={CupLogo} alt='torn' />
-          <span className='heading'>TOURNAMENTS</span>
-        </div>
       </div>
     );
   }
 }
 
-export default TournamentSection;
+export default Tournaments;
