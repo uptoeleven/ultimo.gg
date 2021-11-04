@@ -10,7 +10,7 @@ class SignUpSection extends Component {
   render() {
     return (
         <div className='signUp-section'>
-            <script async src="https://eomail5.com/form/1a71a4a0-37f0-11ec-96e5-06b4694bee2a.js" data-form="1a71a4a0-37f0-11ec-96e5-06b4694bee2a"></script>
+            <iframe src="https://ultgg-io.eo.page/dd4zz" width="1024"></iframe>
         </div>
     );
   }
