@@ -31,7 +31,6 @@ class DesktopFooter extends Component {
             <h1 className='title'>PAGES</h1>
             <div className='text-block footer-mobile'>
               <Link to='/tournaments'>TOURNAMENTS</Link>
-              <Link to='/signup'>SIGN UP</Link>
               <Link to='/store'>MERCH STORE</Link>
               <Link to='/VideoLibrary'>VIDEO LIBRARY</Link>
               <Link to='/Bootcamp'>BOOTCAMP</Link>
@@ -40,7 +39,6 @@ class DesktopFooter extends Component {
             </div>
             <div className='text-block col-2 margin-footer'>
               <Link to='/tournaments'>TOURNAMENTS</Link>
-              <Link to='/signup'>SIGN UP</Link>
               <Link to='/store'>MERCH STORE</Link>
               <Link to='/VideoLibrary'>VIDEO LIBRARY</Link>
             </div>

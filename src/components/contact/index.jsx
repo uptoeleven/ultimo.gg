@@ -3,7 +3,6 @@ import React, { Component } from "react";
 // components
 import ContactBanner from "./contactUsBanner";
 import ReachUs from "./reachUs";
-//import SignUpPageForm from "../Signup/signUpPageForm";
 import SocialSection from "./socialChannels";
 import Footer from "../Footer/desktopFooter";
 

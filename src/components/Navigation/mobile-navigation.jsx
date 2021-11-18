@@ -8,7 +8,6 @@ import "../../style/nav/mobileNav.scss";
 // icons
 import logo from "../../assets/Nav/Logo.svg";
 import TournamentsIcon from "../../assets/Nav/Tournaments.svg";
-import SignUpIcon from "../../assets/Nav/SIgn_Up.svg";
 import MerchIcon from "../../assets/Nav/Merch_Store.svg";
 import VideoIcon from "../../assets/Nav/Video_Library.svg";
 import BootcampIcon from "../../assets/Nav/Bootcamp.svg";

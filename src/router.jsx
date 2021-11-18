@@ -6,7 +6,6 @@ import disableScroll from "disable-scroll";
 import DesktopNav from "./components/Navigation/desktop_nav";
 import MobileNav from "./components/Navigation/mobile-navigation";
 import HomePage from "./components/Home/index";
-import SignUp from "./components/Signup/index";
 import Tournament from "./components/Tournaments/index";
 import Store from "./components/Store/index";
 import VideoPage from "./components/VideoLib/index";
@@ -68,7 +67,6 @@ class App extends Component {
             }}>
             <Switch>
               <Route exact path='/' component={HomePage}></Route>
-              <Route exact path='/signup' component={SignUp}></Route>
               <Route exact path='/tournaments' component={Tournament}></Route>
               <Route exact path='/store' component={Store}></Route>
               <Route exact path='/VideoLibrary' component={VideoPage}></Route>

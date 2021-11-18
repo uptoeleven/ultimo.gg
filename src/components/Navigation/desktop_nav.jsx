@@ -10,8 +10,6 @@ import LogoActive from "../../assets/Nav/Logo.svg";
 import TournamentsIcon from "../../assets/Nav/Tournaments.svg";
 import TournamentIconActive from "../../assets/Nav/torn-icon.svg";
 
-import SignUpIcon from "../../assets/Nav/SIgn_Up.svg";
-import SignUpActive from "../../assets/Nav/SignupActive.svg";
 import MerchIcon from "../../assets/Nav/Merch_Store.svg";
 import MechActive from "../../assets/Nav/team-icon.svg";
 import VideoIcon from "../../assets/Nav/Video_Library.svg";
@@ -74,15 +72,6 @@ class DesktopNav extends Component {
               alt='Tournaments Icon'
             ></img>
             <span>TOURNAMENTS</span>
-          </NavLink>
-          <NavLink activeClassName='activeRoute' to='/signup'>
-            <img className='home-logo' src={SignUpIcon} alt='SignUp Icon'></img>
-            <img
-              className='home-logo home-logo-active sign-up-active margin-remove'
-              src={SignUpActive}
-              alt='Sign-Up Icon'
-            ></img>
-            <span>SIGN UP</span>
           </NavLink>
           <NavLink activeClassName='activeRoute' to='/store'>
             <img className='home-logo' src={MerchIcon} alt='Merch Icon'></img>

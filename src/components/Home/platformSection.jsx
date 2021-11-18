@@ -37,9 +37,6 @@ class PlatformSection extends Component {
                 </span>
                 <a href='#'>SIGN UP TODAY</a>
               </div>
-              <Link to='/signUp'>
-                <div className='sign-up_button'></div>
-              </Link>
             </div>
           </div>
         </div> */}

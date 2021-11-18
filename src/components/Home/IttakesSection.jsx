@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 
-// css
-import "../../style/homePage/signUpSection.scss";
-
 // components
 import VideoCompoent from "./videoComponent";
 

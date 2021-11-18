@@ -16,12 +16,6 @@ class ComingSoon extends Component {
         <div className='comingSoon-container'>
           <img src={Bootcamp} alt='bootcamp'></img>
           <h1>COMING SOON</h1>
-          <p>
-            Listen up, recruit. Our bootcamps are opening soon and will make you
-            the Warrior you were born to be. Improve your gaming skills with our
-            player and coach-led bootcamps and training sessions. Want to be an
-            esports star? <Link to='/signUp'>Sign up now.</Link>
-          </p>
         </div>
       </div>
     );
