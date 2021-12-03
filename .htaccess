@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /~wadcoaj3/projects/ultimogg/
+RewriteBase /var/www/html/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /~wadcoaj3/projects/ultimogg/index.php [L]
+RewriteRule . /var/www/html/index.php [L]
 </IfModule>
 
 # END WordPress

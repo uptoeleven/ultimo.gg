@@ -63,9 +63,9 @@ do_action( 'woocommerce_before_main_content' );
         <div class="search-filter pr-fl"> 
 			<div class="tabs-nav product-tab">
 <ul>
- 	<li class="all"><a  href="http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/shop/">All Products</a></li>
- 	<li class="cl"><a  href="http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/product-category/clothing/">Clothing</a></li>
- 	<li  class="ha"><a href="http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/product-category/hardware/">Hardware</a></li>
+ 	<li class="all"><a  href="https://dev.ultimo.gg/shop/">All Products</a></li>
+ 	<li class="cl"><a  href="https://dev.ultimo.gg/product-category/clothing/">Clothing</a></li>
+ 	<li  class="ha"><a href="https://dev.ultimo.gg/product-category/hardware/">Hardware</a></li>
 </ul>
 </div>
 		</div>
