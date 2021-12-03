@@ -1909,7 +1909,7 @@ class RevSliderOutput extends RevSliderFunctions {
 						
 						$link = 'href="'.$image_link.'"';
 						$link .= ($link_open_in !== '') ? ' target="'.$link_open_in.'"' : '';
-						$link .= ($link_follow === 'nofollow') ? ' rel="nofollow'.(($link_open_in === '_blank') ? ' noopener' : '').'"' : ($link_open_in === '_blank') ? ' rel="noopener"' : '';
+						$link .= ($link_follow === 'nofollow') ? ' rel="nofollow' . (($link_open_in === '_blank') ? ' noopener' : '') . '"' : (($link_open_in === '_blank') ? ' rel="noopener"' : '');
 					}
 					
 					break;
