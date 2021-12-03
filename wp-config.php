@@ -24,10 +24,10 @@ define( 'WP_CACHE', false /* Modified by NitroPack */ );
 define( 'DB_NAME', 'wadcoaj3_ultimoggg' );
 
 /** MySQL database username */
-define( 'DB_USER', 'wadcoaj3_ultimoggg' );
+define( 'DB_USER', 'wordpress' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'ZQSCxAsx1R$1' );
+define( 'DB_PASSWORD', 'd2442e4ec54339847e1f780d8b2d4f192f19750173efa06e' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
