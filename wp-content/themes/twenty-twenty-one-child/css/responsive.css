@@ -680,7 +680,7 @@ a.cart-contents:focus .cart-contents-count {
 }
 
 @media only screen and (max-width: 767px) {
-	.site-main1 .elementor .elementor-element.elementor-element-1f733cf:not(.elementor-motion-effects-element-type-background),
+	.site-main1 .elementor .elementor-element.elementor-element-1f733cf:not(.elementor-motion-effects-element-type-background)
 	{
 		background: none;
 	}
@@ -937,7 +937,7 @@ a.cart-contents:focus .cart-contents-count {
 		background-image: none!important;
 	}
 	.tech-center {
-		background-image: url('http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/wp-content/uploads/2021/10/techrate-bg.png');
+		background-image: url('https://dev.ultimo.gg/wp-content/uploads/2021/10/techrate-bg.png');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;

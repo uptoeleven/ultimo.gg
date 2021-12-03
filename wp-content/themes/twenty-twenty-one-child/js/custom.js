@@ -66,7 +66,7 @@ $('.nav-tabs > li > a').hover(function() {
 // 				margin: 15,
 // 				dots:false,
 // 				nav: true,
-// 				navText: ["<img src='http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-left.png'>","<img src='http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-right.png'>"],
+// 				navText: ["<img src='https://dev.ultimo.gg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-left.png'>","<img src='https://dev.ultimo.gg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-right.png'>"],
 // 				responsiveClass: true,
 // 				responsive: {
 // 					768:{
@@ -94,7 +94,7 @@ var owl = $('.owl-carousel.ult-tour');
 				margin: 20,
 				dots: false,
 				nav: true,
-				navText: ["<img src='http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-left.png'>","<img src='http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-right.png'>"],
+				navText: ["<img src='https://dev.ultimo.gg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-left.png'>","<img src='https://dev.ultimo.gg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-right.png'>"],
 				responsiveClass: true,
 				responsive: {
 					768:{
@@ -115,7 +115,7 @@ var owl = $('.owl-carousel.ult-tour');
                 autoplayHoverPause:true,
 				dots: true,
 				nav: true,
-				navText: ["<img src='http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-left.png'>","<img src='http://cp-ht-9.hostgator.tempwebhost.net/~wadcoaj3/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-right.png'>"]
+				navText: ["<img src='https://dev.ultimo.gg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-left.png'>","<img src='https://dev.ultimo.gg/wp-content/themes/twenty-twenty-one-child/images/slider-arrow-right.png'>"]
 			});
 	owl.on('mousewheel', '.owl-stage', function (e) {
     if (e.deltaY>0) {
