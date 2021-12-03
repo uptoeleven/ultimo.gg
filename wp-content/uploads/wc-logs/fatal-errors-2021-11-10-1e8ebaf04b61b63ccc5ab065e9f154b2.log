@@ -1,0 +1,2 @@
+2021-11-10T13:35:13+00:00 CRITICAL Cannot redeclare woo_custom_product_tabs() (previously declared in /home1/wadcoaj3/public_html/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/functions.php:1034) in /home1/wadcoaj3/public_html/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/functions.php on line 1044
+

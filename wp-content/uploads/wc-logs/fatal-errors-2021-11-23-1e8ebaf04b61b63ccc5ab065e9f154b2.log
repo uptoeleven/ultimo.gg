@@ -1,0 +1,8 @@
+2021-11-23T09:20:45+00:00 CRITICAL syntax error, unexpected ''</div>'' (T_CONSTANT_ENCAPSED_STRING) in /home1/wadcoaj3/public_html/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/functions.php on line 586
+
+2021-11-23T10:49:40+00:00 CRITICAL syntax error, unexpected '<' in /home1/wadcoaj3/public_html/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/functions.php on line 1011
+
+2021-11-23T10:49:41+00:00 CRITICAL syntax error, unexpected '<' in /home1/wadcoaj3/public_html/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/functions.php on line 1011
+
+2021-11-23T11:01:02+00:00 CRITICAL syntax error, unexpected '<', expecting ';' in /home1/wadcoaj3/public_html/projects/ultimogg/wp-content/themes/twenty-twenty-one-child/functions.php on line 1015
+
