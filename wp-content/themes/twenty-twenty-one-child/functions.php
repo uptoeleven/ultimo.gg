@@ -429,7 +429,7 @@ add_theme_support('post-thumbnails');
 //Display Tournaments by shortcode
 add_shortcode( 'shortcode_tournaments_slider', 'tournaments_slider' );
 function tournaments_slider( $atts ){
-global $post;
+global $post, $type, $limit, $status, $order, $return;
 $default = array(
 //'type' => 'post',
 'post_type' => 'tournaments',
@@ -510,7 +510,7 @@ return $return;
 //Display Tournaments by shortcode
 add_shortcode( 'shortcode_featured_slider', 'featured_slider' );
 function featured_slider( $atts ){
-global $post;
+    global $post, $type, $limit, $status, $order, $return;
 $default = array(
 //'type' => 'post',
 'post_type' => 'tournaments',
@@ -598,7 +598,7 @@ return $return;
 //Display Tournaments by shortcode 2
 add_shortcode( 'shortcode_tournaments', 'tournaments_list' );
 function tournaments_list( $atts ){
-global $post;
+    global $post, $type, $limit, $status, $order, $return, $taxonomy, $field, $terms;
 $default = array(
 //'type' => 'post',
 'post_type' => 'tournaments',
@@ -688,7 +688,7 @@ return $return;
 //Display Tournaments by shortcode 3
 add_shortcode( 'filter_tournaments', 'tournaments_filter' );
 function tournaments_filter( $atts ){
-global $post;
+    global $post, $type, $limit, $status, $order, $return, $taxonomy, $field, $terms;
 $default = array(
 //'type' => 'post',
 'post_type' => 'tournaments',
@@ -761,7 +761,7 @@ return $return;
 //Display Tournaments by shortcode 4
 add_shortcode( 'shortcode_tournaments_slider_ult', 'tournaments_sliders' );
 function tournaments_sliders( $atts ){
-global $post;
+    global $post, $type, $limit, $status, $order, $return, $taxonomy, $field, $terms;
 $default = array(
 //'type' => 'post',
 'post_type' => 'tournaments',
@@ -840,6 +840,8 @@ return $return;
 
 // News-Stories shortcode
 function technology_articles($atts){
+    global $post, $type, $limit, $status, $order, $return, $taxonomy, $field, $terms;
+
     $q = new WP_Query(
         array( 'orderby' => 'date', 'order' => 'ASC', 'category_name' => 'Stories', 'posts_per_page' => 8)
     );
@@ -880,6 +882,8 @@ function technology_articles($atts){
 add_shortcode('news-list', 'technology_articles');
 // News-Latest-Bottom shortcode
 function latest_articles($atts){
+    global $post, $type, $limit, $status, $order, $return, $taxonomy, $field, $terms;
+
     $q = new WP_Query(
         array( 'orderby' => 'date', 'order' => 'DSC', 'category_name' => 'Latest News', 'posts_per_page' => 8)
     );
@@ -919,6 +923,7 @@ add_shortcode('latest-list', 'latest_articles');
 // Filter-news-middle
 function my_recent_posts_shortcode2( $atts ) {
     extract( shortcode_atts( array( 'limit' => 6,'orderby' => 'date', 'category' => '',), $atts ) );
+    global $post, $type, $limit, $status, $order, $return, $taxonomy, $field, $terms, $category;
 
     global $paged;
     $q = new WP_Query(  array ( 
@@ -1005,7 +1010,8 @@ function shoptimizer_custom_author_field() { ?>
 // ADD CRYPTO CURRENCY
 add_filter( 'woocommerce_get_price_html', 'cw_change_product_price_display' );
 add_filter( 'woocommerce_cart_item_price', 'cw_change_product_price_display' );
-function cw_change_product_price_display( $price ) {
+function cw_change_product_price_display( $price ) {    global $post, $type, $limit, $status, $order, $return, $taxonomy, $field, $terms;
+
     // Your additional text in a translatable string
      $text = get_field('crypto_currency', $post->ID);
 //     $text = __('TEXT');

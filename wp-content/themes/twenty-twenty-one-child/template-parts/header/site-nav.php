@@ -8,6 +8,13 @@
  */
 
 ?>
+<?php
+    $blog_info    = (isset($blog_info)) ? $blog_info : get_bloginfo( 'name' );
+    $description  = (isset($description)) ? $description : get_bloginfo( 'description', 'display' );
+    $show_title   = (isset($show_title)) ? $show_title : ( true === get_theme_mod( 'display_title_and_tagline', true ) );
+    $header_class = (isset($header_class)) ? $header_class : (($show_title) ? 'site-title' : 'screen-reader-text');
+
+?>
 
 <?php if ( has_nav_menu( 'primary' ) ) : ?>
 	<nav id="site-navigation" class="primary-navigation header-nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'twentytwentyone' ); ?>">
